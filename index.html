@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fillip Newsletter — Sports · Entertainment · IP · Capital</title>
+<meta name="description" content="Weekly signals on capital, rights, fandom, IP, and monetization.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..900;1,9..40,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+
+<style>
+/* ── TOP BAR ─────────────────────────────────────────────────── */
+.top-bar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  height: var(--bar-h);
+  background: rgba(23,39,54,0.96);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+}
+
+#app { padding-top: var(--bar-h); }
+
+/* ── HERO ────────────────────────────────────────────────────── */
+.hero-video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0.09;
+  filter: grayscale(100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.pub-hero {
+  padding: 6rem 5vw 5rem;
+  min-height: 86vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.pub-hero-pre {
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--lime);
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.pub-hero-lockup {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2.5rem;
+  line-height: 1;
+}
+
+.hero-logo {
+  height: clamp(80px, 14vw, 160px);
+  width: auto;
+  display: block;
+}
+
+.pub-hero-tagline {
+  font-size: clamp(1rem, 1.8vw, 1.35rem);
+  font-weight: 600;
+  color: var(--off-white);
+  line-height: 1.45;
+  max-width: 52ch;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.pub-hero-desc {
+  font-size: clamp(0.88rem, 1.3vw, 1.05rem);
+  font-weight: 300;
+  color: var(--sage);
+  line-height: 1.75;
+  max-width: 60ch;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.pub-hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── SECTION LABEL ───────────────────────────────────────────── */
+.section-label {
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 2.5rem;
+}
+
+/* ── LATEST ISSUE ────────────────────────────────────────────── */
+.latest-section {
+  padding: 4.5rem 5vw;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  position: relative;
+  overflow: hidden;
+}
+.latest-section::before {
+  content: 'LATEST';
+  position: absolute; top: 50%; right: -2vw;
+  transform: translateY(-50%);
+  font-size: clamp(6rem, 16vw, 18rem);
+  font-weight: 900; letter-spacing: -0.04em;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255,255,255,0.04);
+  pointer-events: none; user-select: none; line-height: 1;
+}
+
+.latest-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.latest-week-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sage);
+  font-weight: 500;
+}
+
+.latest-issue-title {
+  font-size: clamp(2rem, 4.5vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  max-width: 82vw;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.latest-meta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+.meta-date { font-size: 0.85rem; color: var(--sage); font-weight: 300; }
+
+.latest-intro {
+  font-size: clamp(0.95rem, 1.5vw, 1.2rem);
+  font-weight: 300;
+  color: var(--sage);
+  line-height: 1.75;
+  max-width: 64ch;
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── MONTHLY REPOSITORY ──────────────────────────────────────── */
+.monthly-repo-section {
+  padding: 4.5rem 5vw 6rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.monthly-repo-title {
+  font-size: clamp(2rem, 4.5vw, 3.8rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--off-white);
+  margin-bottom: 3.5rem;
+}
+.month-group { margin-bottom: 3rem; }
+.month-group:last-child { margin-bottom: 0; }
+.month-group-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+  margin-bottom: 0.25rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.month-group-name {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--off-white);
+}
+.month-group-stats {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sage);
+}
+.issue-row {
+  display: flex; align-items: center; gap: 1.5rem;
+  padding: 1rem 1.2rem; text-decoration: none; color: inherit;
+  border-left: 2px solid transparent;
+  transition: border-color 0.2s, background 0.2s;
+}
+.issue-row:hover { border-left-color: var(--lime); background: rgba(255,255,255,0.025); }
+.issue-row-info { flex: 1; min-width: 0; }
+.issue-row-week {
+  font-size: 0.58rem; font-weight: 800; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--lime); margin-bottom: 0.3rem;
+}
+.issue-row-title {
+  font-size: clamp(0.88rem, 1.4vw, 1.05rem); font-weight: 600;
+  color: var(--off-white); line-height: 1.3;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.issue-row-meta { font-size: 0.72rem; color: var(--sage); font-weight: 300; margin-top: 0.2rem; }
+.issue-row-arrow {
+  font-size: 0.9rem; color: var(--sage); flex-shrink: 0;
+  transition: transform 0.2s, color 0.2s;
+}
+.issue-row:hover .issue-row-arrow { transform: translateX(4px); color: var(--lime); }
+
+/* ── RESPONSIVE ──────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .pub-hero { min-height: 75vh; }
+  .latest-section::before { display: none; }
+  .latest-issue-title { max-width: 100%; }
+  .issue-row-title { white-space: normal; }
+}
+</style>
+</head>
+<body>
+
+<script src="data.js"></script>
+<script>
+  var CONFIG     = PUBLICATION_CONFIG;
+  var ALL_MONTHS = MONTHLY_GROUPS;
+</script>
+
+<!-- Fixed top bar -->
+<div class="top-bar" style="justify-content:flex-end;">
+  <a class="btn-primary" id="top-subscribe" href="#" target="_blank" rel="noopener" style="padding:0.5rem 1.3rem;font-size:0.68rem;">Subscribe For Free</a>
+</div>
+
+<!-- Main content rendered by client-side JS -->
+<div id="app"></div>
+
+<footer class="site-footer">
+  <div class="footer-ghost" aria-hidden="true">FILLIP</div>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-pub-name">Fillip Newsletter</div>
+      <div class="footer-tagline" id="footer-tagline"></div>
+      <nav class="footer-links" aria-label="Footer links">
+        <a class="footer-link" id="footer-website" href="#" target="_blank" rel="noopener">Website</a>
+        <a class="footer-link" id="footer-linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
+    <div class="footer-right">
+      <a class="btn-outline" id="footer-subscribe" href="#" target="_blank" rel="noopener" style="font-size:0.7rem;padding:0.7rem 1.6rem;">Subscribe For Free →</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Populate footer and top bar from config
+document.getElementById('top-subscribe').href    = CONFIG.beehiivSubscribeUrl;
+document.getElementById('footer-tagline').textContent = CONFIG.editionLabel;
+document.getElementById('footer-website').href   = CONFIG.websiteUrl;
+document.getElementById('footer-linkedin').href  = CONFIG.linkedinUrl;
+document.getElementById('footer-subscribe').href = CONFIG.beehiivSubscribeUrl;
+</script>
+
+<script>
+(function () {
+
+  function esc(s) {
+    return String(s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function issueUrl(slug) {
+    return 'issue.html?slug=' + encodeURIComponent(slug);
+  }
+
+  function getLatest(months) {
+    var all = [];
+    months.forEach(function (m) { (m.issues || []).forEach(function (i) { all.push(i); }); });
+    all.sort(function (a, b) { return new Date(b.publishedDate) - new Date(a.publishedDate); });
+    return all[0] || null;
+  }
+
+  function render() {
+    var app = document.getElementById('app');
+    var html = '';
+
+    var latest = getLatest(ALL_MONTHS);
+
+    if (!latest) {
+      app.innerHTML = '<div style="padding:5rem 5vw;color:var(--sage);">No issues found.</div>';
+      return;
+    }
+
+    // ── 1. Publication hero ──────────────────────────────────────
+    html += '<section class="pub-hero">';
+    html += '<video class="hero-video" id="hero-video" autoplay muted playsinline poster="https://static.wixstatic.com/media/31a0b1_5c2c50b997184abeb92a3067a0ee65c1f001.jpg">'
+      + '<source src="https://video.wixstatic.com/video/31a0b1_5c2c50b997184abeb92a3067a0ee65c1/1080p/mp4/file.mp4" type="video/mp4">'
+      + '</video>';
+    html += '<div class="pub-hero-pre">Free Weekly · Sports &amp; Entertainment Intelligence</div>';
+    html += '<div class="pub-hero-lockup">';
+    html += '<img src="' + esc(CONFIG.logoUrl.replace('w_132,h_81', 'w_528,h_324')) + '" alt="Fillip Newsletter" class="hero-logo" />';
+    html += '</div>';
+    html += '<p class="pub-hero-tagline">' + esc(CONFIG.tagline) + '</p>';
+    html += '<p class="pub-hero-desc">' + esc(CONFIG.coverageNote) + '</p>';
+    html += '<div class="pub-hero-actions">';
+    html += '<a class="btn-primary" href="' + esc(CONFIG.beehiivSubscribeUrl) + '" target="_blank" rel="noopener">Subscribe For Free</a>';
+    html += '<a class="btn-outline" href="#latest">Read Latest Issue &nbsp;↓</a>';
+    html += '</div>';
+    html += '</section>';
+
+    // ── 2. Latest issue feature ──────────────────────────────────
+    var sc = (latest.stories || []).length;
+    html += '<section class="latest-section" id="latest">';
+    html += '<div class="section-label">Latest Issue</div>';
+    html += '<div class="latest-eyebrow">';
+    html += '<span class="issue-badge">Latest</span>';
+    html += '<span class="latest-week-label">' + esc(latest.weekLabel) + '</span>';
+    html += '</div>';
+    html += '<h2 class="latest-issue-title">' + esc(latest.issueTitle) + '</h2>';
+    html += '<div class="latest-meta">';
+    html += '<span class="meta-date">' + esc(latest.dateRange) + '</span>';
+    html += '<span class="stat-pill">' + sc + ' Signal' + (sc !== 1 ? 's' : '') + '</span>';
+    html += '<span class="edition-chip">' + esc(latest.editionTag) + '</span>';
+    html += '</div>';
+    html += '<p class="latest-intro">' + esc(latest.introLine) + '</p>';
+    html += '<a class="btn-primary" href="' + issueUrl(latest.slug) + '">Read the Full Breakdown &nbsp;→</a>';
+    html += '</section>';
+
+    // ── 3. Monthly repository ────────────────────────────────────
+    html += '<section class="monthly-repo-section">';
+    html += '<div class="monthly-repo-title">Issues</div>';
+
+    var sortedMonths = ALL_MONTHS.slice().sort(function (a, b) {
+      return new Date(b.publishedDate) - new Date(a.publishedDate);
+    });
+
+    sortedMonths.forEach(function (month) {
+      var monthIssues = (month.issues || []).slice().sort(function (a, b) {
+        return new Date(b.publishedDate) - new Date(a.publishedDate);
+      });
+      if (!monthIssues.length) return;
+      var totalSig = monthIssues.reduce(function (s, i) { return s + (i.stories ? i.stories.length : 0); }, 0);
+      var ic = monthIssues.length;
+
+      html += '<div class="month-group">';
+      html += '<div class="month-group-header">';
+      html += '<span class="month-group-name">' + esc(month.monthLabel) + '</span>';
+      html += '<span class="month-group-stats">' + ic + ' Issue' + (ic !== 1 ? 's' : '') + ' &nbsp;·&nbsp; ' + totalSig + ' Signal' + (totalSig !== 1 ? 's' : '') + '</span>';
+      html += '</div>';
+
+      monthIssues.forEach(function (issue) {
+        var sc = (issue.stories || []).length;
+        html += '<a class="issue-row" href="' + issueUrl(issue.slug) + '">';
+        html += '<div class="issue-row-info">';
+        html += '<div class="issue-row-week">' + esc(issue.weekLabel) + '</div>';
+        html += '<div class="issue-row-title">' + esc(issue.issueTitle) + '</div>';
+        html += '<div class="issue-row-meta">' + esc(issue.dateRange) + ' &nbsp;·&nbsp; ' + sc + ' Signal' + (sc !== 1 ? 's' : '') + '</div>';
+        html += '</div>';
+        html += '<span class="issue-row-arrow">→</span>';
+        html += '</a>';
+      });
+
+      html += '</div>';
+    });
+
+    html += '</section>';
+
+    app.innerHTML = html;
+
+    // Smooth scroll for #anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var el = document.getElementById(a.getAttribute('href').slice(1));
+        if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+
+    setupHeroVideo();
+  }
+
+  var HERO_VIDEOS = [
+    'https://video.wixstatic.com/video/31a0b1_5c2c50b997184abeb92a3067a0ee65c1/1080p/mp4/file.mp4'
+  ];
+
+  function setupHeroVideo() {
+    var video = document.getElementById('hero-video');
+    if (!video || HERO_VIDEOS.length === 0) return;
+    var idx = Math.floor(Math.random() * HERO_VIDEOS.length);
+    function playVideo(i) {
+      video.style.transition = 'none';
+      video.style.opacity = '0';
+      video.src = HERO_VIDEOS[i];
+      video.load();
+      video.play().catch(function () {});
+      setTimeout(function () {
+        video.style.transition = 'opacity 1.5s ease';
+        video.style.opacity = '0.09';
+      }, 100);
+    }
+    video.addEventListener('ended', function () {
+      video.style.transition = 'opacity 1s ease';
+      video.style.opacity = '0';
+      setTimeout(function () { idx = (idx + 1) % HERO_VIDEOS.length; playVideo(idx); }, 1000);
+    });
+    playVideo(idx);
+  }
+
+  render();
+})();
+</script>
+
+</body>
+</html>

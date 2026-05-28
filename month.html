@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fillip Newsletter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..900;1,9..40,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+
+<style>
+/* ── BACK BAR ────────────────────────────────────────────────── */
+.back-bar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  height: var(--bar-h);
+  background: rgba(23,39,54,0.96);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+}
+.back-link {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sage);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.back-link:hover { color: var(--lime); }
+.back-bar-brand {
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: rgba(255,255,255,0.3);
+}
+
+#month-root { padding-top: var(--bar-h); }
+
+/* ── MONTH HERO ──────────────────────────────────────────────── */
+.month-hero {
+  padding: 6rem 5vw 5rem;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.month-hero-bg {
+  position: absolute;
+  bottom: -4rem; right: -2vw;
+  font-size: clamp(8rem, 22vw, 25rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255,255,255,0.03);
+  pointer-events: none;
+  user-select: none;
+  line-height: 1;
+}
+.month-eyebrow {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--lime);
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+.month-title {
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  color: var(--off-white);
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+.month-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+.month-date-range { font-size: 0.85rem; color: var(--sage); font-weight: 300; }
+.month-intro {
+  font-size: clamp(0.95rem, 1.6vw, 1.2rem);
+  font-weight: 300;
+  color: var(--sage);
+  line-height: 1.75;
+  max-width: 62ch;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── ISSUES GRID ─────────────────────────────────────────────── */
+.issues-section { padding: 0 5vw 5rem; }
+.issues-section-label {
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--sage);
+  padding: 2.5rem 0 2rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.issues-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.issue-card {
+  background: var(--navy);
+  padding: 2.5rem 2rem;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: background 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.issue-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--lime);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+.issue-card:hover { background: rgba(255,255,255,0.03); }
+.issue-card:hover::after { transform: scaleX(1); }
+
+.card-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.card-week {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--lime);
+}
+.card-edition {
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--forest);
+  font-weight: 600;
+  border: 1px solid var(--forest);
+  padding: 0.12rem 0.5rem;
+  border-radius: 2px;
+}
+.card-title {
+  font-size: clamp(1rem, 1.8vw, 1.4rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--off-white);
+}
+.card-date-range { font-size: 0.8rem; color: var(--sage); font-weight: 300; }
+.card-intro {
+  font-size: 0.86rem;
+  color: var(--sage);
+  font-weight: 300;
+  line-height: 1.55;
+}
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.card-story-count {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sage);
+}
+.card-arrow { font-size: 1rem; color: var(--sage); transition: transform 0.2s, color 0.2s; }
+.issue-card:hover .card-arrow { transform: translateX(4px); color: var(--lime); }
+
+.empty-state { padding: 4rem 0; color: var(--sage); font-size: 1rem; font-weight: 300; line-height: 1.6; }
+
+/* ── RESPONSIVE ──────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .issues-grid { grid-template-columns: 1fr; }
+  .month-title { font-size: clamp(2.5rem, 10vw, 5rem); }
+  .month-hero-bg { display: none; }
+}
+</style>
+</head>
+<body>
+
+<script src="data.js"></script>
+
+<!-- Fixed back bar -->
+<div class="back-bar">
+  <a class="back-link" href="index.html">← Home Page</a>
+  <span class="back-bar-brand">Fillip Newsletter</span>
+</div>
+
+<!-- Main content rendered by client-side JS -->
+<div id="month-root"></div>
+
+<footer class="site-footer" id="site-footer">
+  <div class="footer-ghost" aria-hidden="true">FILLIP</div>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-pub-name">Fillip Newsletter</div>
+      <div class="footer-tagline" id="footer-tagline"></div>
+      <nav class="footer-links" aria-label="Footer links">
+        <a class="footer-link" href="index.html">Home Page</a>
+        <a class="footer-link" id="footer-website" href="#" target="_blank" rel="noopener">Website</a>
+        <a class="footer-link" id="footer-linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
+    <div class="footer-right">
+      <a class="btn-primary" id="footer-subscribe" href="#" target="_blank" rel="noopener" style="font-size:0.7rem;padding:0.75rem 1.6rem;">Subscribe For Free →</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+
+  var CONFIG = PUBLICATION_CONFIG;
+  var params = new URLSearchParams(window.location.search);
+  var monthSlug = params.get('month');
+
+  var month = null;
+  MONTHLY_GROUPS.forEach(function(m) {
+    if (m.slug === monthSlug) { month = m; }
+  });
+
+  // Populate footer
+  document.getElementById('footer-tagline').textContent = CONFIG.editionLabel || '';
+  document.getElementById('footer-website').href = CONFIG.websiteUrl || '#';
+  document.getElementById('footer-linkedin').href = CONFIG.linkedinUrl || '#';
+  document.getElementById('footer-subscribe').href = CONFIG.beehiivSubscribeUrl || '#';
+
+  function esc(s) {
+    return String(s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function issueUrl(slug) {
+    return 'issue.html?slug=' + encodeURIComponent(slug);
+  }
+
+  function mount() {
+    var root = document.getElementById('month-root');
+
+    if (!month) {
+      root.innerHTML = '<div style="padding:6rem 5vw;color:var(--sage);">Month not found. <a href="index.html" style="color:var(--lime);">← Home Page</a></div>';
+      return;
+    }
+
+    document.title = month.monthLabel + ' — Fillip Newsletter';
+
+    var issues = (month.issues || []).slice().sort(function (a, b) {
+      return new Date(b.publishedDate) - new Date(a.publishedDate);
+    });
+    var weeks   = issues.length;
+    var stories = issues.reduce(function (s, i) { return s + (i.stories ? i.stories.length : 0); }, 0);
+    var html = '';
+
+    // Month hero
+    html += '<section class="month-hero">';
+    html += '<span class="month-hero-bg" aria-hidden="true">' + esc(month.monthLabel.split(' ')[0]) + '</span>';
+    html += '<div class="month-eyebrow">Fillip Newsletter</div>';
+    html += '<h1 class="month-title">' + esc(month.monthLabel) + '</h1>';
+    html += '<div class="month-meta-row">';
+    html += '<span class="month-date-range">' + esc(month.dateRange || '') + '</span>';
+    if (weeks > 0) html += '<span class="stat-pill">' + weeks + ' Week' + (weeks !== 1 ? 's' : '') + '</span>';
+    if (stories > 0) html += '<span class="stat-pill">' + stories + ' Signal' + (stories !== 1 ? 's' : '') + '</span>';
+    html += '<span class="edition-chip">' + esc(month.editionTag) + '</span>';
+    html += '</div>';
+    html += '<p class="month-intro">' + esc(month.introLine) + '</p>';
+    html += '</section>';
+
+    // Issues grid
+    html += '<section class="issues-section">';
+    html += '<div class="issues-section-label">Issues This Month</div>';
+    if (issues.length === 0) {
+      html += '<div class="empty-state">Issues are on their way — check back soon.</div>';
+    } else {
+      html += '<div class="issues-grid">';
+      issues.forEach(function (issue) {
+        var sc = (issue.stories || []).length;
+        html += '<a class="issue-card" href="' + issueUrl(issue.slug) + '">';
+        html += '<div class="card-eyebrow">';
+        html += '<span class="card-week">' + esc(issue.weekLabel) + '</span>';
+        html += '<span class="card-edition">' + esc(issue.editionTag) + '</span>';
+        html += '</div>';
+        html += '<div class="card-title">' + esc(issue.issueTitle) + '</div>';
+        html += '<div class="card-date-range">' + esc(issue.dateRange) + '</div>';
+        html += '<p class="card-intro">' + esc(issue.introLine) + '</p>';
+        html += '<div class="card-footer">';
+        html += '<span class="card-story-count">' + sc + ' Signal' + (sc !== 1 ? 's' : '') + '</span>';
+        html += '<span class="card-arrow">→</span>';
+        html += '</div>';
+        html += '</a>';
+      });
+      html += '</div>';
+    }
+    html += '</section>';
+
+    // Subscribe CTA
+    html += '<section class="subscribe-section">';
+    html += '<div class="subscribe-inner">';
+    html += '<div class="subscribe-eyebrow">Free · Weekly</div>';
+    html += '<h2 class="subscribe-heading">Get Fillip Newsletter every week.</h2>';
+    html += '<p class="subscribe-body">Signals across sports, entertainment, IP, and capital flows — free, every week.</p>';
+    html += '<div class="subscribe-actions">';
+    html += '<a class="btn-primary" href="' + esc(CONFIG.beehiivSubscribeUrl) + '" target="_blank" rel="noopener">Subscribe For Free →</a>';
+    html += '<a class="btn-ghost" href="index.html">← Home Page</a>';
+    html += '</div>';
+    html += '</div>';
+    html += '</section>';
+
+    root.innerHTML = html;
+  }
+
+  mount();
+
+})();
+</script>
+
+</body>
+</html>

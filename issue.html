@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fillip Newsletter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..900;1,9..40,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+
+<style>
+/* ── BACK BAR ────────────────────────────────────────────────── */
+.back-bar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  height: var(--bar-h);
+  background: rgba(23,39,54,0.96);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+}
+.back-link {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sage);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.back-link:hover { color: var(--lime); }
+
+#issue-root { padding-top: var(--bar-h); }
+
+/* ── ISSUE HEADER ────────────────────────────────────────────── */
+.issue-header {
+  padding: 5rem 5vw 4.5rem;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.header-ghost {
+  position: absolute;
+  bottom: -3rem; right: -2vw;
+  font-size: clamp(10rem, 28vw, 28rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255,255,255,0.03);
+  pointer-events: none;
+  user-select: none;
+  line-height: 1;
+}
+.header-eyebrow {
+  font-size: clamp(0.82rem, 1.3vw, 1rem);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+.header-title {
+  font-size: clamp(2.2rem, 5vw, 5.5rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--off-white);
+  margin-bottom: 2rem;
+  max-width: 22ch;
+  position: relative;
+  z-index: 1;
+}
+.core-signal {
+  border-left: 3px solid var(--lime);
+  padding: 1rem 1.5rem;
+  background: rgba(204,237,96,0.04);
+  border-radius: 0 4px 4px 0;
+  font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+  font-weight: 400;
+  color: var(--off-white);
+  line-height: 1.62;
+  max-width: 68ch;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+.core-signal-label {
+  font-size: 0.55rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--lime);
+  margin-bottom: 0.4rem;
+}
+.header-meta {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── STORY INDEX ─────────────────────────────────────────────── */
+.story-index {
+  display: flex;
+  flex-direction: column;
+  max-width: 660px;
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+.story-index-btn {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  color: var(--off-white);
+  cursor: pointer;
+  text-align: left;
+  padding: 0.85rem 0;
+  transition: color 0.15s;
+  font-family: var(--font);
+  width: 100%;
+}
+.story-index-btn:hover { color: var(--lime); }
+.story-index-btn:hover .idx-num { color: var(--lime); }
+.idx-num {
+  font-size: clamp(0.85rem, 1.2vw, 1rem);
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--sage);
+  flex-shrink: 0;
+  padding-top: 0.1rem;
+  min-width: 2.8rem;
+  transition: color 0.15s;
+}
+.idx-text {
+  font-size: clamp(0.82rem, 1.2vw, 0.94rem);
+  font-weight: 500;
+  line-height: 1.35;
+}
+.idx-tag {
+  font-size: 0.56rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-top: 0.15rem;
+}
+
+/* ── SIGNALS BODY ────────────────────────────────────────────── */
+.signals-body { padding: 0 5vw; }
+
+.signal-entry {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: 0 2.5rem;
+  padding: 4rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  scroll-margin-top: calc(var(--bar-h) + 1.5rem);
+}
+.signal-entry:first-child { border-top: 1px solid rgba(255,255,255,0.06); }
+
+.entry-num-col { padding-top: 0.3rem; }
+.entry-num {
+  font-size: clamp(1.1rem, 1.8vw, 1.5rem);
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  color: var(--lime);
+  line-height: 1;
+}
+
+.entry-body { min-width: 0; }
+.entry-category {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 0.75rem;
+}
+.entry-metric {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(204,237,96,0.45);
+  line-height: 1;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+.entry-headline {
+  font-size: clamp(1.25rem, 2.2vw, 1.9rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  color: var(--off-white);
+  margin-bottom: 1.25rem;
+}
+.signal-entry:first-child .entry-headline {
+  font-size: clamp(1.55rem, 2.8vw, 2.5rem);
+}
+.entry-summary {
+  font-size: clamp(0.88rem, 1.3vw, 1rem);
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--sage);
+  max-width: 72ch;
+  margin-bottom: 1.25rem;
+}
+.entry-summary strong { color: var(--off-white); font-weight: 600; }
+
+.entry-why {
+  border-left: 2px solid var(--lime);
+  padding: 0.8rem 1.25rem;
+  background: rgba(204,237,96,0.04);
+  border-radius: 0 3px 3px 0;
+  margin-bottom: 1.5rem;
+  max-width: 68ch;
+}
+.entry-why-label {
+  font-size: 0.55rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--lime);
+  margin-bottom: 0.3rem;
+}
+.entry-why-text {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--off-white);
+  line-height: 1.6;
+}
+
+/* ── EDITORIAL SUB-SECTIONS ─────────────────────────────────── */
+.entry-sub { margin-bottom: 1.25rem; max-width: 72ch; }
+.entry-sub-label {
+  font-size: 0.55rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 0.35rem;
+}
+.entry-sub-body {
+  font-size: clamp(0.88rem, 1.3vw, 1rem);
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--sage);
+}
+.entry-sub-body strong { color: var(--off-white); font-weight: 600; }
+.entry-sub-extended {
+  font-size: clamp(0.92rem, 1.45vw, 1.05rem);
+  color: var(--off-white);
+  line-height: 1.8;
+}
+
+.entry-foot {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.entry-source {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sage);
+  text-decoration: none;
+  border: 1px solid rgba(173,185,173,0.35);
+  padding: 0.3rem 0.85rem;
+  border-radius: 2px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.entry-source:hover { color: var(--lime); border-color: var(--lime); }
+.entry-date { font-size: 0.65rem; color: var(--sage); font-weight: 300; }
+
+/* ── EDITORIAL SECTION (latam angle) ────────────────────────── */
+.editorial-section {
+  padding: 4.5rem 5vw;
+  background: rgba(0,0,0,0.45);
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.editorial-section-label {
+  font-size: clamp(2rem, 4.5vw, 3.8rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--off-white);
+  margin-bottom: 1.5rem;
+}
+.editorial-section-body {
+  font-size: clamp(0.9rem, 1.4vw, 1.05rem);
+  font-weight: 300;
+  line-height: 1.8;
+  color: rgba(237,237,236,0.75);
+  max-width: 68ch;
+}
+.editorial-section-body strong { color: var(--off-white); font-weight: 600; }
+
+/* ── FILLIP ECOSYSTEM SECTION ────────────────────────────────── */
+.ecosystem-section {
+  padding: 4.5rem 5vw;
+  background: rgba(204,237,96,0.05);
+  border-top: 2px solid var(--lime);
+  border-bottom: 1px solid rgba(204,237,96,0.15);
+}
+.ecosystem-title {
+  font-size: clamp(2rem, 4.5vw, 3.8rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--lime);
+  margin-bottom: 3rem;
+}
+.ecosystem-items { display: flex; flex-direction: column; gap: 0; }
+.ecosystem-item {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: 0 2.5rem;
+  padding: 3rem 0;
+  border-bottom: 1px solid rgba(204,237,96,0.1);
+}
+.ecosystem-item:last-child { border-bottom: none; padding-bottom: 0; }
+.ecosystem-item-num {
+  font-size: clamp(1.1rem, 1.8vw, 1.5rem);
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  color: var(--lime);
+  padding-top: 0.3rem;
+}
+.ecosystem-item-head {
+  font-size: clamp(1.15rem, 2.2vw, 1.75rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  color: var(--off-white);
+  margin-bottom: 1rem;
+}
+.ecosystem-item-body {
+  font-size: clamp(0.88rem, 1.3vw, 1rem);
+  font-weight: 300;
+  color: var(--sage);
+  line-height: 1.75;
+  max-width: 68ch;
+  margin-bottom: 1.1rem;
+}
+
+/* ── ISSUE FOOTER ────────────────────────────────────────────── */
+.issue-footer {
+  background: var(--navy);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 3rem 5vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.issue-footer .footer-ghost { position: absolute; bottom: -1rem; left: 3vw; font-size: clamp(5rem, 16vw, 14rem); font-weight: 900; letter-spacing: -0.04em; color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,0.04); pointer-events: none; user-select: none; line-height: 1; opacity: 0.4; }
+.footer-nav { display: flex; gap: 1rem; flex-wrap: wrap; position: relative; z-index: 1; }
+.footer-nav-btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.65rem 1.4rem; border-radius: 4px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; transition: background 0.2s, color 0.2s; font-family: var(--font); }
+.footer-nav-btn.btn-month { background: var(--lime); color: var(--navy); }
+.footer-nav-btn.btn-month:hover { background: #b8d940; }
+.footer-nav-btn.btn-home { background: transparent; color: var(--sage); border: 1px solid rgba(255,255,255,0.12); }
+.footer-nav-btn.btn-home:hover { border-color: var(--lime); color: var(--lime); }
+.footer-issue-info { text-align: right; position: relative; z-index: 1; }
+.footer-issue-title { font-size: clamp(0.9rem, 1.8vw, 1.3rem); font-weight: 600; color: rgba(255,255,255,0.45); letter-spacing: -0.01em; }
+.footer-issue-meta { font-size: 0.72rem; color: var(--sage); margin-top: 0.4rem; font-weight: 300; }
+.footer-story-count { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--lime); margin-top: 0.5rem; }
+
+/* ── RESPONSIVE ──────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .header-ghost { display: none; }
+  .signal-entry { grid-template-columns: 2.5rem 1fr; gap: 0 1.25rem; padding: 3rem 0; }
+  .ecosystem-item { grid-template-columns: 2.5rem 1fr; gap: 0 1.25rem; }
+  .issue-footer { flex-direction: column; align-items: flex-start; }
+  .footer-issue-info { text-align: left; }
+  .footer-nav { flex-direction: column; }
+  .footer-nav-btn { justify-content: center; }
+}
+</style>
+</head>
+<body>
+
+<script src="data.js"></script>
+<script>
+(function () {
+  var params   = new URLSearchParams(window.location.search);
+  var slug     = params.get('slug');
+  var ISSUE    = null;
+  var CONFIG   = PUBLICATION_CONFIG;
+
+  MONTHLY_GROUPS.forEach(function (month) {
+    (month.issues || []).forEach(function (issue) {
+      if (issue.slug === slug) { ISSUE = issue; }
+    });
+  });
+
+  window.__ISSUE  = ISSUE;
+  window.__CONFIG = CONFIG;
+})();
+</script>
+
+<!-- Fixed back bar -->
+<div class="back-bar">
+  <a class="back-link" href="index.html">← Home Page</a>
+</div>
+
+<!-- Main content rendered by client-side JS -->
+<div id="issue-root"></div>
+
+<script>
+(function () {
+
+  var issue  = window.__ISSUE;
+  var CONFIG = window.__CONFIG;
+
+  if (!issue) {
+    document.getElementById('issue-root').innerHTML =
+      '<div style="padding:5rem 5vw;color:var(--sage);">Issue not found. <a href="index.html" style="color:var(--lime);">← Home Page</a></div>';
+    return;
+  }
+
+  document.title = issue.issueTitle + ' — Fillip Newsletter';
+
+  function esc(s) {
+    return String(s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function sanitize(html) {
+    return String(html || '').replace(/<(?!\/?strong\b)[^>]*>/gi, '');
+  }
+
+  function formatDate(str) {
+    if (!str) return '';
+    var d = new Date(str + 'T00:00:00');
+    return d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+  }
+
+  function renderHeader() {
+    var sorted = issue.stories.slice().sort(function (a, b) { return a.order - b.order; });
+    var sc = issue.stories.length;
+
+    var index = sorted.map(function (s) {
+      return '<button class="story-index-btn" onclick="scrollToSection(\'signal-' + s.order + '\')">'
+        + '<span class="idx-num">' + String(s.order).padStart(2, '0') + '</span>'
+        + '<span><div class="idx-text">' + esc(s.headline) + '</div>'
+        + '<div class="idx-tag">' + esc(s.tag || '') + '</div></span>'
+        + '</button>';
+    }).join('');
+
+    var coreHtml = '';
+    if (issue.coreSignal) {
+      coreHtml = '<div class="core-signal">'
+        + '<div class="core-signal-label">This Week\'s Signal</div>'
+        + esc(issue.coreSignal)
+        + '</div>';
+    }
+
+    return '<section class="issue-header">'
+      + '<div class="header-ghost" aria-hidden="true">FILLIP</div>'
+      + '<div class="header-eyebrow">Fillip Newsletter &nbsp;·&nbsp; ' + esc(issue.weekLabel) + ' &nbsp;·&nbsp; ' + esc(issue.dateRange) + '</div>'
+      + '<h1 class="header-title">' + esc(issue.issueTitle) + '</h1>'
+      + coreHtml
+      + '<div class="header-meta">'
+      + '<span class="stat-pill">' + sc + ' Signal' + (sc !== 1 ? 's' : '') + '</span>'
+      + '<span class="edition-chip">' + esc(issue.editionTag) + '</span>'
+      + '</div>'
+      + '<div class="story-index">' + index + '</div>'
+      + '</section>';
+  }
+
+  function renderSignalEntry(s) {
+    var numStr  = String(s.order).padStart(2, '0');
+    var metric  = s.accentText || s.accentMetric || '';
+    var summary = s.emailSummary || '';
+
+    var metricHtml = metric
+      ? '<span class="entry-metric" aria-hidden="true">' + esc(metric) + '</span>'
+      : '';
+
+    var summaryHtml = summary
+      ? '<div class="entry-sub-label">Summary</div>'
+        + '<div class="entry-summary">' + sanitize(summary) + '</div>'
+      : '';
+
+    var whyHtml = s.whyItMatters
+      ? '<div class="entry-why">'
+        + '<div class="entry-why-label">Why It Matters</div>'
+        + '<div class="entry-why-text">' + esc(s.whyItMatters) + '</div>'
+        + '</div>'
+      : '';
+
+    var signalHtml = s.signalText
+      ? '<div class="entry-sub">'
+        + '<div class="entry-sub-label">Business Signal</div>'
+        + '<div class="entry-sub-body">' + esc(s.signalText) + '</div>'
+        + '</div>'
+      : '';
+
+    var extendedHtml = s.extendedAnalysis
+      ? '<div class="entry-sub">'
+        + '<div class="entry-sub-label">Extended Analysis</div>'
+        + '<div class="entry-sub-body entry-sub-extended">' + esc(s.extendedAnalysis) + '</div>'
+        + '</div>'
+      : '';
+
+    var sourceHtml = (s.sourceUrl && s.sourceName)
+      ? '<a class="entry-source" href="' + esc(s.sourceUrl) + '" target="_blank" rel="noopener">' + esc(s.sourceName) + ' ↗</a>'
+      : '';
+
+    return '<article class="signal-entry" id="signal-' + s.order + '">'
+      + '<div class="entry-num-col"><span class="entry-num">' + numStr + '</span></div>'
+      + '<div class="entry-body">'
+      + '<div class="entry-category">' + esc(s.tag || '') + '</div>'
+      + metricHtml
+      + '<h2 class="entry-headline">' + esc(s.headline) + '</h2>'
+      + summaryHtml
+      + whyHtml
+      + signalHtml
+      + extendedHtml
+      + '<div class="entry-foot">'
+      + sourceHtml
+      + '<span class="entry-date">' + formatDate(s.publishedDate) + '</span>'
+      + '</div>'
+      + '</div>'
+      + '</article>';
+  }
+
+  function renderEditorialSection(label, content) {
+    if (!content) return '';
+    var body = typeof content === 'string' ? content : (content.body || content.headline || '');
+    if (!body) return '';
+    return '<section class="editorial-section">'
+      + '<div class="editorial-section-label">' + esc(label) + '</div>'
+      + '<div class="editorial-section-body">' + esc(body) + '</div>'
+      + '</section>';
+  }
+
+  function renderEcosystemSection() {
+    var items = issue.ecosystemNews;
+    if (!items || !items.length) return '';
+    var itemsHtml = items.map(function (item, idx) {
+      var numStr = String(idx + 1).padStart(2, '0');
+      var sourceHtml = (item.sourceUrl && item.sourceName)
+        ? '<a class="entry-source" href="' + esc(item.sourceUrl) + '" target="_blank" rel="noopener">' + esc(item.sourceName) + ' ↗</a>'
+        : '';
+      return '<div class="ecosystem-item">'
+        + '<div class="ecosystem-item-num">' + numStr + '</div>'
+        + '<div>'
+        + '<div class="ecosystem-item-head">' + esc(item.headline) + '</div>'
+        + '<p class="ecosystem-item-body">' + esc(item.body || '') + '</p>'
+        + sourceHtml
+        + '</div>'
+        + '</div>';
+    }).join('');
+    return '<section class="ecosystem-section">'
+      + '<div class="ecosystem-title">Fillip Ecosystem</div>'
+      + '<div class="ecosystem-items">' + itemsHtml + '</div>'
+      + '</section>';
+  }
+
+  function renderSubscribeCTA() {
+    return '<section class="subscribe-section" id="subscribe-cta">'
+      + '<div class="subscribe-inner">'
+      + '<div class="subscribe-eyebrow">Free · Weekly</div>'
+      + '<h2 class="subscribe-heading">Get the full breakdown every week.</h2>'
+      + '<p class="subscribe-body">Short brief in your inbox every week. Full visual breakdown here. Same issue — just more depth.</p>'
+      + '<div class="subscribe-actions">'
+      + '<a class="btn-primary" href="' + esc(CONFIG.beehiivSubscribeUrl) + '" target="_blank" rel="noopener">Subscribe For Free →</a>'
+      + '<button class="btn-ghost" onclick="shareIssue()">Share This Issue</button>'
+      + '</div>'
+      + '</div>'
+      + '</section>';
+  }
+
+  function renderFooter() {
+    var sc = issue.stories.length;
+    return '<footer class="issue-footer">'
+      + '<div class="footer-ghost" aria-hidden="true">FILLIP</div>'
+      + '<nav class="footer-nav" aria-label="Issue navigation">'
+      + '<a class="footer-nav-btn btn-month" href="index.html">← Home Page</a>'
+      + '<a class="footer-nav-btn btn-home" href="' + esc(CONFIG.websiteUrl || '#') + '" target="_blank" rel="noopener">fillip.com ↗</a>'
+      + '<a class="footer-nav-btn btn-home" href="' + esc(CONFIG.linkedinUrl || '#') + '" target="_blank" rel="noopener">LinkedIn ↗</a>'
+      + '</nav>'
+      + '<div class="footer-issue-info">'
+      + '<div class="footer-issue-title">' + esc(issue.issueTitle) + '</div>'
+      + '<div class="footer-issue-meta">' + esc(issue.dateRange) + ' &nbsp;·&nbsp; ' + esc(issue.editionTag) + '</div>'
+      + '<div class="footer-story-count">' + sc + ' Signal' + (sc !== 1 ? 's' : '') + '</div>'
+      + '</div>'
+      + '</footer>';
+  }
+
+  function mount() {
+    var sorted = issue.stories.slice().sort(function (a, b) { return a.order - b.order; });
+    var html = '';
+
+    html += renderHeader();
+    html += '<div class="signals-body">';
+    sorted.forEach(function (s) { html += renderSignalEntry(s); });
+    html += '</div>';
+
+    if (issue.ecosystemNews && issue.ecosystemNews.length) {
+      html += renderEcosystemSection();
+    }
+    if (issue.latamAngle) {
+      html += renderEditorialSection('LatAm Market Angle', issue.latamAngle);
+    }
+
+    html += renderSubscribeCTA();
+    html += renderFooter();
+
+    document.getElementById('issue-root').innerHTML = html;
+  }
+
+  window.shareIssue = function () {
+    var title = issue.issueTitle + ' — Fillip Newsletter';
+    var text  = issue.shareText || issue.introLine || '';
+    var url   = window.location.href;
+    if (navigator.share) {
+      navigator.share({ title: title, text: text, url: url }).catch(function () {});
+    } else if (navigator.clipboard) {
+      navigator.clipboard.writeText(url).then(function () {
+        var btn = document.getElementById('share-btn');
+        if (btn) { var orig = btn.textContent; btn.textContent = 'Copied!'; setTimeout(function () { btn.textContent = orig; }, 2200); }
+      }).catch(function () { window.prompt('Copy this link:', url); });
+    } else {
+      window.prompt('Copy this link:', url);
+    }
+  };
+
+  window.scrollToSection = function (id) {
+    var el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  mount();
+
+})();
+</script>
+
+</body>
+</html>

@@ -23,6 +23,29 @@ body {
   color: var(--off-white);
   min-height: 100vh;
   overflow-x: hidden;
+  text-align: justify;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  text-align-last: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: left;
+  -webkit-hyphens: none;
+  hyphens: none;
+  text-align-last: left;
+}
+
+/* Buttons, labels, nav, chips — always left-aligned */
+a, button,
+.btn-primary, .btn-outline, .btn-ghost,
+.stat-pill, .edition-chip, .issue-badge,
+.subscribe-eyebrow, .subscribe-heading,
+.footer-pub-name, .footer-tagline, .footer-link,
+.footer-links, .footer-inner {
+  text-align: left;
+  -webkit-hyphens: none;
+  hyphens: none;
 }
 
 /* ── BUTTONS ─────────────────────────────────────────────────────── */

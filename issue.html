@@ -414,6 +414,32 @@
 .footer-issue-meta { font-size: 0.72rem; color: var(--sage); margin-top: 0.4rem; font-weight: 300; }
 .footer-story-count { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--lime); margin-top: 0.5rem; }
 
+/* ── SECTION DIVIDERS ────────────────────────────────────────── */
+.section-divider {
+  padding: 4rem 0 2.5rem;
+}
+.section-divider--sports {
+  padding-top: 3.5rem;
+}
+.section-divider--entertainment {
+  padding-top: 4.5rem;
+}
+.section-divider-label {
+  font-size: 0.55rem;
+  font-weight: 800;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--lime);
+  margin-bottom: 0.6rem;
+}
+.section-divider-title {
+  font-size: clamp(2.2rem, 5vw, 4.5rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--off-white);
+}
+
 /* ── RESPONSIVE ──────────────────────────────────────────────── */
 @media (max-width: 768px) {
   .header-ghost { display: none; }
@@ -423,6 +449,8 @@
   .footer-issue-info { text-align: left; }
   .footer-nav { flex-direction: column; }
   .footer-nav-btn { justify-content: center; }
+  .section-divider { padding: 2.5rem 0 1.5rem; }
+  .section-divider--entertainment { padding-top: 3rem; }
 }
 </style>
 </head>
@@ -516,6 +544,25 @@
       + '</div>'
       + '<div class="story-index">' + index + '</div>'
       + '</section>';
+  }
+
+  function inferSection(s) {
+    if (s.section) return s.section;
+    var tag = s.tag || '';
+    var entPrefixes = ['Entertainment', 'IP ·', 'Gaming ·'];
+    for (var i = 0; i < entPrefixes.length; i++) {
+      if (tag.indexOf(entPrefixes[i]) === 0) return 'entertainment';
+    }
+    return 'sports';
+  }
+
+  function renderSectionDivider(section) {
+    var titles = { 'sports': 'Sports Business', 'entertainment': 'Entertainment & IP' };
+    var title = titles[section] || section;
+    return '<div class="section-divider section-divider--' + section + '">'
+      + '<div class="section-divider-label">This Week\'s Signals</div>'
+      + '<div class="section-divider-title">' + esc(title) + '</div>'
+      + '</div>';
   }
 
   function renderSignalEntry(s) {
@@ -645,7 +692,15 @@
 
     html += renderHeader();
     html += '<div class="signals-body">';
-    sorted.forEach(function (s) { html += renderSignalEntry(s); });
+    var currentSection = null;
+    sorted.forEach(function (s) {
+      var sec = inferSection(s);
+      if (sec !== currentSection) {
+        currentSection = sec;
+        html += renderSectionDivider(sec);
+      }
+      html += renderSignalEntry(s);
+    });
     html += '</div>';
 
     if (issue.ecosystemNews && issue.ecosystemNews.length) {

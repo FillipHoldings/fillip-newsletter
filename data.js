@@ -23,9 +23,150 @@ const MONTHLY_GROUPS = [
     monthLabel: 'June 2026',
     editionTag: 'Sports · Entertainment · IP · Capital',
     publishedDate: '2026-06-08',
-    dateRange: 'May 30 – June 8, 2026',
-    introLine: 'Week one of June: Napoli rejects a €2B American bid, Ramos\'s €444M Sevilla deal collapses, Dončić invests in a Rome-bound Italian club eyeing NBA Europe, Curry signs a 10-year $400M deal with Li-Ning, Airbnb partners with the WSL, FIFA and Netflix launch a World Cup game, UMG rejects Ackman\'s $64B takeover, Michael crosses $854M to become Lionsgate\'s highest-grossing film, and Backrooms crosses $212M in 10 days to become A24\'s all-time record holder.',
+    dateRange: 'May 30 – June 15, 2026',
+    introLine: 'Weeks 1–2 of June: Napoli rejects a €2B bid, Ramos\'s Sevilla deal collapses, Dončić buys into NBA Europe, Curry signs $400M with Li-Ning, UMG rejects Ackman\'s $64B offer, Backrooms crosses $212M for A24; then Mahomes becomes the first $500M NFL player, Fox acquires Roku for $25B, the Knicks\' first title in 53 years breaks every Fanatics record, UFC holds its first White House event, Liga MX eyes the stock exchange at $13B, and Soy Frankelda reaches Netflix as Mexico\'s first stop-motion feature.',
     issues: [
+
+      // WEEK 2
+      {
+        slug: 'week-2-june-2026',
+        issueNumber: '2',
+        weekLabel: 'Week 2',
+        dateRange: 'June 8–15, 2026',
+        publishedDate: '2026-06-15',
+        issueTitle: 'Week 2 — June 2026',
+        editionTag: 'Sports · Entertainment · IP · Capital',
+        introLine: 'Week two of June: Mahomes becomes the first $500M NFL player, Fox acquires Roku for $25 billion, the Knicks\' first title in 53 years breaks every Fanatics record, UFC holds its first White House event, DAZN and DirecTV sign a five-country World Cup deal, and Mexico anchors three simultaneous capital moves — Liga MX eyeing the stock exchange, Fox locking NFL rights, and Soy Frankelda reaching Netflix as the country\'s first stop-motion film.',
+        shareText: 'Mahomes hits $504M, Fox buys Roku for $25B, Knicks break Fanatics records, UFC at the White House, Liga MX eyes the stock exchange — Week 2 June · Fillip.',
+        coreSignal: 'Three separate stories this week pointed at the same city. Liga MX announced plans to list on the stock exchange at a $13 billion valuation. Fox locked multi-year NFL broadcast rights into the Mexican market. And Soy Frankelda reached Netflix as the country\'s first stop-motion feature — all in the same week the World Cup began on Mexican soil. Meanwhile in the U.S., the sports economy reset at the top: Mahomes became the first $500M player, Fox paid $25 billion for Roku\'s 100 million streaming households, and the Knicks\' first title since 1973 triggered 8,000 Fanatics orders per minute. Capital knows where the audience is going.',
+        latamAngle: 'In a single week, Mexico appeared as the main protagonist in three distinct capital moves. Liga MX Commissioner Mikel Arriola announced plans to pursue a stock exchange listing at a $13 billion valuation — potentially the first for any professional sports league globally — with preliminary offers already received for a 10% stake. Fox locked multi-year NFL broadcast rights into the Mexican market covering the regular season, full postseason, and Super Bowl, ahead of the Azteca international schedule through 2028. And Soy Frankelda — directed by Mexico City brothers Arturo and Roy Ambriz, mentored by Guillermo del Toro — reached Netflix\'s global platform as the country\'s first stop-motion feature. The same week the World Cup began on Mexican soil, the country\'s capital market, broadcast, and IP stories all moved in the same direction.',
+        ecosystemNews: [
+          {
+            headline: 'El Grande Americano Auctions Noche de los Grandes Mask on Fanatics for Charity',
+            body: 'The mask worn by El Grande Americano during his mask-versus-mask victory at AAA\'s Noche de los Grandes on May 30 — in which Chad Gable was unmasked as the Original Grande Americano at Arena Monterrey — went up for auction on Fanatics on June 12. The listing reached $6,000 within hours of going live. Bidding closes June 25, with 100% of proceeds benefiting Dr. Sonrisas, a Mexican children\'s cancer charity.',
+            sourceName: 'Crónica MX',
+            sourceUrl: 'https://www.cronica.com.mx/deportes/2026/06/12/el-grande-americano-subasta-su-mascara-de-la-noche-de-los-grandes-en-cuanto-va-la-puja/'
+          }
+        ],
+        stories: [
+          {
+            order: 1,
+            tag: 'Sports Business · NFL',
+            accentText: '$504.75M',
+            headline: 'Mahomes Signs Reworked Deal Making Him First $500M NFL Player',
+            emailSummary: 'The <strong>Kansas City Chiefs</strong> and quarterback <strong>Patrick Mahomes</strong> agreed to a reworked contract extension adding two years to his existing deal, pushing the total value to <strong>$504.75 million</strong> — the first NFL contract to exceed $500 million. The deal extends through the <strong>2033 season</strong> at an average annual value of <strong>$64 million</strong>, an NFL record. Through incentives and escalators, Mahomes can earn up to <strong>$522.25 million</strong>. The agreement was finalized while Mahomes remains in recovery from a <strong>torn ACL and LCL</strong> suffered in December, with the QB participating only in limited 7-on-7 drills at minicamp.',
+            whyItMatters: 'The first $500M NFL player was signed mid-injury recovery — confirming that franchise-quarterback certainty commands a premium regardless of health status, and setting a new floor for elite QB valuations across the entire league.',
+            signalText: 'The Kansas City Chiefs extended Patrick Mahomes\'s contract to $504.75 million through 2033, the first NFL deal over $500 million.',
+            sourceName: 'ESPN',
+            sourceUrl: 'https://www.espn.com/nfl/story/_/id/49021927/sources-chiefs-patrick-mahomes-make-500m-reworked-deal',
+            publishedDate: '2026-06-10'
+          },
+          {
+            order: 2,
+            tag: 'Media Rights · Mexico',
+            headline: 'Fox Secures Multi-Year NFL Broadcasting Rights for the Mexican Market',
+            emailSummary: '<strong>Fox Sports</strong> secured expanded multi-year NFL broadcasting rights for <strong>Mexico</strong> beginning with the 2026 season, covering weekly Sunday and Thursday night games, Thanksgiving Day programming, all six <strong>NFC Conference playoff games</strong>, the Pro Bowl, and the <strong>Super Bowl</strong>. Distribution spans <strong>Fox</strong> and <strong>Fox+</strong> linear channels, the <strong>Fox One</strong> OTT streaming service, and select programming on the free <strong>Tubi</strong> platform. <strong>TelevisaUnivision</strong> continues concurrent coverage under a separate renewal. Ten NFL teams hold marketing rights in Mexico, and the league is committed to international games at <strong>Estadio Azteca</strong> through 2028.',
+            whyItMatters: 'Fox is building a full-stack NFL broadcast presence in Mexico — linear, streaming, and free — locking the Super Bowl and postseason into the market ahead of the 2026 World Cup year and the growing NFL fan base across Latin America.',
+            signalText: 'Fox extended multi-year NFL broadcasting rights in Mexico covering the regular season, full postseason, and Super Bowl.',
+            sourceName: 'Sportcal',
+            sourceUrl: 'https://www.sportcal.com/media/fox-expands-nfl-rights-to-mexico-with-expansive-multi-year-slate/',
+            publishedDate: '2026-06-10'
+          },
+          {
+            order: 3,
+            tag: 'Valuation · Liga MX',
+            accentText: '$13B',
+            headline: 'Liga MX Explores Stock Exchange Listing at a $13 Billion Valuation',
+            emailSummary: '<strong>Liga MX Commissioner Mikel Arriola</strong> announced plans to pursue a <strong>stock exchange listing</strong> and open the league to private institutional investment, speaking at a conference on the World Cup\'s economic impact organized by Mexico\'s <strong>BIVA</strong> exchange. The league has been valued at <strong>$13 billion</strong> and has already received preliminary offers for a <strong>10% ownership stake</strong>. Arriola stated that external investor resources will be required to complete the consolidation of broadcasting rights — one of the league\'s core strategic goals since its April governance split from the FMF. If completed, <strong>Liga MX would be the first professional sports league in the world to trade directly on a public exchange</strong>.',
+            whyItMatters: 'A $13B Liga MX on a public exchange would be a structural first for global professional sport — and the step before it, centralizing broadcasting rights through institutional capital, is the direct commercial payoff of the governance reform the league voted through in April.',
+            signalText: 'Liga MX Commissioner Arriola announced plans to list the league on the stock exchange at a $13 billion valuation.',
+            sourceName: 'ESPN MX',
+            sourceUrl: 'https://www.espn.com.mx/futbol/mexico/nota/_/id/16801519/liga-mx-buscara-incursion-bolsa-e-inversion-privada',
+            publishedDate: '2026-06-10'
+          },
+          {
+            order: 4,
+            tag: 'Sports Business · Merchandise',
+            accentText: '8,000/min',
+            headline: 'Knicks\' First Title in 53 Years Sets All-Sports Fanatics Sales Record',
+            emailSummary: 'The <strong>New York Knicks</strong> won their first NBA championship since 1973, defeating the <strong>San Antonio Spurs 94–90</strong> in Game 5 to take the Finals series <strong>4–1</strong>. In the 24 hours following the win, Knicks championship merchandise became the top seller across all sports in <strong>Fanatics history</strong> — surpassing the record set by the 2025 <strong>Philadelphia Eagles</strong> after Super Bowl LIX. Fanatics took in more than <strong>8,000 orders per minute</strong> immediately after the final whistle and released over <strong>300 championship products</strong>. The team is on pace to surpass the <strong>2016 Chicago Cubs</strong> as the all-time top championship seller in Fanatics history. Unique items include a <strong>$10,000 Swarovski crystal leather jacket</strong> and a Seinfeld-inspired <strong>"Summer of the Knicks"</strong> tee.',
+            whyItMatters: 'A 53-year title drought in the largest U.S. media market produces the highest-velocity merchandise moment in Fanatics history — confirming that suppressed fan bases with deep identity ties generate disproportionate commercial release events when they finally win.',
+            signalText: 'Knicks championship gear set the all-sports 24-hour Fanatics sales record, generating over 8,000 orders per minute after their NBA title win.',
+            sourceName: 'The Athletic',
+            sourceUrl: 'https://www.nytimes.com/athletic/7361292/2026/06/15/new-york-knicks-nba-championship-gear-fanatics/',
+            publishedDate: '2026-06-15'
+          },
+          {
+            order: 5,
+            tag: 'Live Events · UFC',
+            accentText: '$60M+',
+            headline: 'UFC Freedom 250 at the White House Delivers Record Paramount+ Numbers',
+            emailSummary: '<strong>UFC</strong> held <strong>Freedom 250</strong> on the White House South Lawn on <strong>June 14, 2026</strong> — the first-ever UFC event at the complex — to mark America\'s 250th anniversary. <strong>President Trump</strong> watched cage-side alongside <strong>Dana White</strong>, with event production costs exceeding <strong>$60 million</strong>. The card aired on <strong>Paramount+</strong>, delivering what Dana White described as "monstrous" viewership numbers. Over <strong>4,000 guests</strong> attended on the South Lawn by invitation; security involved <strong>seven federal agencies</strong> across <strong>11 months of planning</strong>. Corporate sponsors included <strong>Bud Light</strong>, <strong>Dodge Ram</strong>, <strong>Corona Extra</strong>, and <strong>Polymarket</strong>. The main card featured <strong>Ilia Topuria vs. Justin Gaethje</strong> for the Lightweight title and <strong>Alex Pereira vs. Ciryl Gane</strong> for the Interim Heavyweight belt.',
+            whyItMatters: 'A UFC event that costs $60M+ to produce, requires seven federal agencies, and delivers record Paramount+ viewership in a single night confirms that UFC\'s political access is now a measurable commercial asset — and a live events benchmark for institutional-scale sponsorship.',
+            signalText: 'UFC held its first-ever White House event on June 14, 2026, with production costs exceeding $60 million and record Paramount+ viewership.',
+            sourceName: 'ABC News',
+            sourceUrl: 'https://abcnews.com/Politics/inside-trumps-ufc-fight-white-house-south-lawn/story?id=133819655',
+            publishedDate: '2026-06-14'
+          },
+          {
+            order: 6,
+            tag: 'Media Rights · Latin America',
+            accentText: '104 matches',
+            headline: 'DAZN and DirecTV Latin America Sign Five-Country World Cup Deal',
+            emailSummary: '<strong>DAZN</strong> struck a multi-year agreement with <strong>DirecTV Latin America</strong> to carry its <strong>DSPORTS</strong>, <strong>DSPORTS2</strong>, and <strong>DSPORTS+</strong> channels on DAZN\'s platform across five countries: <strong>Chile</strong>, <strong>Colombia</strong>, <strong>Ecuador</strong>, <strong>Peru</strong>, and <strong>Uruguay</strong>. The deal delivers all <strong>104 FIFA World Cup 2026 matches</strong> live to DAZN subscribers in those markets. The package also includes <strong>Copa América</strong>, <strong>CONMEBOL Sudamericana</strong>, FIBA competitions, tennis, and MMA. DSPORTS is owned by <strong>Grupo Werthein</strong>, which acquired DirecTV Latin America from AT&T in 2021. The deal was announced <strong>June 11</strong>, days before World Cup kickoff.',
+            whyItMatters: 'DAZN now holds a direct distribution path for all 104 World Cup matches across five key South American markets — building the subscriber base it needs to compete for the next LatAm rights cycle, regardless of the outcome of its broader DirecTV acquisition ambitions.',
+            signalText: 'DAZN and DirecTV Latin America signed a multi-year deal giving DAZN subscribers in five countries access to all 104 World Cup matches live.',
+            sourceName: 'Reuters',
+            sourceUrl: 'https://www.reuters.com/sports/soccer/dazn-directv-latin-america-strike-sports-channel-deal-ahead-world-cup-2026-06-11/',
+            publishedDate: '2026-06-11'
+          },
+          {
+            order: 7,
+            tag: 'Entertainment · M&A',
+            accentText: '$25B',
+            headline: 'Fox Acquires Roku for $25 Billion, Adding 100 Million Streaming Households',
+            emailSummary: '<strong>Fox Corporation</strong> announced an agreement to acquire <strong>Roku</strong> for <strong>$25 billion</strong> total, paying <strong>$160 per share</strong> in a cash-and-stock transaction. Roku reaches more than <strong>100 million global streaming households</strong>, making it the most widely deployed connected TV platform in the U.S. The combined company will rank as the <strong>third-largest U.S. TV player</strong> by share of viewing, behind YouTube and Netflix. Fox expects <strong>$400 million in annual cost synergies</strong> and for the deal to be accretive to free cash flow by 2029. The transaction is expected to close in <strong>H1 2027</strong>. <strong>Fox shares fell 18%</strong> on announcement day. <strong>Roku founder Anthony Wood</strong> will join Fox\'s board.',
+            whyItMatters: 'Fox is not just buying a platform — it is acquiring direct relationships with 100 million streaming households and the advertising infrastructure that sits in front of them. Combining live sports and news rights with Roku\'s connected TV reach creates a distribution advantage that pure content players cannot replicate.',
+            signalText: 'Fox Corporation agreed to acquire Roku for $25 billion, adding over 100 million global streaming households to its portfolio.',
+            sourceName: 'NBC News',
+            sourceUrl: 'https://www.nbcnews.com/business/media/fox-buys-roku-22-billion-rcna350097',
+            publishedDate: '2026-06-15'
+          },
+          {
+            order: 8,
+            tag: 'Entertainment · Labor',
+            headline: 'DGA Reaches Tentative Four-Year Deal With Studios and Streamers',
+            emailSummary: 'The <strong>Directors Guild of America</strong> reached a tentative four-year collective bargaining agreement with the <strong>Alliance of Motion Picture and Television Producers</strong> on June 9, 2026 — roughly three weeks before the previous contract\'s June 30 expiration. The deal was negotiated under new DGA President <strong>Christopher Nolan</strong> and aligns with the four-year terms secured earlier in 2026 by both the <strong>Writers Guild of America</strong> and <strong>SAG-AFTRA</strong>. Top priorities included employment protections, health plan sustainability, and AI guardrails. Full financial terms will not be released until the <strong>DGA National Board</strong> completes its review; approximately <strong>20,000 members</strong> will then vote on ratification.',
+            whyItMatters: 'Three major Hollywood guilds — WGA, SAG-AFTRA, and now DGA — have all secured four-year terms in 2026. Aligned expiration dates give studios and streamers multi-year labor peace, removing a major production disruption risk at the moment the industry rebuilds post-strike output capacity.',
+            signalText: 'The DGA reached a tentative four-year collective bargaining agreement with studios and streamers, matching WGA and SAG-AFTRA terms.',
+            sourceName: 'Deadline',
+            sourceUrl: 'https://deadline.com/2026/06/dga-deal-christopher-nolan-lstudios-1236952188/',
+            publishedDate: '2026-06-09'
+          },
+          {
+            order: 9,
+            tag: 'IP · Tennis · Digital',
+            headline: 'ATP Expands TikTok Partnership to Cover All Nine Masters 1000 Events',
+            emailSummary: 'The <strong>ATP Tour</strong> and <strong>TikTok</strong> expanded their global content partnership to cover all <strong>nine ATP Masters 1000 events</strong> and the <strong>Nitto ATP Finals</strong>, establishing a year-round platform presence. The <strong>"On Tour With" creator program</strong> — launched at the 2025 ATP Finals — extends to all Masters 1000 and select <strong>ATP 500</strong> events, granting behind-the-scenes access including media days and practice sessions. Since the partnership began, top-100 ATP players on TikTok have <strong>nearly doubled</strong> and posts tagged <strong>#tennis grew over 25%</strong> during 2025. Players including <strong>Carlos Alcaraz</strong>, <strong>Ethan Quinn</strong>, and <strong>Zizou Bergs</strong> received platform education through the program.',
+            whyItMatters: 'Expanding to all nine Masters 1000 events converts a one-off content experiment into a systematic year-round distribution strategy — positioning TikTok as the primary discovery channel for tennis\'s next generation of fans at the sport\'s highest commercial tier.',
+            signalText: 'ATP expanded its TikTok content partnership to all nine Masters 1000 tournaments and the ATP Finals for the 2026 season.',
+            sourceName: 'TikTok Newsroom',
+            sourceUrl: 'https://newsroom.tiktok.com/tiktok-atp-expand-partnership-to-attract-the-next-generation-of-global-tennis-fans',
+            publishedDate: '2026-06-09'
+          },
+          {
+            order: 10,
+            tag: 'Entertainment · IP · Mexico',
+            headline: 'Soy Frankelda Reaches Netflix as Mexico\'s First Stop-Motion Feature',
+            emailSummary: '<strong>Soy Frankelda</strong> (I Am Frankelda), <strong>Mexico\'s first stop-motion feature film</strong>, launched globally on <strong>Netflix</strong> on <strong>June 12, 2026</strong>. Directed by brothers <strong>Arturo</strong> and <strong>Roy Ambriz</strong> at their <strong>Cinema Fantasma</strong> studio in Mexico City, the film follows a 19th-century writer who confronts the fictional monsters she created. Filmmaker <strong>Guillermo del Toro</strong> mentored the Ambriz brothers and connected them directly to Netflix. Originally developed as a 30-minute Warner special, the project expanded into a feature independently co-financed — including a mortgage on the family home. Before its Netflix launch, it was <strong>Mexico\'s third-highest-grossing film of 2025</strong> and earned a nomination for <strong>Best Independent Feature at the Annie Awards</strong>.',
+            whyItMatters: 'A Mexican stop-motion film that self-financed through a family mortgage, earned $50M+ pesos in theaters, and reached Netflix via Guillermo del Toro\'s direct introduction is a complete IP origin story — from regional cultural product to global streaming through a single relationship unlock.',
+            signalText: 'Mexico\'s first stop-motion feature film, Soy Frankelda, launched globally on Netflix on June 12, 2026.',
+            sourceName: 'LA Times ES',
+            sourceUrl: 'https://www.latimes.com/espanol/entretenimiento/articulo/2026-06-13/yo-soy-frankelda-el-hito-de-la-animacion-mexicana-nos-lleva-un-mundo-magico-y-escalofriante',
+            publishedDate: '2026-06-13'
+          }
+        ]
+      },
 
       // WEEK 1
       {

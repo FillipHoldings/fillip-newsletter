@@ -178,7 +178,7 @@ const MONTHLY_GROUPS = [
           },
           {
             order: 12,
-            tag: 'Live Events · Media',
+            tag: 'Entertainment · Live Events',
             accentText: '10,000+ attendees',
             headline: 'People Inc. Acquires Austin\'s Hot Luck Festival to Expand Live Events',
             emailSummary: '<strong>People Inc.</strong> — formerly <strong>Dotdash Meredith</strong>, publisher of People, Food & Wine, Travel + Leisure, and 40+ lifestyle brands — acquired <strong>Hot Luck</strong>, an Austin-based food and music festival co-founded by pitmaster <strong>Aaron Franklin</strong>. Hot Luck drew over <strong>10,000 attendees</strong> in 2025, featuring indie music and live-fire cooking. People Inc. acquires the festival brand, guest lists, infrastructure, and all employees, with Franklin and co-founders remaining involved. The company plans to expand the festival into content — video, social, newsletters — and eventually into <strong>new markets</strong>.',

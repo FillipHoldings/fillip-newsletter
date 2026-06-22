@@ -22,10 +22,174 @@ const MONTHLY_GROUPS = [
     isCurrent: true,
     monthLabel: 'June 2026',
     editionTag: 'Sports · Entertainment · IP · Capital',
-    publishedDate: '2026-06-08',
-    dateRange: 'May 30 – June 15, 2026',
-    introLine: 'Weeks 1–2 of June: Napoli rejects a €2B bid, Ramos\'s Sevilla deal collapses, Dončić buys into NBA Europe, Curry signs $400M with Li-Ning, UMG rejects Ackman\'s $64B offer, Backrooms crosses $212M for A24; then Mahomes becomes the first $500M NFL player, Fox acquires Roku for $25B, the Knicks\' first title in 53 years breaks every Fanatics record, UFC holds its first White House event, Liga MX eyes the stock exchange at $13B, and Soy Frankelda reaches Netflix as Mexico\'s first stop-motion feature.',
+    publishedDate: '2026-06-22',
+    dateRange: 'May 30 – June 22, 2026',
+    introLine: 'Weeks 1–3 of June: Napoli rejects a €2B bid, Ramos\'s Sevilla deal collapses, Dončić buys into NBA Europe, Curry signs $400M with Li-Ning, UMG rejects Ackman\'s $64B offer, Backrooms crosses $212M for A24; Mahomes becomes the first $500M NFL player, Fox acquires Roku for $25B, the Knicks\' first title in 53 years breaks every Fanatics record, UFC holds its first White House event, Liga MX eyes the stock exchange at $13B, Soy Frankelda reaches Netflix; then iShowSpeed draws 9.2M for a live World Cup stream, Big3 agrees to go public at $290M, Pau Gasol bids €55M for Liga F\'s commercial rights, and Toy Story 5 opens to $312M globally.',
     issues: [
+
+      // WEEK 3
+      {
+        slug: 'week-3-june-2026',
+        issueNumber: '3',
+        weekLabel: 'Week 3',
+        dateRange: 'June 16–22, 2026',
+        publishedDate: '2026-06-22',
+        issueTitle: 'Week 3 — June 2026',
+        editionTag: 'Sports · Entertainment · IP · Capital',
+        introLine: 'Week three of June: Big3 agrees to go public at $290M, iShowSpeed draws 9.2 million viewers on a live World Cup stream, L Catterton moves on HYROX, Pau Gasol bids €55M to run Liga F\'s commercial rights, the NBA Finals peak at 33 million viewers and reset ABC\'s ad pricing, Panini brings all 72 EFL clubs to U.S. retail, Toy Story 5 opens to $312M globally, Devil Wears Prada 2 crosses $1B, EA builds in-game advertising to replace linear TV budgets, Amazon locks Kevin Durant\'s Boardroom, and People Inc. buys a food festival because AI can\'t replace it.',
+        shareText: 'Big3 goes public at $290M, iShowSpeed draws 9.2M viewers for a World Cup game, Toy Story 5 opens to $312M, Pau Gasol bids €55M for Liga F, and EA launches in-game advertising — Week 3 June · Fillip.',
+        coreSignal: 'This week\'s stories traced the same pressure point: the distribution intermediary is failing. iShowSpeed drew 9.2 million viewers for a World Cup match — potentially outpacing Fox\'s own broadcast. People Inc. acquired a food festival explicitly because, as their executive said, \'AI can\'t replace that.\' EA built an in-game ad platform to intercept TV budgets migrating from linear. Amazon locked Boardroom to guarantee a direct relationship with sports fans inside its own ecosystem. Formula 1 replaced its ticketing stack with a platform reaching 300 million consumers. When every established middleman is under pressure, capital rushes toward whoever owns the direct connection.',
+        ecosystemNews: [
+          {
+            headline: 'Los Perros del Mal Return to AAA with Five New Members Under WWE Administration',
+            body: 'On June 20 at AAA\'s event in Mérida, Yucatán, Los Perros del Mal — one of the most iconic factions in Mexican lucha libre history, originally founded in 2004 by El Hijo del Perro Aguayo — returned with five new members: Ángel Garza, Humberto Carrillo, Daga, NXT\'s Karmen Petrovic, and WWE development athlete Bronco Nima. The faction attacked El Grande Americano to mark their arrival. AAA GM Rey Mysterio is expected to designate a leader soon, with Dominik Mysterio and Damian Priest among the candidates.',
+            sourceName: 'Heraldo de México',
+            sourceUrl: 'https://heraldodemexico.com.mx/espectaculos/2026/6/21/regresan-los-perros-del-mal-aaa-la-historica-faccion-creada-por-el-hijo-del-perro-aguayo-video-836443.html'
+          }
+        ],
+        stories: [
+          {
+            order: 1,
+            tag: 'Sports Business',
+            accentText: '$290M',
+            headline: 'Ice Cube\'s Big3 Basketball League Goes Public in $290M Deal',
+            emailSummary: '<strong>Ice Cube\'s Big3</strong>, the 3-on-3 professional basketball league co-founded by Ice Cube and Jeff Kwatinetz, agreed to merge with <strong>Graf Global Corp.</strong> — a publicly traded SPAC — in a business combination valued at <strong>$290 million</strong>. The combined entity will be renamed <strong>Big3 Basketball Holdings, Inc.</strong> and is expected to list on NYSE or Nasdaq under ticker symbol <strong>"TONT"</strong> in Q4 2026. <strong>NBA Hall of Famer Clyde Drexler</strong> will serve as commissioner; <strong>Mark King</strong> joins as chairman. The deal makes Big3 the <strong>first publicly traded professional sports league</strong> in U.S. history, allowing retail investors — including fans — to hold equity in a live sports property.',
+            whyItMatters: 'Taking a professional sports league public for the first time bypasses traditional franchise ownership structures — allowing retail investors and underrepresented communities to own equity in live sports at a scale that NBA, NFL, and MLB ownership rules have historically blocked.',
+            signalText: 'Ice Cube\'s Big3 basketball league agreed to merge with SPAC Graf Global Corp. at a $290 million valuation.',
+            sourceName: 'Yahoo Sports',
+            sourceUrl: 'https://sports.yahoo.com/articles/ice-cube-big3-basketball-league-140009726.html',
+            publishedDate: '2026-06-16'
+          },
+          {
+            order: 2,
+            tag: 'Media Rights · NBA',
+            accentText: '20.6M viewers',
+            headline: '2026 NBA Finals Averaged 20.6 Million Viewers, Doubling 2025',
+            emailSummary: 'The 2026 <strong>NBA Finals</strong> — the <strong>New York Knicks</strong> over the <strong>San Antonio Spurs</strong> — averaged <strong>20.6 million viewers</strong> per night across five games on <strong>ABC</strong>, doubling the 2025 series average of <strong>10.2 million</strong>. <strong>Game 5</strong> peaked at <strong>33 million viewers</strong>, the biggest NBA Finals audience since <strong>Michael Jordan\'s final championship in 1998</strong>. Scatter market rates for Game 5 reached <strong>$1.4 million per 30-second unit</strong>; ABC is on pace to surpass the <strong>$288 million in advertising</strong> it captured from the 2025 Finals. The series guarantees three NBA games will appear on 2026\'s list of the <strong>100 most-watched broadcasts</strong> — the first time since 2019.',
+            whyItMatters: 'The Knicks\' first title in 53 years transformed the NBA\'s largest media market into its highest-rated Finals since the Jordan era — resetting scatter ad pricing and establishing a new floor for NBA broadcast rights negotiations.',
+            signalText: 'The 2026 NBA Finals averaged 20.6 million viewers per night, the highest Finals audience since Michael Jordan\'s last championship in 1998.',
+            sourceName: 'Sportico',
+            sourceUrl: 'https://www.sportico.com/business/media/2026/nba-finals-knicks-championship-tv-viewers-ratings-abc-1234909990/',
+            publishedDate: '2026-06-16'
+          },
+          {
+            order: 3,
+            tag: 'Investment · Sports',
+            accentText: '€200M+',
+            headline: 'L Catterton in Exclusive Talks to Acquire Stake in HYROX from Infront',
+            emailSummary: '<strong>L Catterton</strong>, the private equity firm backed by <strong>LVMH\'s Bernard Arnault</strong> family office, entered exclusive talks to acquire a stake in <strong>HYROX</strong> from Swiss media group <strong>Infront Sports & Media</strong>. HYROX is an indoor racing format combining running with functional workout stations; it grew from 650 participants at its <strong>2018 Hamburg debut</strong> to <strong>425,000–550,000 athletes across 80+ events in 30 countries</strong> in the 2024–25 season. The company posted estimated revenue of <strong>€130–140 million</strong> in 2025 with a roughly <strong>20% EBITDA margin</strong>, and projects above <strong>€200 million</strong> in 2026. Specific stake size and transaction value were not disclosed.',
+            whyItMatters: 'L Catterton — with prior investments in Peloton and a deep consumer wellness portfolio — acquiring a stake in a mass-participation fitness format at €200M+ projected revenue confirms that PE is treating high-growth fitness events as the same asset class as professional sports.',
+            signalText: 'L Catterton entered exclusive talks to acquire a stake in HYROX, which posted estimated 2025 revenue of €130–140 million.',
+            sourceName: 'Sporting Goods Intelligence',
+            sourceUrl: 'https://www.sgieurope.com/financing/l-catterton-in-exclusive-talks-to-buy-hyrox-stake/121691.article',
+            publishedDate: '2026-06-13'
+          },
+          {
+            order: 4,
+            tag: 'Investment · Women\'s Sports',
+            accentText: '€55M',
+            headline: 'Pau Gasol\'s €55M Bid Would Give Him Control of Liga F Commercial Rights',
+            emailSummary: '<strong>Pau Gasol</strong>, through his investment vehicle <strong>Gasol16 Ventures</strong>, submitted a <strong>€55 million proposal</strong> to acquire and manage the commercial rights of <strong>Liga F</strong>, Spain\'s top women\'s football division. The proposal goes to a vote at an extraordinary assembly on <strong>June 29</strong>. Gasol — a former NBA star and <strong>IOC Athletes\' Commission member</strong> — has previously invested in <strong>Bay FC</strong> of the NWSL and projects within the WNBA ecosystem. The offer is described as one of the <strong>largest private capital commitments ever made to a women\'s football competition</strong>.',
+            whyItMatters: 'A €55M commercial rights bid for a women\'s domestic football league from a credentialed institutional investor signals that women\'s football in Europe is reaching a threshold where capital sees it as a standalone commercial asset — not a development investment.',
+            signalText: 'Pau Gasol submitted a €55 million proposal to acquire and manage the commercial rights of Spain\'s Liga F.',
+            sourceName: 'iSportConnect',
+            sourceUrl: 'https://www.isportconnect.com/pau-gasols-e55-million-liga-f-proposal-signals-a-new-era-for-womens-football/',
+            publishedDate: '2026-06-16'
+          },
+          {
+            order: 5,
+            tag: 'Media Rights · Streaming',
+            accentText: '9.2M viewers',
+            headline: 'FIFA and Fox Partner with iShowSpeed to Stream World Cup Live',
+            emailSummary: 'Creator <strong>iShowSpeed</strong> (Darren Watkins Jr.) partnered with <strong>FIFA</strong>, <strong>Fox Sports</strong>, and <strong>YouTube</strong> to stream live 2026 World Cup matches from stadiums. U.S. audiences can watch via the <strong>Fox One Prime Channel on YouTube</strong> and the <strong>Fox One streaming service</strong>; international audiences on <strong>iShowSpeed\'s personal YouTube channel</strong>. Speed drew <strong>9.2 million viewers</strong> for Portugal\'s World Cup opener — a figure that may have exceeded Fox\'s own broadcast network audience for the same match. Scheduled upcoming streams include <strong>Argentina vs. Austria</strong> (June 22, Dallas), <strong>Colombia vs. Portugal</strong> (June 27, Miami), and select knockout and semifinal rounds. No financial terms were disclosed.',
+            whyItMatters: 'A single creator drawing 9.2 million viewers for a live World Cup match — potentially matching the broadcast network audience — validates the creator-economy as a primary sports distribution channel at the largest global stage in live sports.',
+            signalText: 'iShowSpeed drew 9.2 million viewers streaming Portugal\'s World Cup opener via a deal with FIFA and Fox Sports.',
+            sourceName: 'Awful Announcing',
+            sourceUrl: 'https://awfulannouncing.com/fox/ishowspeed-deal-stream-live-fifa-world-cup-games.html',
+            publishedDate: '2026-06-18'
+          },
+          {
+            order: 6,
+            tag: 'Sports Business · Ticketing',
+            headline: 'Formula 1 Names Fever Official Ticketing Supplier in Five-Year Global Deal',
+            emailSummary: '<strong>Formula 1</strong> appointed <strong>Fever</strong> as its <strong>Official Ticketing Supplier</strong> in a five-year global strategic partnership beginning with races in <strong>2027</strong>. Fever will build and operate a new ticketing platform on <strong>F1.com</strong> covering general admission, hospitality packages, and <strong>Paddock Club</strong> tickets. The partnership leverages Fever\'s reach of over <strong>300 million consumers</strong> across <strong>40+ countries</strong>. No financial terms were disclosed.',
+            whyItMatters: 'F1 centralizing its global ticketing under a single platform with 300 million consumers converts fan discovery and purchase into a unified data asset — giving the series direct behavioral visibility into fan spending across every race market.',
+            signalText: 'Formula 1 appointed Fever as its Official Ticketing Supplier in a five-year global partnership beginning in 2027.',
+            sourceName: 'Fever Newsroom',
+            sourceUrl: 'https://newsroom.feverup.com/en-US/266843-formula-1-announces-fever-as-new-official-supplier-bringing-new-ticketing-platform-to-fans-around-the-world/',
+            publishedDate: '2026-06-16'
+          },
+          {
+            order: 7,
+            tag: 'IP · Collectibles',
+            headline: 'Panini Launches First-Ever U.S. Release of EFL Trading Cards',
+            emailSummary: '<strong>Panini America</strong> announced its first-ever U.S. release of <strong>English Football League</strong> trading cards in partnership with the <strong>EFL</strong>. The <strong>Panini Prestige EFL</strong> collection features a <strong>300-card base set</strong> covering all <strong>72 clubs</strong> across the EFL Championship, League One, and League Two for the 2025–26 season. Autographed cards feature EFL stars and legends including <strong>Harry Kane</strong>, <strong>Gareth Bale</strong>, <strong>Gary Lineker</strong>, and <strong>Alan Shearer</strong>. The collection will be available at major U.S. retailers and on Panini\'s website starting next month.',
+            whyItMatters: 'The EFL — the world\'s oldest football league, founded 1888 — gaining its first U.S. retail collectibles release reflects the accelerating American appetite for English football beyond the Premier League, opening a commercial channel Panini is monetizing across all 72 lower-division clubs simultaneously.',
+            signalText: 'Panini America launched the first-ever U.S. release of English Football League trading cards covering all 72 EFL clubs.',
+            sourceName: 'Panini America',
+            sourceUrl: 'https://blog.paniniamerica.net/panini-america-announces-the-first-ever-u-s-release-of-english-football-league-trading-cards/',
+            publishedDate: '2026-06-16'
+          },
+          {
+            order: 8,
+            tag: 'Entertainment · Box Office',
+            accentText: '$312M',
+            headline: 'Toy Story 5 Opens to $312M Globally, Second-Largest Animated Debut Ever',
+            emailSummary: '<strong>Toy Story 5</strong> opened to <strong>$160 million</strong> domestically and <strong>$312 million</strong> globally — the largest opening in the franchise\'s history and the <strong>second-largest animated opening weekend of all time</strong>, trailing only Incredibles 2\'s $182.7 million U.S. debut in 2018. The film also claimed the <strong>biggest domestic debut of 2026</strong>, surpassing Universal\'s Super Mario Galaxy Movie ($131.7M). Produced on a <strong>$250 million</strong> budget, the film earned a <strong>94% Rotten Tomatoes score</strong> and an <strong>"A" CinemaScore</strong>. Analysts project it could surpass <strong>Toy Story 4\'s $1.07 billion</strong> global total.',
+            whyItMatters: 'Toy Story 5 becoming 2026\'s biggest domestic debut — joining Inside Out 2 and Zootopia 2 both above $1.6B — confirms that Pixar sequels with deep emotional IP remain the most reliable theatrical revenue engine in the studio system.',
+            signalText: 'Toy Story 5 opened to $160 million domestically and $312 million globally, the second-largest animated opening weekend in history.',
+            sourceName: 'Variety',
+            sourceUrl: 'https://variety.com/2026/film/box-office/toy-story-5-box-office-opening-weekend-record-franchise-1236786574/',
+            publishedDate: '2026-06-22'
+          },
+          {
+            order: 9,
+            tag: 'Entertainment · Box Office',
+            accentText: '$1B+',
+            headline: 'Devil Wears Prada 2 Pushes Two-Film Franchise Past $1 Billion',
+            emailSummary: '<strong>The Devil Wears Prada 2</strong>, produced by <strong>Disney</strong> at approximately <strong>$100 million</strong> (plus $80 million in marketing), has grossed <strong>$676 million globally</strong> — pushing the two-film franchise past <strong>$1 billion</strong> in combined earnings. The sequel opened to <strong>$77 million</strong> domestically and <strong>$233 million</strong> globally, nearly triple the original\'s opening weekend. International markets delivered <strong>$458 million</strong> against <strong>$217 million</strong> domestically. The original 2006 film earned <strong>$326 million</strong>. Disney is expected to turn a profitable return despite combined production and marketing costs near <strong>$180 million</strong>.',
+            whyItMatters: 'A legacy sequel nearly tripling the original\'s opening and doubling its total gross confirms that established IP with the right cast reassembly can generate blockbuster returns from audiences who weren\'t in the target demographic when the original released.',
+            signalText: 'The Devil Wears Prada 2 grossed $676 million globally, pushing the two-film franchise past $1 billion.',
+            sourceName: 'Variety',
+            sourceUrl: 'https://variety.com/2026/film/box-office/devil-wears-prada-2-franchise-1-billion-box-office-1236781761/',
+            publishedDate: '2026-06-18'
+          },
+          {
+            order: 10,
+            tag: 'Gaming · Advertising',
+            headline: 'EA Launches In-Game Advertising Platform Targeting Sports TV Budgets',
+            emailSummary: '<strong>Electronic Arts</strong> launched <strong>EA Advertising</strong>, a platform enabling brands to embed customized ads into gameplay through stadium signage and in-game experiences. <strong>Lowe\'s</strong> and <strong>Visa</strong> created in-game experiences inside <strong>EA Sports FC</strong> and <strong>EA Sports College Football</strong>; <strong>PepsiCo\'s Mountain Dew</strong> partnered on <strong>"DEW University,"</strong> a playable team experience in EA Sports College Football 26. EA is pitching gaming inventory to brands as a performance-trackable alternative to declining TV upfront budgets, positioning its sports titles as a direct reach vehicle for highly engaged sports fans.',
+            whyItMatters: 'EA monetizing in-game stadium inventory as a replacement for linear TV advertising inserts gaming into the sports media rights conversation — the same fans, the same IP, but a fully interactive and measurable ad environment that broadcast cannot replicate.',
+            signalText: 'Electronic Arts launched EA Advertising, an in-game platform letting brands embed ads inside EA Sports titles through stadium signage.',
+            sourceName: 'Variety',
+            sourceUrl: 'https://variety.com/2026/tv/news/electronic-arts-videogames-sports-advertising-1236781028/',
+            publishedDate: '2026-06-17'
+          },
+          {
+            order: 11,
+            tag: 'Entertainment · Podcasts',
+            headline: 'Amazon\'s Wondery Signs Exclusive Distribution Deal With Kevin Durant\'s Boardroom',
+            emailSummary: '<strong>Amazon\'s Wondery</strong> signed a wide-ranging agreement with <strong>Boardroom</strong>, the sports and entertainment media company co-founded by <strong>Kevin Durant</strong> and <strong>Rich Kleiman</strong>, covering exclusive distribution and ad-sales rights to Boardroom\'s full podcast slate and digital series. Programming will be distributed across <strong>Prime Video</strong>, <strong>Amazon Music</strong>, and <strong>Fire TV Channels</strong> beginning early 2027, alongside new branded content and live fan engagement opportunities. Boardroom claims a network reaching over <strong>52 million unique monthly visitors</strong>. Annual <strong>Twitch livestreams</strong> featuring Durant are also part of the deal.',
+            whyItMatters: 'Amazon acquiring exclusive distribution and ad-sales rights to a 52M-visitor sports media network built around an active NBA superstar converts athlete IP from an endorsement model to full content infrastructure — locking the audience inside Amazon\'s ecosystem rather than licensing it.',
+            signalText: 'Amazon\'s Wondery signed exclusive distribution and ad-sales rights to Kevin Durant\'s Boardroom podcast and digital slate.',
+            sourceName: 'Variety',
+            sourceUrl: 'https://variety.com/2026/digital/news/amazon-wondery-boardroom-kevin-durant-rich-kleiman-podcasts-1236784919/',
+            publishedDate: '2026-06-19'
+          },
+          {
+            order: 12,
+            tag: 'Live Events · Media',
+            accentText: '10,000+ attendees',
+            headline: 'People Inc. Acquires Austin\'s Hot Luck Festival to Expand Live Events',
+            emailSummary: '<strong>People Inc.</strong> — formerly <strong>Dotdash Meredith</strong>, publisher of People, Food & Wine, Travel + Leisure, and 40+ lifestyle brands — acquired <strong>Hot Luck</strong>, an Austin-based food and music festival co-founded by pitmaster <strong>Aaron Franklin</strong>. Hot Luck drew over <strong>10,000 attendees</strong> in 2025, featuring indie music and live-fire cooking. People Inc. acquires the festival brand, guest lists, infrastructure, and all employees, with Franklin and co-founders remaining involved. The company plans to expand the festival into content — video, social, newsletters — and eventually into <strong>new markets</strong>.',
+            whyItMatters: 'People Inc. explicitly framing the acquisition as a hedge against AI-driven search traffic declines — "AI can\'t replace that" — confirms that legacy media publishers are treating live experiences as the one distribution channel that resists algorithmic disintermediation.',
+            signalText: 'People Inc. acquired Hot Luck, an Austin food and music festival that drew over 10,000 attendees in 2025.',
+            sourceName: 'Yahoo Finance',
+            sourceUrl: 'https://finance.yahoo.com/small-business/articles/exclusive-people-inc-buys-austin-132406231.html',
+            publishedDate: '2026-06-16'
+          }
+        ]
+      },
 
       // WEEK 2
       {

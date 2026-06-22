@@ -159,6 +159,16 @@
   color: var(--sage);
   margin-top: 0.15rem;
 }
+.story-index-section {
+  padding: 1rem 0 0.25rem;
+  margin-top: 0.35rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.52rem;
+  font-weight: 800;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--lime);
+}
 
 /* ── SIGNALS BODY ────────────────────────────────────────────── */
 .signals-body { padding: 0 5vw; }
@@ -517,8 +527,17 @@
     var sorted = issue.stories.slice().sort(function (a, b) { return a.order - b.order; });
     var sc = issue.stories.length;
 
+    var idxSection = null;
     var index = sorted.map(function (s) {
-      return '<button class="story-index-btn" onclick="scrollToSection(\'signal-' + s.order + '\')">'
+      var sec = inferSection(s);
+      var divider = '';
+      if (sec !== idxSection) {
+        idxSection = sec;
+        var sectionLabels = { 'sports': 'Sports Business', 'entertainment': 'Entertainment & IP' };
+        divider = '<div class="story-index-section">' + esc(sectionLabels[sec] || sec) + '</div>';
+      }
+      return divider
+        + '<button class="story-index-btn" onclick="scrollToSection(\'signal-' + s.order + '\')">'
         + '<span class="idx-num">' + String(s.order).padStart(2, '0') + '</span>'
         + '<span><div class="idx-text">' + esc(s.headline) + '</div>'
         + '<div class="idx-tag">' + esc(s.tag || '') + '</div></span>'

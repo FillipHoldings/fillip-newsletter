@@ -22,10 +22,148 @@ const MONTHLY_GROUPS = [
     isCurrent: true,
     monthLabel: 'June 2026',
     editionTag: 'Sports · Entertainment · IP · Capital',
-    publishedDate: '2026-06-22',
-    dateRange: 'May 30 – June 22, 2026',
-    introLine: 'Weeks 1–3 of June: Napoli rejects a €2B bid, Ramos\'s Sevilla deal collapses, Dončić buys into NBA Europe, Curry signs $400M with Li-Ning, UMG rejects Ackman\'s $64B offer, Backrooms crosses $212M for A24; Mahomes becomes the first $500M NFL player, Fox acquires Roku for $25B, the Knicks\' first title in 53 years breaks every Fanatics record, UFC holds its first White House event, Liga MX eyes the stock exchange at $13B, Soy Frankelda reaches Netflix; then iShowSpeed draws 9.2M for a live World Cup stream, Big3 agrees to go public at $290M, Pau Gasol bids €55M for Liga F\'s commercial rights, and Toy Story 5 opens to $312M globally.',
+    publishedDate: '2026-06-29',
+    dateRange: 'May 30 – June 29, 2026',
+    introLine: 'Weeks 1–4 of June: Napoli rejects a €2B bid, Ramos\'s Sevilla deal collapses, Dončić buys into NBA Europe, Curry signs $400M with Li-Ning, UMG rejects Ackman\'s $64B offer, Backrooms crosses $212M for A24; Mahomes becomes the first $500M NFL player, Fox acquires Roku for $25B, the Knicks\' first title in 53 years breaks every Fanatics record, UFC holds its first White House event, Liga MX eyes the stock exchange at $13B, Soy Frankelda reaches Netflix; iShowSpeed draws 9.2M for a live World Cup stream, Big3 agrees to go public at $290M, Pau Gasol bids €55M for Liga F\'s commercial rights, Toy Story 5 opens to $312M globally; then Comcast spins off NBCUniversal, Ari Emanuel enters exclusive $6B talks for ATG\'s 70 theaters, CazéTV draws 17.8M on YouTube to reset the World Cup broadcast map, Google embeds DeepMind at A24\'s AI lab, Karim Lopez becomes Mexico\'s first NBA first-rounder, and Michael surpasses Oppenheimer as the highest-grossing biopic in history.',
     issues: [
+
+      // WEEK 4
+      {
+        slug: 'week-4-june-2026',
+        issueNumber: '4',
+        weekLabel: 'Week 4',
+        dateRange: 'June 22–29, 2026',
+        publishedDate: '2026-06-29',
+        issueTitle: 'Week 4 — June 2026',
+        editionTag: 'Sports · Entertainment · IP · Capital',
+        introLine: 'Week four of June: Comcast spins off NBCUniversal and Sky, Ari Emanuel enters exclusive $6B talks to acquire theater group ATG, CazéTV draws 17.8 million viewers on YouTube to set the world live streaming record, Google embeds DeepMind researchers at A24\'s AI lab, Sony puts $100M into Cosm\'s dome venues, Karim Lopez becomes Mexico\'s first NBA first-round pick, Apple makes the Austrian GP free to grow its U.S. F1 audience, Meta begins building a prediction market app with Llama AI, and Michael surpasses Oppenheimer to become the highest-grossing biopic in history.',
+        shareText: 'Comcast spins off NBCUniversal, Ari Emanuel in $6B talks for ATG\'s 70 theaters, CazéTV draws 17.8M on YouTube, Google puts $75M in A24\'s AI lab, Karim Lopez is Mexico\'s first NBA first-rounder, Michael surpasses Oppenheimer — Week 4 June · Fillip.',
+        coreSignal: 'This week, Comcast confirmed what the market has suspected for years: owning both the pipe and the content no longer works. The 2011 bet that combining NBCUniversal with broadband infrastructure would create lasting advantage is being unwound in a single year. The same logic runs through every other deal. Ari Emanuel is not licensing theaters — he is buying the building. Sony is not licensing Cosm — it is buying the dome. Google is not licensing A24\'s library — it is embedding researchers inside the studio. The vertical integration thesis is being rebuilt from scratch, this time with live experience and creative infrastructure at the center instead of distribution.',
+        latamAngle: 'Two stories this week shared a common signal: Latin American protagonists rewriting records in North American sports institutions. In Brazil, Casimiro Miguel\'s CazéTV drew 17.8 million simultaneous viewers for Brazil\'s World Cup match against Scotland — more than double the previous YouTube live record of approximately 8 million, set during India\'s moon landing in 2023. In Mexico, 19-year-old Karim Lopez from Hermosillo became the first Mexican-born player selected in the NBA draft\'s first round — picked 21st overall, then traded to Memphis. Both firsts arrived during the same World Cup week, in the same year Liga MX announced a $13 billion stock listing. The commercial weight of the Latin American sports market is no longer a projection.',
+        ecosystemNews: [
+          {
+            headline: 'El Grande Americano Mask Auction Closes at $50,035 for Dr. Sonrisas Foundation',
+            body: 'The mask from Ludwig Kaiser\'s victory over Chad Gable\'s Original Grande Americano at AAA\'s Noche de los Grandes sold for $50,035 on Fanatics. Kaiser confirmed the result on Instagram: \'What an incredible result! $50,035 USD. Thank you so much for every single bid.\' One hundred percent of proceeds benefit the Dr. Sonrisas Foundation, which supports Mexican children with critical illnesses. Kaiser has since returned to AAA programming on FOX Latin America, where he was attacked by the revived Perros del Mal.',
+            sourceName: 'Yahoo Sports',
+            sourceUrl: 'https://sports.yahoo.com/articles/wwe-el-grande-americano-match-185238503.html'
+          },
+          {
+            headline: 'AAA Takes the Ring at FIFA World Cup Fan Fest in Mexico City on July 1',
+            body: 'AAA will present a wrestling exhibition at the FIFA Fan Fest in Mexico City on July 1 at 12:00 PM, with La Parka, Psycho Clown, Aerostar, and La Hiedra performing inside a dedicated ring at the venue. The exhibition precedes live broadcasts of three Round of 16 matches — England vs. Democratic Republic of Congo, Belgium vs. Senegal, and United States vs. Bosnia-Herzegovina — on the Fan Fest screens. Mexico City is using the event to showcase the country\'s sporting and cultural traditions as a central World Cup host city.',
+            sourceName: 'Record MX',
+            sourceUrl: 'https://www.record.com.mx/historia/aaa-llevara-la-lucha-libre-al-fan-fest-del-mundial-2026-en-la-ciudad-de-mexico-2026062913443902483'
+          }
+        ],
+        stories: [
+          {
+            order: 1,
+            tag: 'Media Rights · Streaming',
+            accentText: '17.8M viewers',
+            headline: 'CazéTV Sets YouTube Live Record with 17.8M World Cup Viewers',
+            emailSummary: 'Brazilian creator <strong>Casimiro Miguel</strong>\'s channel <strong>CazéTV</strong> peaked at <strong>17.8 million simultaneous viewers</strong> during the Brazil vs. Scotland World Cup match on YouTube — setting a new world record for live streaming on the platform, surpassing the previous record of approximately <strong>8 million viewers</strong> set during India\'s 2023 moon landing. CazéTV is the only broadcaster streaming all <strong>104 World Cup matches live</strong> and free on YouTube. The channel crossed <strong>35 million subscribers</strong> during the same broadcast. Viewer counts scaled across Brazil\'s group stage: <strong>12.7 million</strong> for Brazil vs. Morocco, <strong>16.1 million</strong> for Brazil vs. Haiti, then <strong>17.8 million</strong> for Brazil vs. Scotland.',
+            whyItMatters: 'A Brazilian creator channel surpassing any prior YouTube live record — including major national broadcast moments — at the world\'s largest sporting event confirms the creator distribution model is not an alternative to broadcast; it is now the primary channel for sports consumption in Brazil.',
+            signalText: 'CazéTV peaked at 17.8 million simultaneous YouTube viewers during Brazil\'s World Cup match against Scotland, setting a new world live streaming record.',
+            sourceName: 'Rio Times',
+            sourceUrl: 'https://www.riotimesonline.com/cazetv-world-cup-youtube-streaming-record-brazil-2026/',
+            publishedDate: '2026-06-25'
+          },
+          {
+            order: 2,
+            tag: 'Media Rights · F1',
+            accentText: '$150M/year',
+            headline: 'Apple Opens Austrian GP Free on Apple TV to Build U.S. F1 Audience',
+            emailSummary: '<strong>Apple</strong> made the full <strong>Austrian Grand Prix</strong> weekend — including practice, qualifying, and the race — free to access on <strong>Apple TV</strong> for any U.S. viewer with an <strong>Apple ID</strong>. Apple acquired exclusive U.S. Formula 1 broadcasting rights at the start of 2026 for a reported <strong>$150 million per year</strong>. The free-access strategy follows Apple\'s earlier simulcast of the <strong>Canadian GP with Netflix</strong>, plus screenings staged at Times Square billboards and IMAX cinemas. Apple claims viewership comparable to F1\'s final <strong>ESPN year</strong> (1.32 million average viewers per race) but has not released specific 2026 numbers.',
+            whyItMatters: 'Apple is treating individual F1 races as subscriber acquisition events — making them free to convert casual fans into Apple ID holders and, eventually, paying subscribers before the season tightens into races they will pay to watch.',
+            signalText: 'Apple made the full Austrian Grand Prix weekend free on Apple TV for U.S. viewers with an Apple ID.',
+            sourceName: 'SportsPro',
+            sourceUrl: 'https://www.sportspro.com/news/broadcast-ott/apple-streaming-austrian-gp-free-f1/',
+            publishedDate: '2026-06-19'
+          },
+          {
+            order: 3,
+            tag: 'Sports Business · NBA',
+            accentText: 'Pick No. 21',
+            headline: 'Karim Lopez Becomes NBA\'s First Mexico-Born First-Round Draft Pick',
+            emailSummary: '<strong>Karim Lopez</strong>, a 19-year-old forward born in <strong>Hermosillo, Mexico</strong>, was selected <strong>21st overall</strong> by the <strong>Detroit Pistons</strong> in the 2026 NBA Draft and immediately traded to the <strong>Memphis Grizzlies</strong> — becoming the first player born in Mexico to be selected in the NBA draft\'s first round. Lopez stands 6-foot-8 with a near-<strong>7-foot wingspan</strong> and a <strong>38-inch max vertical leap</strong>, and averaged <strong>11.9 points</strong> and <strong>6.1 rebounds</strong> per game with the <strong>New Zealand Breakers</strong> in the Australian NBL. <strong>Eduardo Najera</strong>, selected 38th overall in 2000, was the only prior Mexican-born player drafted in NBA history.',
+            whyItMatters: 'Mexico\'s first first-round NBA pick — arriving during World Cup year as Liga MX explores a stock exchange listing — is the clearest signal yet that Mexican athletes are reaching the top of the NBA talent market, with direct commercial implications for the league\'s fastest-growing international audience.',
+            signalText: 'Karim Lopez, born in Hermosillo, Mexico, was selected 21st overall and traded to the Memphis Grizzlies, becoming the NBA\'s first Mexico-born first-round pick.',
+            sourceName: 'ESPN',
+            sourceUrl: 'https://www.espn.com/nba/story/_/id/49161309/lopez-becomes-nba-1st-mexico-born-1st-rounder-traded-grizzlies',
+            publishedDate: '2026-06-23'
+          },
+          {
+            order: 4,
+            tag: 'Technology · Prediction Markets',
+            accentText: '3B+ daily users',
+            headline: 'Meta Builds AI Prediction Market App Arena to Rival Kalshi and Polymarket',
+            emailSummary: '<strong>Meta</strong> CEO <strong>Mark Zuckerberg</strong> has directed a team to build a standalone prediction market app called <strong>Arena</strong>, according to internal documents obtained by <strong>NPR</strong>. The app uses Meta\'s <strong>Llama</strong> large language model to auto-generate questions from trending topics, personalize market recommendations, and resolve markets in <strong>near real-time</strong>. Users receive a <strong>daily virtual allotment of play money</strong> — no real wagers — while Meta navigates more than <strong>30 pending legal challenges</strong> against the prediction market industry and awaits regulatory clarity from the <strong>CFTC</strong>. The app, internally codenamed <strong>\'Antwerp\'</strong> and <strong>\'FBForecast,\'</strong> has no public launch date. More than <strong>3 billion people</strong> use at least one Meta app daily; a prior attempt, <strong>Forecast</strong> (2020–22), was shut down due to the cost of manual question curation — the new app solves that problem with AI.',
+            whyItMatters: 'Meta entering prediction markets — even with play money — brings 3 billion daily users into a sector projected to reach $1 trillion. The play-money-first structure is regulatory positioning: building a user base and interface before real-money licensing is cleared.',
+            signalText: 'Meta began building a standalone prediction market app called Arena, using its Llama AI to auto-generate and resolve markets in near real-time.',
+            sourceName: 'NPR',
+            sourceUrl: 'https://www.npr.org/2026/06/24/nx-s1-5869486/meta-prediction-market-app-ai',
+            publishedDate: '2026-06-24'
+          },
+          {
+            order: 5,
+            tag: 'Entertainment · M&A',
+            headline: 'Comcast Spins Off NBCUniversal and Sky Into a Separate Public Company',
+            emailSummary: '<strong>Comcast</strong> announced it will spin off <strong>NBCUniversal</strong> into an independent publicly traded company, separating its media and entertainment assets from its broadband, cable, and wireless business. The new entity will include <strong>Universal Pictures</strong>, the <strong>NBC</strong> and <strong>Telemundo</strong> broadcast networks, <strong>NBC News</strong>, <strong>Peacock</strong>, <strong>Bravo</strong>, a theme parks division, and <strong>Sky</strong> — the British TV broadcaster Comcast acquired in 2018. <strong>Mike Cavanagh</strong> will lead the new entity; Comcast retains up to a <strong>19.9% stake</strong> for up to one year post-separation. <strong>Comcast shares rose nearly 10%</strong> on the announcement. The spinoff is expected to complete in approximately one year and follows Comcast\'s 2024 separation of <strong>CNBC</strong> and <strong>MSNBC</strong> into a separate company called <strong>Versant</strong>.',
+            whyItMatters: 'The Comcast-NBCUniversal split reverses the content-plus-distribution thesis of the 2011 merger — confirming that vertical integration between pipe and content no longer produces the synergies that justified it, as Paramount-WBD ($110B), Versant, and now this spinoff all dismantle the same structure from different starting points.',
+            signalText: 'Comcast announced it will spin off NBCUniversal and Sky into a separate publicly traded company within approximately one year.',
+            sourceName: 'NBC News',
+            sourceUrl: 'https://www.nbcnews.com/business/business-news/comcast-spinoff-nbcuniversal-sky-split-two-companies-rcna352188',
+            publishedDate: '2026-06-29'
+          },
+          {
+            order: 6,
+            tag: 'Live Events · M&A',
+            accentText: '$6B',
+            headline: 'Ari Emanuel Enters Exclusive $6B Talks to Buy Theater Group ATG',
+            emailSummary: '<strong>Ari Emanuel</strong>\'s media group <strong>Mari</strong> entered exclusive talks to acquire <strong>ATG Entertainment</strong> — owner of approximately <strong>70 venues</strong> across the UK, US, and Europe — from private equity firm <strong>Providence</strong> in a deal valued at approximately <strong>£4.5 billion ($6 billion)</strong>. ATG\'s portfolio includes London\'s <strong>Lyceum Theatre</strong> (The Lion King), the <strong>Savoy Theatre</strong> (Paddington the Musical), and New York\'s <strong>Lyric Theatre</strong> (Harry Potter and the Cursed Child). ATG posted <strong>£160.9 million in operating profit</strong> in the year to March 2025, recovered from pandemic closures. Providence originally acquired ATG for <strong>£350 million in 2013</strong>. Mari launched with <strong>$2 billion in equity</strong> backed by <strong>Apollo</strong>, <strong>RedBird Capital</strong>, and <strong>Qatar Investment Authority</strong>, and has already invested in the Frieze art fair, London\'s Winter Wonderland, and the Miami Open. A deal could close within a month.',
+            whyItMatters: 'ATG is the largest commercial theater group in the world. An Emanuel acquisition would give Mari — already holding Frieze, Winter Wonderland, and the Miami Open — direct control over the full live entertainment stack, from tennis and art fairs to the West End and Broadway.',
+            signalText: 'Ari Emanuel\'s Mari Group entered exclusive talks to acquire theater group ATG, owner of approximately 70 venues, for $6 billion.',
+            sourceName: 'Financial Times',
+            sourceUrl: 'https://www.ft.com/content/6bedcfad-decc-4dec-baf5-afcb906c2e5e',
+            publishedDate: '2026-06-23'
+          },
+          {
+            order: 7,
+            tag: 'IP · AI',
+            accentText: '$75M',
+            headline: 'Google Invests $75M in A24 to Develop AI Filmmaking Tools with DeepMind',
+            emailSummary: '<strong>Google</strong> invested approximately <strong>$75 million</strong> in <strong>A24</strong>, with <strong>DeepMind</strong> researchers embedded at <strong>A24 Labs</strong> to co-develop AI filmmaking tools — including <strong>AI-generated storyboards</strong>. The partnership explicitly avoids prompted-generation AI; tools are designed to preserve creative control, not replace it. Google gains no access to A24\'s content library or data. <strong>Scott Belsky</strong> leads the A24 Labs side; <strong>Eli Collins</strong>, DeepMind VP of Product, said the goal is getting technology \'into the hands of the best minds in the field.\' The deal follows similar Hollywood-AI collaborations with Lionsgate and Runway AI, and <strong>Netflix\'s earlier acquisition</strong> of Ben Affleck\'s InterPositive startup.',
+            whyItMatters: 'Google is not licensing A24\'s library — it is embedding DeepMind researchers inside the studio to build tools the industry cannot yet see. The explicit rejection of prompted-generation AI is a commercial signal: tools that assist rather than replace are the only version Hollywood will adopt at scale.',
+            signalText: 'Google invested approximately $75 million in A24, with DeepMind researchers embedded at A24 Labs to build AI filmmaking tools.',
+            sourceName: 'Variety',
+            sourceUrl: 'https://variety.com/2026/film/news/google-a24-ai-filmmaking-tools-1236787297/',
+            publishedDate: '2026-06-22'
+          },
+          {
+            order: 8,
+            tag: 'Entertainment · Live Events',
+            accentText: '$100M',
+            headline: 'Sony Pictures Invests $100M in Cosm to Deploy IP in Dome Venues',
+            emailSummary: '<strong>Sony Pictures Entertainment</strong> invested <strong>$100 million</strong> in <strong>Cosm</strong> through a <strong>Series C funding round</strong>, acquiring a minority ownership stake. Cosm operates immersive dome venues — <strong>87-foot structures with 12K LED displays</strong> — currently in <strong>Los Angeles</strong>, <strong>Dallas</strong>, and <strong>Atlanta</strong>, with upcoming locations in <strong>Detroit</strong> and <strong>Cleveland</strong>. Sony CEO and Chairman <strong>Ravi Ahuja</strong> joins Cosm\'s board. The studio plans to screen its own franchises — including <strong>Spider-Man</strong>, <strong>Ghostbusters</strong>, and anime titles — in the dome format, with announcements expected before year-end. Cosm already holds partnerships with the <strong>NFL, NBA, WWE, NBC Sports, ESPN, and CBS Sports</strong>. The $100 million will fund domestic and international venue expansion.',
+            whyItMatters: 'Sony is not just a content licensor here — it is a minority owner of the physical infrastructure that screens its IP, giving it a direct stake in how revenue is split at the venue level. As traditional theaters face structural pressure, studios investing in alternative exhibition formats is the opening move of a new exhibition model.',
+            signalText: 'Sony Pictures invested $100 million in Cosm, acquiring a minority stake in the dome venue operator and planning to screen its own franchises inside the shared-reality venues.',
+            sourceName: 'Variety',
+            sourceUrl: 'https://variety.com/2026/biz/news/sony-pictures-100-million-cosm-shared-reality-venue-owner-1236789422/',
+            publishedDate: '2026-06-24'
+          },
+          {
+            order: 9,
+            tag: 'Entertainment · Box Office',
+            accentText: '$977M',
+            headline: 'Michael Biopic Surpasses Oppenheimer as Highest-Grossing Biopic in History',
+            emailSummary: '<strong>Michael</strong>, the Lionsgate biopic of <strong>Michael Jackson</strong> directed by <strong>Antoine Fuqua</strong> and starring <strong>Jaafar Jackson</strong>, crossed <strong>$977.4 million globally</strong> — surpassing <strong>Oppenheimer\'s</strong> final gross of <strong>$975.8 million</strong> by approximately <strong>$1.6 million</strong> to become the <strong>highest-grossing biopic in cinema history</strong>. The film stands at <strong>$370.2 million domestic</strong> and <strong>$607.2 million international</strong>, projected to cross <strong>$1 billion</strong> — the second film to reach that milestone in 2026 after Universal\'s Super Mario Galaxy Movie. Michael also holds the record as the <strong>highest-grossing musical biopic</strong>, surpassing Bohemian Rhapsody ($911 million). Oppenheimer earned its gross with seven Academy Award wins including Best Picture and Best Director.',
+            whyItMatters: 'A contested biopic clearing Oppenheimer\'s Oscar-boosted total on pure audience demand confirms that estate-approved catalogue IP with a built-in global fan base is the most durable commercial vehicle in the studio system — regardless of subject controversy.',
+            signalText: 'Michael crossed $977.4 million globally, surpassing Oppenheimer\'s $975.8 million to become the highest-grossing biopic in cinema history.',
+            sourceName: 'Deadline',
+            sourceUrl: 'https://deadline.com/2026/06/box-office-michael-oppenheimer-1236969255/',
+            publishedDate: '2026-06-28'
+          }
+        ]
+      },
 
       // WEEK 3
       {

@@ -16,10 +16,164 @@ const PUBLICATION_CONFIG = {
 
 const MONTHLY_GROUPS = [
 
+  // JULY 2026
+  {
+    slug: 'july-2026',
+    isCurrent: true,
+    monthLabel: 'July 2026',
+    editionTag: 'Sports · Entertainment · IP · Capital',
+    publishedDate: '2026-07-05',
+    dateRange: 'June 29 – July 5, 2026',
+    introLine: 'Week 1 of July: Sky acquires ITV for $2.1B, Atlético Madrid signs a 10-year Live Nation deal to stage concerts at the Metropolitano, an AI \'actor\' named Tilly Norwood gets her first movie, PJL sells a $50M franchise before its 2027 launch, the Premier Lacrosse League raises $100M ahead of the Olympics, Liga F\'s assembly ratifies Pau Gasol\'s €55M investment, CazéTV locks up Euro 2028 rights in Brazil, and Isaac del Toro becomes the first Mexican Tour de France stage winner in 37 years.',
+    issues: [
+
+      // WEEK 1
+      {
+        slug: 'week-1-july-2026',
+        issueNumber: '1',
+        weekLabel: 'Week 1',
+        dateRange: 'June 29 – July 5, 2026',
+        publishedDate: '2026-07-05',
+        issueTitle: 'Week 1 — July 2026',
+        editionTag: 'Sports · Entertainment · IP · Capital',
+        introLine: 'Week one of July: Sky buys ITV in a $2.1B deal to compete with YouTube, Atlético Madrid turns its stadium into a concert venue with Live Nation, an AI \'actor\' lands her first feature film, and capital keeps pricing sports leagues before they\'ve proven anything — a $50M pre-launch franchise sale for PJL, a $100M raise for lacrosse ahead of the Olympics, and Liga F\'s assembly formally ratifying Pau Gasol\'s €55M bet.',
+        shareText: 'Sky buys ITV for $2.1B, Atlético Madrid signs a 10-year Live Nation stadium deal, an AI actor gets her first movie, PJL sells a $50M franchise pre-launch, and Liga F ratifies Gasol\'s €55M bet — Week 1 July · Fillip.',
+        coreSignal: 'This week, capital priced ownership before proof and infrastructure before demand. PJL sold its first franchise for $50 million before playing a match; the Premier Lacrosse League raised $100 million nine months before lacrosse even returns to the Olympics; Liga F\'s assembly formally ratified Pau Gasol\'s €55 million bet on a still-young league. At the other end, the institutions that already have scale are trading pieces of it away: Sky bought ITV to compete with YouTube\'s viewing share, and Atlético Madrid turned its stadium into a concert hall because ticket revenue alone no longer justifies the real estate.',
+        latamAngle: 'Latin America\'s 2026 kept compounding this week. In Brazil, Casimiro Miguel\'s CazéTV — fresh off setting a live-streaming record during the World Cup group stage — secured free, open rights to broadcast Euro 2028, extending its rights-acquisition streak into Europe\'s next major tournament. In Mexico, 23-year-old Isaac del Toro became the first Mexican rider to win a Tour de France stage in 37 years, a milestone he tied directly to that night\'s World Cup quarterfinal: "We have eleven footballers who have to advance tonight." The same week Mexico hosts the World Cup, its athletes and Brazil\'s media companies are the ones making the highlight reel.',
+        ecosystemNews: [
+          {
+            headline: 'Tsubasa Ramen Brings a Supercampeones Pop-Up to Mexico City',
+            body: 'Japanese chef Yuta — who also runs Ebisumaru Ramen in Guadalajara and Querétaro — opened Tsubasa Ramen, an officially licensed Captain Tsubasa (Supercampeones) pop-up in Mexico City\'s Colonia Del Valle. The limited-run spot leans into a locker-room theme, serving gyozas, takoyaki, and soccer-jersey-shaped steamed buns alongside character-named drinks like Tsubasa Blue and Wakabayashi Red. Open Tuesday–Sunday, 1–7 PM, with no confirmed closing date.',
+            sourceName: 'CDMX Secreta',
+            sourceUrl: 'https://cdmxsecreta.com/restaurante-tematico-supercampeones-cdmx/'
+          }
+        ],
+        stories: [
+          {
+            order: 1,
+            tag: 'Investment · Women\'s Sports',
+            section: 'sports',
+            accentText: '€55M',
+            headline: 'Liga F Ratifies Gasol\'s €55M Investment in Assembly Vote',
+            emailSummary: '<strong>Liga F</strong>\'s General Assembly voted by a two-thirds supermajority to ratify a <strong>€55 million</strong> investment from <strong>Pau Gasol</strong>\'s <strong>Gasol16 Ventures</strong>, in partnership with <strong>Fortified Partners</strong> — the largest private investment ever made in a women\'s football league. Funds will be disbursed over the next <strong>four seasons</strong> to fund commercial and operational development. The league closed its most recent fiscal year with <strong>€25.8 million</strong> in revenue and audience growth of <strong>11.2% year-over-year</strong> to <strong>7.5 million viewers</strong>.',
+            whyItMatters: 'A binding assembly vote — not just a proposal — confirms institutional investors now treat Liga F as a standalone commercial asset, with Gasol explicitly framing the bet as data-driven rather than symbolic.',
+            signalText: 'Liga F\'s General Assembly ratified a €55 million investment from Pau Gasol\'s Gasol16 Ventures.',
+            sourceName: 'Just Women\'s Sports',
+            sourceUrl: 'https://justwomenssports.com/reads/liga-f-pau-gasol-55-million-womens-soccer-investment-deal/',
+            publishedDate: '2026-07-02'
+          },
+          {
+            order: 2,
+            tag: 'Live Events · Expansion',
+            section: 'sports',
+            accentText: '$50M',
+            headline: 'PJL Sells First Franchise for $50M Before Launch',
+            emailSummary: '<strong>Premier Jumping League</strong> (PJL), the Frank McCourt-backed global show-jumping league launching in <strong>April 2027</strong>, sold its first franchise for <strong>$50 million</strong> to U.S. investor <strong>Jason McCarthy</strong>, who will own the <strong>McCarthy Jumping Team</strong>. PJL is structured as a <strong>16-team league</strong> competing across <strong>14 international venues</strong> and guarantees a <strong>$300 million</strong> total prize pot. The league has signed world No. 1 rider <strong>Scott Brash</strong> and partnered with <strong>Box to Box Films</strong>, the production company behind F1\'s <strong>Drive to Survive</strong>.',
+            whyItMatters: 'Selling a $50 million franchise before a single match has been played sets a valuation floor for a sport with no prior institutional ownership structure, and signals investors are pricing scarcity ahead of proof of concept.',
+            signalText: 'PJL sold its first franchise for $50 million ahead of its April 2027 launch.',
+            sourceName: 'Sportcal',
+            sourceUrl: 'https://www.sportcal.com/news/mccourt-based-pjl-sells-first-franchise-for-50m-ahead-of-launch/',
+            publishedDate: '2026-06-29'
+          },
+          {
+            order: 3,
+            tag: 'Investment · Sports',
+            section: 'sports',
+            accentText: '$100M',
+            headline: 'Premier Lacrosse League Raises $100M Ahead of Olympics',
+            emailSummary: '<strong>Premier Lacrosse League</strong> and <strong>Women\'s Lacrosse League</strong> raised a <strong>$100 million Series E</strong> led by <strong>Ares</strong> funds and <strong>Joe Tsai</strong>, with additional backing from <strong>ESPN</strong>, <strong>David Blitzer\'s Bolt Ventures</strong>, and actors <strong>Glen Powell</strong> and <strong>Rob McElhenney</strong>. The raise is timed to lacrosse\'s return to the Olympics at <strong>LA 2028</strong> for the first time since 1908. PLL plans to pause its <strong>2028 season</strong> for two weeks to align with the Games, betting on a global viewership surge.',
+            whyItMatters: 'A $100M raise timed to a single Olympic cycle shows investors treating a rare Games return as a one-time audience-expansion event worth funding ahead of any proof it converts to viewership.',
+            signalText: 'Premier Lacrosse League raised a $100 million Series E led by Ares and Joe Tsai.',
+            sourceName: 'Yahoo Sports',
+            sourceUrl: 'https://sports.yahoo.com/olympics/article/premier-lacrosse-league-lands-100-million-to-chase-olympic-moment-100000231.html',
+            publishedDate: '2026-06-30'
+          },
+          {
+            order: 4,
+            tag: 'Investment · Basketball',
+            section: 'sports',
+            accentText: '$4.86B',
+            headline: 'Blue Owl Capital Eyes Minority Stake in Cavaliers',
+            emailSummary: '<strong>Blue Owl Capital</strong> is in advanced talks to acquire a minority stake — reportedly in the <strong>5% to 10%</strong> range — in the <strong>Cleveland Cavaliers</strong>, according to Bloomberg. The investment would run through Blue Owl\'s <strong>Dyal HomeCourt Partners</strong> fund, which already holds minority stakes in the <strong>Atlanta Hawks</strong>, <strong>Sacramento Kings</strong>, and <strong>Minnesota Timberwolves</strong>. <strong>Sportico</strong> values the Cavaliers at <strong>$4.86 billion</strong>, ranking 16th among NBA franchises. Both Blue Owl and the Cavaliers declined to comment.',
+            whyItMatters: 'A fourth NBA minority stake for the same PE fund confirms institutional capital is building a repeatable ownership playbook across franchises rather than making one-off bets.',
+            signalText: 'Blue Owl Capital is in advanced talks for a minority stake in the Cleveland Cavaliers.',
+            sourceName: 'Yahoo Finance',
+            sourceUrl: 'https://finance.yahoo.com/markets/stocks/articles/blue-owl-capital-eyes-minority-183216121.html',
+            publishedDate: '2026-06-29'
+          },
+          {
+            order: 5,
+            tag: 'Media Rights · Streaming',
+            section: 'sports',
+            headline: 'CazéTV Secures Free Euro 2028 Rights in Brazil',
+            emailSummary: '<strong>CazéTV</strong>, Brazilian creator <strong>Casimiro Miguel</strong>\'s YouTube channel, secured rights to broadcast all <strong>UEFA Euro 2028</strong> matches free and in the open across Brazil, extending its rights-acquisition streak beyond the 2026 World Cup. The deal follows a parallel agreement giving CazéTV free-to-air rights to Spain\'s <strong>LaLiga EA Sports</strong> matches in Brazil through <strong>2032</strong>. Financial terms were not disclosed. UEFA cited CazéTV\'s ability to attract younger audiences and experiment with new distribution formats.',
+            whyItMatters: 'A creator channel adding Europe\'s top international tournament to its rights portfolio just weeks after setting a World Cup streaming record confirms CazéTV is now negotiating as a primary broadcaster, not an alternative one.',
+            signalText: 'CazéTV secured free broadcast rights to all UEFA Euro 2028 matches in Brazil.',
+            sourceName: '2Playbook',
+            sourceUrl: 'https://www.2playbook.com/media/cazetv-sigue-sumando-torneos-su-canal-youtube-emitira-euro-2028-en-brasil_22872_102.html',
+            publishedDate: '2026-07-03'
+          },
+          {
+            order: 6,
+            tag: 'Sports Business · Cycling',
+            section: 'sports',
+            accentText: '37 years',
+            headline: 'Isaac del Toro Wins Tour de France Stage',
+            emailSummary: '<strong>Isaac del Toro</strong>, a 23-year-old from <strong>Ensenada, Mexico</strong> riding for <strong>UAE Team Emirates</strong>, won <strong>Stage 2</strong> of the 2026 Tour de France on the Montjuïc circuit in Barcelona — the first stage win by a Mexican rider in <strong>37 years</strong>, since Raúl Alcalá in 1989–1990. Teammate <strong>Tadej Pogačar</strong> eased off to let Del Toro cross first; Del Toro sits <strong>fourth overall</strong>, 16 seconds behind race leader <strong>Jonas Vingegaard</strong>. Del Toro tied the win to that night\'s World Cup quarterfinal for host nation Mexico: "We have eleven footballers who have to advance tonight."',
+            whyItMatters: 'A rider from a country with almost no cycling infrastructure winning a Tour de France stage during the same year Mexico hosts the World Cup gives Mexican audiences and sponsors a second global sport to rally around.',
+            signalText: 'Isaac del Toro became the first Mexican rider to win a Tour de France stage in 37 years.',
+            sourceName: 'El Financiero',
+            sourceUrl: 'https://www.elfinanciero.com.mx/deportes/2026/07/05/isaac-del-toro-gana-la-segunda-etapa-del-tour-de-francia/',
+            publishedDate: '2026-07-05'
+          },
+          {
+            order: 7,
+            tag: 'Entertainment · Live Events',
+            section: 'entertainment',
+            accentText: '€1M/show',
+            headline: 'Atlético Madrid Signs 10-Year Live Nation Concert Deal',
+            emailSummary: '<strong>Atlético Madrid</strong> agreed a <strong>10-year</strong> strategic partnership with <strong>Live Nation</strong> to stage <strong>15 to 20 concerts annually</strong> at its <strong>Metropolitano</strong> stadium during the off-season, with an option to extend. Atlético is expected to net up to <strong>€1 million</strong> in revenue per concert, plus additional income from selling tickets directly via its existing partnership with <strong>Fever</strong>. The deal builds on an earlier joint venture with Live Nation and <strong>Oak View Group</strong> to build a <strong>€400 million</strong>, 20,000-capacity indoor arena next to the stadium, modeled on Manchester\'s Co-op Live. <strong>Bad Bunny</strong> sold out 10 consecutive shows at the Metropolitano in May and June, drawing over <strong>560,000</strong> fans.',
+            whyItMatters: 'Atlético is monetizing stadium downtime as a second revenue line just as crosstown rival Real Madrid\'s own concert plans at the Bernabéu remain tied up in a noise-pollution legal dispute — turning a regulatory weakness for one club into a structural advantage for the other.',
+            signalText: 'Atlético Madrid signed a 10-year deal with Live Nation to stage concerts at its stadium.',
+            sourceName: 'The Athletic',
+            sourceUrl: 'https://www.nytimes.com/athletic/7416418/2026/07/02/atletico-madrid-stadium-metropolitano-concerts/',
+            publishedDate: '2026-07-02'
+          },
+          {
+            order: 8,
+            tag: 'Entertainment · M&A',
+            section: 'entertainment',
+            accentText: '$2.1B',
+            headline: 'Sky Acquires ITV Network in $2.1B UK Deal',
+            emailSummary: '<strong>Sky</strong> agreed to acquire <strong>ITV</strong>\'s television network operations for <strong>£1.6 billion ($2.1 billion)</strong>, paying <strong>£1.2 billion</strong> upfront and another <strong>£200 million</strong> in 2028 contingent on ad-revenue targets. <strong>ITV Studios</strong>, the production arm behind <strong>Love Island</strong> and <strong>Coronation Street</strong>, is excluded from the deal and remains independently listed, though Sky struck a <strong>£2.1 billion</strong> output deal with it through <strong>2032</strong>. Sky and ITV will sit under <strong>NBCUniversal</strong>, which Comcast is spinning out as a standalone company. Combined, Sky and ITV hold a <strong>17.7%</strong> UK viewing share, just behind YouTube\'s <strong>18.6%</strong>.',
+            whyItMatters: 'Sky absorbing ITV\'s network in the same week as the Comcast-NBCUniversal spinoff shows legacy UK broadcasters consolidating specifically to compete with YouTube\'s viewing share, not with each other.',
+            signalText: 'Sky agreed to acquire ITV\'s television network operations for £1.6 billion ($2.1 billion).',
+            sourceName: 'Deadline',
+            sourceUrl: 'https://deadline.com/2026/07/sky-acquires-itv-love-island-1236973761/',
+            publishedDate: '2026-07-05'
+          },
+          {
+            order: 9,
+            tag: 'IP · AI',
+            section: 'entertainment',
+            headline: 'AI Actor Tilly Norwood to Lead Film \'Misaligned\'',
+            emailSummary: '<strong>Particle6</strong>, the AI studio behind AI \'actor\' <strong>Tilly Norwood</strong>, announced her feature film debut in <strong>\'Misaligned,\'</strong> a comedy-drama set in the \'Tillyverse\' billed as a coming-of-age story \'infused with existential AI chaos.\' The film is a hybrid production using traditional directors, writers, and editors alongside AI specialists. Founder <strong>Eline van der Velden</strong> said the goal is proving \'AI can support premium narrative filmmaking, but only with substantial amounts of human craft.\' The announcement follows the backlash Norwood triggered in late 2025 after agency WME publicly declined to represent her, stating: \'We represent humans.\'',
+            whyItMatters: 'Moving from a talent-representation controversy to an actual feature greenlight tests whether audiences and distributors will treat an AI-generated performer as commercially viable content, not just an industry flashpoint.',
+            signalText: 'Particle6 announced Tilly Norwood, an AI \'actor,\' will lead the feature film \'Misaligned.\'',
+            sourceName: 'Variety',
+            sourceUrl: 'https://variety.com/2026/film/global/ai-actor-tilly-norwood-movie-debut-misaligned-1236802325/',
+            publishedDate: '2026-07-02'
+          }
+        ]
+      }
+
+    ]
+  },
+
   // JUNE 2026
   {
     slug: 'june-2026',
-    isCurrent: true,
+    isCurrent: false,
     monthLabel: 'June 2026',
     editionTag: 'Sports · Entertainment · IP · Capital',
     publishedDate: '2026-06-29',
@@ -58,6 +212,7 @@ const MONTHLY_GROUPS = [
           {
             order: 1,
             tag: 'Media Rights · Streaming',
+            section: 'sports',
             accentText: '17.8M viewers',
             headline: 'CazéTV Sets YouTube Live Record with 17.8M World Cup Viewers',
             emailSummary: 'Brazilian creator <strong>Casimiro Miguel</strong>\'s channel <strong>CazéTV</strong> peaked at <strong>17.8 million simultaneous viewers</strong> during the Brazil vs. Scotland World Cup match on YouTube — setting a new world record for live streaming on the platform, surpassing the previous record of approximately <strong>8 million viewers</strong> set during India\'s 2023 moon landing. CazéTV is the only broadcaster streaming all <strong>104 World Cup matches live</strong> and free on YouTube. The channel crossed <strong>35 million subscribers</strong> during the same broadcast. Viewer counts scaled across Brazil\'s group stage: <strong>12.7 million</strong> for Brazil vs. Morocco, <strong>16.1 million</strong> for Brazil vs. Haiti, then <strong>17.8 million</strong> for Brazil vs. Scotland.',
@@ -70,6 +225,7 @@ const MONTHLY_GROUPS = [
           {
             order: 2,
             tag: 'Media Rights · F1',
+            section: 'sports',
             accentText: '$150M/year',
             headline: 'Apple Opens Austrian GP Free on Apple TV to Build U.S. F1 Audience',
             emailSummary: '<strong>Apple</strong> made the full <strong>Austrian Grand Prix</strong> weekend — including practice, qualifying, and the race — free to access on <strong>Apple TV</strong> for any U.S. viewer with an <strong>Apple ID</strong>. Apple acquired exclusive U.S. Formula 1 broadcasting rights at the start of 2026 for a reported <strong>$150 million per year</strong>. The free-access strategy follows Apple\'s earlier simulcast of the <strong>Canadian GP with Netflix</strong>, plus screenings staged at Times Square billboards and IMAX cinemas. Apple claims viewership comparable to F1\'s final <strong>ESPN year</strong> (1.32 million average viewers per race) but has not released specific 2026 numbers.',
@@ -82,6 +238,7 @@ const MONTHLY_GROUPS = [
           {
             order: 3,
             tag: 'Sports Business · NBA',
+            section: 'sports',
             accentText: 'Pick No. 21',
             headline: 'Karim Lopez Becomes NBA\'s First Mexico-Born First-Round Draft Pick',
             emailSummary: '<strong>Karim Lopez</strong>, a 19-year-old forward born in <strong>Hermosillo, Mexico</strong>, was selected <strong>21st overall</strong> by the <strong>Detroit Pistons</strong> in the 2026 NBA Draft and immediately traded to the <strong>Memphis Grizzlies</strong> — becoming the first player born in Mexico to be selected in the NBA draft\'s first round. Lopez stands 6-foot-8 with a near-<strong>7-foot wingspan</strong> and a <strong>38-inch max vertical leap</strong>, and averaged <strong>11.9 points</strong> and <strong>6.1 rebounds</strong> per game with the <strong>New Zealand Breakers</strong> in the Australian NBL. <strong>Eduardo Najera</strong>, selected 38th overall in 2000, was the only prior Mexican-born player drafted in NBA history.',
@@ -94,6 +251,7 @@ const MONTHLY_GROUPS = [
           {
             order: 4,
             tag: 'Technology · Prediction Markets',
+            section: 'sports',
             accentText: '3B+ daily users',
             headline: 'Meta Builds AI Prediction Market App Arena to Rival Kalshi and Polymarket',
             emailSummary: '<strong>Meta</strong> CEO <strong>Mark Zuckerberg</strong> has directed a team to build a standalone prediction market app called <strong>Arena</strong>, according to internal documents obtained by <strong>NPR</strong>. The app uses Meta\'s <strong>Llama</strong> large language model to auto-generate questions from trending topics, personalize market recommendations, and resolve markets in <strong>near real-time</strong>. Users receive a <strong>daily virtual allotment of play money</strong> — no real wagers — while Meta navigates more than <strong>30 pending legal challenges</strong> against the prediction market industry and awaits regulatory clarity from the <strong>CFTC</strong>. The app, internally codenamed <strong>\'Antwerp\'</strong> and <strong>\'FBForecast,\'</strong> has no public launch date. More than <strong>3 billion people</strong> use at least one Meta app daily; a prior attempt, <strong>Forecast</strong> (2020–22), was shut down due to the cost of manual question curation — the new app solves that problem with AI.',
@@ -106,6 +264,7 @@ const MONTHLY_GROUPS = [
           {
             order: 5,
             tag: 'Entertainment · M&A',
+            section: 'entertainment',
             headline: 'Comcast Spins Off NBCUniversal and Sky Into a Separate Public Company',
             emailSummary: '<strong>Comcast</strong> announced it will spin off <strong>NBCUniversal</strong> into an independent publicly traded company, separating its media and entertainment assets from its broadband, cable, and wireless business. The new entity will include <strong>Universal Pictures</strong>, the <strong>NBC</strong> and <strong>Telemundo</strong> broadcast networks, <strong>NBC News</strong>, <strong>Peacock</strong>, <strong>Bravo</strong>, a theme parks division, and <strong>Sky</strong> — the British TV broadcaster Comcast acquired in 2018. <strong>Mike Cavanagh</strong> will lead the new entity; Comcast retains up to a <strong>19.9% stake</strong> for up to one year post-separation. <strong>Comcast shares rose nearly 10%</strong> on the announcement. The spinoff is expected to complete in approximately one year and follows Comcast\'s 2024 separation of <strong>CNBC</strong> and <strong>MSNBC</strong> into a separate company called <strong>Versant</strong>.',
             whyItMatters: 'The Comcast-NBCUniversal split reverses the content-plus-distribution thesis of the 2011 merger — confirming that vertical integration between pipe and content no longer produces the synergies that justified it, as Paramount-WBD ($110B), Versant, and now this spinoff all dismantle the same structure from different starting points.',
@@ -117,6 +276,7 @@ const MONTHLY_GROUPS = [
           {
             order: 6,
             tag: 'Live Events · M&A',
+            section: 'entertainment',
             accentText: '$6B',
             headline: 'Ari Emanuel Enters Exclusive $6B Talks to Buy Theater Group ATG',
             emailSummary: '<strong>Ari Emanuel</strong>\'s media group <strong>Mari</strong> entered exclusive talks to acquire <strong>ATG Entertainment</strong> — owner of approximately <strong>70 venues</strong> across the UK, US, and Europe — from private equity firm <strong>Providence</strong> in a deal valued at approximately <strong>£4.5 billion ($6 billion)</strong>. ATG\'s portfolio includes London\'s <strong>Lyceum Theatre</strong> (The Lion King), the <strong>Savoy Theatre</strong> (Paddington the Musical), and New York\'s <strong>Lyric Theatre</strong> (Harry Potter and the Cursed Child). ATG posted <strong>£160.9 million in operating profit</strong> in the year to March 2025, recovered from pandemic closures. Providence originally acquired ATG for <strong>£350 million in 2013</strong>. Mari launched with <strong>$2 billion in equity</strong> backed by <strong>Apollo</strong>, <strong>RedBird Capital</strong>, and <strong>Qatar Investment Authority</strong>, and has already invested in the Frieze art fair, London\'s Winter Wonderland, and the Miami Open. A deal could close within a month.',
@@ -129,6 +289,7 @@ const MONTHLY_GROUPS = [
           {
             order: 7,
             tag: 'IP · AI',
+            section: 'entertainment',
             accentText: '$75M',
             headline: 'Google Invests $75M in A24 to Develop AI Filmmaking Tools with DeepMind',
             emailSummary: '<strong>Google</strong> invested approximately <strong>$75 million</strong> in <strong>A24</strong>, with <strong>DeepMind</strong> researchers embedded at <strong>A24 Labs</strong> to co-develop AI filmmaking tools — including <strong>AI-generated storyboards</strong>. The partnership explicitly avoids prompted-generation AI; tools are designed to preserve creative control, not replace it. Google gains no access to A24\'s content library or data. <strong>Scott Belsky</strong> leads the A24 Labs side; <strong>Eli Collins</strong>, DeepMind VP of Product, said the goal is getting technology \'into the hands of the best minds in the field.\' The deal follows similar Hollywood-AI collaborations with Lionsgate and Runway AI, and <strong>Netflix\'s earlier acquisition</strong> of Ben Affleck\'s InterPositive startup.',
@@ -141,6 +302,7 @@ const MONTHLY_GROUPS = [
           {
             order: 8,
             tag: 'Entertainment · Live Events',
+            section: 'entertainment',
             accentText: '$100M',
             headline: 'Sony Pictures Invests $100M in Cosm to Deploy IP in Dome Venues',
             emailSummary: '<strong>Sony Pictures Entertainment</strong> invested <strong>$100 million</strong> in <strong>Cosm</strong> through a <strong>Series C funding round</strong>, acquiring a minority ownership stake. Cosm operates immersive dome venues — <strong>87-foot structures with 12K LED displays</strong> — currently in <strong>Los Angeles</strong>, <strong>Dallas</strong>, and <strong>Atlanta</strong>, with upcoming locations in <strong>Detroit</strong> and <strong>Cleveland</strong>. Sony CEO and Chairman <strong>Ravi Ahuja</strong> joins Cosm\'s board. The studio plans to screen its own franchises — including <strong>Spider-Man</strong>, <strong>Ghostbusters</strong>, and anime titles — in the dome format, with announcements expected before year-end. Cosm already holds partnerships with the <strong>NFL, NBA, WWE, NBC Sports, ESPN, and CBS Sports</strong>. The $100 million will fund domestic and international venue expansion.',
@@ -153,6 +315,7 @@ const MONTHLY_GROUPS = [
           {
             order: 9,
             tag: 'Entertainment · Box Office',
+            section: 'entertainment',
             accentText: '$977M',
             headline: 'Michael Biopic Surpasses Oppenheimer as Highest-Grossing Biopic in History',
             emailSummary: '<strong>Michael</strong>, the Lionsgate biopic of <strong>Michael Jackson</strong> directed by <strong>Antoine Fuqua</strong> and starring <strong>Jaafar Jackson</strong>, crossed <strong>$977.4 million globally</strong> — surpassing <strong>Oppenheimer\'s</strong> final gross of <strong>$975.8 million</strong> by approximately <strong>$1.6 million</strong> to become the <strong>highest-grossing biopic in cinema history</strong>. The film stands at <strong>$370.2 million domestic</strong> and <strong>$607.2 million international</strong>, projected to cross <strong>$1 billion</strong> — the second film to reach that milestone in 2026 after Universal\'s Super Mario Galaxy Movie. Michael also holds the record as the <strong>highest-grossing musical biopic</strong>, surpassing Bohemian Rhapsody ($911 million). Oppenheimer earned its gross with seven Academy Award wins including Best Picture and Best Director.',
@@ -189,6 +352,7 @@ const MONTHLY_GROUPS = [
           {
             order: 1,
             tag: 'Sports Business',
+            section: 'sports',
             accentText: '$290M',
             headline: 'Ice Cube\'s Big3 Basketball League Goes Public in $290M Deal',
             emailSummary: '<strong>Ice Cube\'s Big3</strong>, the 3-on-3 professional basketball league co-founded by Ice Cube and Jeff Kwatinetz, agreed to merge with <strong>Graf Global Corp.</strong> — a publicly traded SPAC — in a business combination valued at <strong>$290 million</strong>. The combined entity will be renamed <strong>Big3 Basketball Holdings, Inc.</strong> and is expected to list on NYSE or Nasdaq under ticker symbol <strong>"TONT"</strong> in Q4 2026. <strong>NBA Hall of Famer Clyde Drexler</strong> will serve as commissioner; <strong>Mark King</strong> joins as chairman. The deal makes Big3 the <strong>first publicly traded professional sports league</strong> in U.S. history, allowing retail investors — including fans — to hold equity in a live sports property.',
@@ -201,6 +365,7 @@ const MONTHLY_GROUPS = [
           {
             order: 2,
             tag: 'Media Rights · NBA',
+            section: 'sports',
             accentText: '20.6M viewers',
             headline: '2026 NBA Finals Averaged 20.6 Million Viewers, Doubling 2025',
             emailSummary: 'The 2026 <strong>NBA Finals</strong> — the <strong>New York Knicks</strong> over the <strong>San Antonio Spurs</strong> — averaged <strong>20.6 million viewers</strong> per night across five games on <strong>ABC</strong>, doubling the 2025 series average of <strong>10.2 million</strong>. <strong>Game 5</strong> peaked at <strong>33 million viewers</strong>, the biggest NBA Finals audience since <strong>Michael Jordan\'s final championship in 1998</strong>. Scatter market rates for Game 5 reached <strong>$1.4 million per 30-second unit</strong>; ABC is on pace to surpass the <strong>$288 million in advertising</strong> it captured from the 2025 Finals. The series guarantees three NBA games will appear on 2026\'s list of the <strong>100 most-watched broadcasts</strong> — the first time since 2019.',
@@ -213,6 +378,7 @@ const MONTHLY_GROUPS = [
           {
             order: 3,
             tag: 'Investment · Sports',
+            section: 'sports',
             accentText: '€200M+',
             headline: 'L Catterton in Exclusive Talks to Acquire Stake in HYROX from Infront',
             emailSummary: '<strong>L Catterton</strong>, the private equity firm backed by <strong>LVMH\'s Bernard Arnault</strong> family office, entered exclusive talks to acquire a stake in <strong>HYROX</strong> from Swiss media group <strong>Infront Sports & Media</strong>. HYROX is an indoor racing format combining running with functional workout stations; it grew from 650 participants at its <strong>2018 Hamburg debut</strong> to <strong>425,000–550,000 athletes across 80+ events in 30 countries</strong> in the 2024–25 season. The company posted estimated revenue of <strong>€130–140 million</strong> in 2025 with a roughly <strong>20% EBITDA margin</strong>, and projects above <strong>€200 million</strong> in 2026. Specific stake size and transaction value were not disclosed.',
@@ -225,6 +391,7 @@ const MONTHLY_GROUPS = [
           {
             order: 4,
             tag: 'Investment · Women\'s Sports',
+            section: 'sports',
             accentText: '€55M',
             headline: 'Pau Gasol\'s €55M Bid Would Give Him Control of Liga F Commercial Rights',
             emailSummary: '<strong>Pau Gasol</strong>, through his investment vehicle <strong>Gasol16 Ventures</strong>, submitted a <strong>€55 million proposal</strong> to acquire and manage the commercial rights of <strong>Liga F</strong>, Spain\'s top women\'s football division. The proposal goes to a vote at an extraordinary assembly on <strong>June 29</strong>. Gasol — a former NBA star and <strong>IOC Athletes\' Commission member</strong> — has previously invested in <strong>Bay FC</strong> of the NWSL and projects within the WNBA ecosystem. The offer is described as one of the <strong>largest private capital commitments ever made to a women\'s football competition</strong>.',
@@ -237,6 +404,7 @@ const MONTHLY_GROUPS = [
           {
             order: 5,
             tag: 'Media Rights · Streaming',
+            section: 'sports',
             accentText: '9.2M viewers',
             headline: 'FIFA and Fox Partner with iShowSpeed to Stream World Cup Live',
             emailSummary: 'Creator <strong>iShowSpeed</strong> (Darren Watkins Jr.) partnered with <strong>FIFA</strong>, <strong>Fox Sports</strong>, and <strong>YouTube</strong> to stream live 2026 World Cup matches from stadiums. U.S. audiences can watch via the <strong>Fox One Prime Channel on YouTube</strong> and the <strong>Fox One streaming service</strong>; international audiences on <strong>iShowSpeed\'s personal YouTube channel</strong>. Speed drew <strong>9.2 million viewers</strong> for Portugal\'s World Cup opener — a figure that may have exceeded Fox\'s own broadcast network audience for the same match. Scheduled upcoming streams include <strong>Argentina vs. Austria</strong> (June 22, Dallas), <strong>Colombia vs. Portugal</strong> (June 27, Miami), and select knockout and semifinal rounds. No financial terms were disclosed.',
@@ -249,6 +417,7 @@ const MONTHLY_GROUPS = [
           {
             order: 6,
             tag: 'Sports Business · Ticketing',
+            section: 'sports',
             headline: 'Formula 1 Names Fever Official Ticketing Supplier in Five-Year Global Deal',
             emailSummary: '<strong>Formula 1</strong> appointed <strong>Fever</strong> as its <strong>Official Ticketing Supplier</strong> in a five-year global strategic partnership beginning with races in <strong>2027</strong>. Fever will build and operate a new ticketing platform on <strong>F1.com</strong> covering general admission, hospitality packages, and <strong>Paddock Club</strong> tickets. The partnership leverages Fever\'s reach of over <strong>300 million consumers</strong> across <strong>40+ countries</strong>. No financial terms were disclosed.',
             whyItMatters: 'F1 centralizing its global ticketing under a single platform with 300 million consumers converts fan discovery and purchase into a unified data asset — giving the series direct behavioral visibility into fan spending across every race market.',
@@ -260,6 +429,7 @@ const MONTHLY_GROUPS = [
           {
             order: 7,
             tag: 'IP · Collectibles',
+            section: 'entertainment',
             headline: 'Panini Launches First-Ever U.S. Release of EFL Trading Cards',
             emailSummary: '<strong>Panini America</strong> announced its first-ever U.S. release of <strong>English Football League</strong> trading cards in partnership with the <strong>EFL</strong>. The <strong>Panini Prestige EFL</strong> collection features a <strong>300-card base set</strong> covering all <strong>72 clubs</strong> across the EFL Championship, League One, and League Two for the 2025–26 season. Autographed cards feature EFL stars and legends including <strong>Harry Kane</strong>, <strong>Gareth Bale</strong>, <strong>Gary Lineker</strong>, and <strong>Alan Shearer</strong>. The collection will be available at major U.S. retailers and on Panini\'s website starting next month.',
             whyItMatters: 'The EFL — the world\'s oldest football league, founded 1888 — gaining its first U.S. retail collectibles release reflects the accelerating American appetite for English football beyond the Premier League, opening a commercial channel Panini is monetizing across all 72 lower-division clubs simultaneously.',
@@ -271,6 +441,7 @@ const MONTHLY_GROUPS = [
           {
             order: 8,
             tag: 'Entertainment · Box Office',
+            section: 'entertainment',
             accentText: '$312M',
             headline: 'Toy Story 5 Opens to $312M Globally, Second-Largest Animated Debut Ever',
             emailSummary: '<strong>Toy Story 5</strong> opened to <strong>$160 million</strong> domestically and <strong>$312 million</strong> globally — the largest opening in the franchise\'s history and the <strong>second-largest animated opening weekend of all time</strong>, trailing only Incredibles 2\'s $182.7 million U.S. debut in 2018. The film also claimed the <strong>biggest domestic debut of 2026</strong>, surpassing Universal\'s Super Mario Galaxy Movie ($131.7M). Produced on a <strong>$250 million</strong> budget, the film earned a <strong>94% Rotten Tomatoes score</strong> and an <strong>"A" CinemaScore</strong>. Analysts project it could surpass <strong>Toy Story 4\'s $1.07 billion</strong> global total.',
@@ -283,6 +454,7 @@ const MONTHLY_GROUPS = [
           {
             order: 9,
             tag: 'Entertainment · Box Office',
+            section: 'entertainment',
             accentText: '$1B+',
             headline: 'Devil Wears Prada 2 Pushes Two-Film Franchise Past $1 Billion',
             emailSummary: '<strong>The Devil Wears Prada 2</strong>, produced by <strong>Disney</strong> at approximately <strong>$100 million</strong> (plus $80 million in marketing), has grossed <strong>$676 million globally</strong> — pushing the two-film franchise past <strong>$1 billion</strong> in combined earnings. The sequel opened to <strong>$77 million</strong> domestically and <strong>$233 million</strong> globally, nearly triple the original\'s opening weekend. International markets delivered <strong>$458 million</strong> against <strong>$217 million</strong> domestically. The original 2006 film earned <strong>$326 million</strong>. Disney is expected to turn a profitable return despite combined production and marketing costs near <strong>$180 million</strong>.',
@@ -295,6 +467,7 @@ const MONTHLY_GROUPS = [
           {
             order: 10,
             tag: 'Gaming · Advertising',
+            section: 'entertainment',
             headline: 'EA Launches In-Game Advertising Platform Targeting Sports TV Budgets',
             emailSummary: '<strong>Electronic Arts</strong> launched <strong>EA Advertising</strong>, a platform enabling brands to embed customized ads into gameplay through stadium signage and in-game experiences. <strong>Lowe\'s</strong> and <strong>Visa</strong> created in-game experiences inside <strong>EA Sports FC</strong> and <strong>EA Sports College Football</strong>; <strong>PepsiCo\'s Mountain Dew</strong> partnered on <strong>"DEW University,"</strong> a playable team experience in EA Sports College Football 26. EA is pitching gaming inventory to brands as a performance-trackable alternative to declining TV upfront budgets, positioning its sports titles as a direct reach vehicle for highly engaged sports fans.',
             whyItMatters: 'EA monetizing in-game stadium inventory as a replacement for linear TV advertising inserts gaming into the sports media rights conversation — the same fans, the same IP, but a fully interactive and measurable ad environment that broadcast cannot replicate.',
@@ -306,6 +479,7 @@ const MONTHLY_GROUPS = [
           {
             order: 11,
             tag: 'Entertainment · Podcasts',
+            section: 'entertainment',
             headline: 'Amazon\'s Wondery Signs Exclusive Distribution Deal With Kevin Durant\'s Boardroom',
             emailSummary: '<strong>Amazon\'s Wondery</strong> signed a wide-ranging agreement with <strong>Boardroom</strong>, the sports and entertainment media company co-founded by <strong>Kevin Durant</strong> and <strong>Rich Kleiman</strong>, covering exclusive distribution and ad-sales rights to Boardroom\'s full podcast slate and digital series. Programming will be distributed across <strong>Prime Video</strong>, <strong>Amazon Music</strong>, and <strong>Fire TV Channels</strong> beginning early 2027, alongside new branded content and live fan engagement opportunities. Boardroom claims a network reaching over <strong>52 million unique monthly visitors</strong>. Annual <strong>Twitch livestreams</strong> featuring Durant are also part of the deal.',
             whyItMatters: 'Amazon acquiring exclusive distribution and ad-sales rights to a 52M-visitor sports media network built around an active NBA superstar converts athlete IP from an endorsement model to full content infrastructure — locking the audience inside Amazon\'s ecosystem rather than licensing it.',
@@ -317,6 +491,7 @@ const MONTHLY_GROUPS = [
           {
             order: 12,
             tag: 'Entertainment · Live Events',
+            section: 'entertainment',
             accentText: '10,000+ attendees',
             headline: 'People Inc. Acquires Austin\'s Hot Luck Festival to Expand Live Events',
             emailSummary: '<strong>People Inc.</strong> — formerly <strong>Dotdash Meredith</strong>, publisher of People, Food & Wine, Travel + Leisure, and 40+ lifestyle brands — acquired <strong>Hot Luck</strong>, an Austin-based food and music festival co-founded by pitmaster <strong>Aaron Franklin</strong>. Hot Luck drew over <strong>10,000 attendees</strong> in 2025, featuring indie music and live-fire cooking. People Inc. acquires the festival brand, guest lists, infrastructure, and all employees, with Franklin and co-founders remaining involved. The company plans to expand the festival into content — video, social, newsletters — and eventually into <strong>new markets</strong>.',
@@ -354,6 +529,7 @@ const MONTHLY_GROUPS = [
           {
             order: 1,
             tag: 'Sports Business · NFL',
+            section: 'sports',
             accentText: '$504.75M',
             headline: 'Mahomes Signs Reworked Deal Making Him First $500M NFL Player',
             emailSummary: 'The <strong>Kansas City Chiefs</strong> and quarterback <strong>Patrick Mahomes</strong> agreed to a reworked contract extension adding two years to his existing deal, pushing the total value to <strong>$504.75 million</strong> — the first NFL contract to exceed $500 million. The deal extends through the <strong>2033 season</strong> at an average annual value of <strong>$64 million</strong>, an NFL record. Through incentives and escalators, Mahomes can earn up to <strong>$522.25 million</strong>. The agreement was finalized while Mahomes remains in recovery from a <strong>torn ACL and LCL</strong> suffered in December, with the QB participating only in limited 7-on-7 drills at minicamp.',
@@ -366,6 +542,7 @@ const MONTHLY_GROUPS = [
           {
             order: 2,
             tag: 'Media Rights · Mexico',
+            section: 'sports',
             headline: 'Fox Secures Multi-Year NFL Broadcasting Rights for the Mexican Market',
             emailSummary: '<strong>Fox Sports</strong> secured expanded multi-year NFL broadcasting rights for <strong>Mexico</strong> beginning with the 2026 season, covering weekly Sunday and Thursday night games, Thanksgiving Day programming, all six <strong>NFC Conference playoff games</strong>, the Pro Bowl, and the <strong>Super Bowl</strong>. Distribution spans <strong>Fox</strong> and <strong>Fox+</strong> linear channels, the <strong>Fox One</strong> OTT streaming service, and select programming on the free <strong>Tubi</strong> platform. <strong>TelevisaUnivision</strong> continues concurrent coverage under a separate renewal. Ten NFL teams hold marketing rights in Mexico, and the league is committed to international games at <strong>Estadio Azteca</strong> through 2028.',
             whyItMatters: 'Fox is building a full-stack NFL broadcast presence in Mexico — linear, streaming, and free — locking the Super Bowl and postseason into the market ahead of the 2026 World Cup year and the growing NFL fan base across Latin America.',
@@ -377,6 +554,7 @@ const MONTHLY_GROUPS = [
           {
             order: 3,
             tag: 'Valuation · Liga MX',
+            section: 'sports',
             accentText: '$13B',
             headline: 'Liga MX Explores Stock Exchange Listing at a $13 Billion Valuation',
             emailSummary: '<strong>Liga MX Commissioner Mikel Arriola</strong> announced plans to pursue a <strong>stock exchange listing</strong> and open the league to private institutional investment, speaking at a conference on the World Cup\'s economic impact organized by Mexico\'s <strong>BIVA</strong> exchange. The league has been valued at <strong>$13 billion</strong> and has already received preliminary offers for a <strong>10% ownership stake</strong>. Arriola stated that external investor resources will be required to complete the consolidation of broadcasting rights — one of the league\'s core strategic goals since its April governance split from the FMF. If completed, <strong>Liga MX would be the first professional sports league in the world to trade directly on a public exchange</strong>.',
@@ -389,6 +567,7 @@ const MONTHLY_GROUPS = [
           {
             order: 4,
             tag: 'Sports Business · Merchandise',
+            section: 'sports',
             accentText: '8,000/min',
             headline: 'Knicks\' First Title in 53 Years Sets All-Sports Fanatics Sales Record',
             emailSummary: 'The <strong>New York Knicks</strong> won their first NBA championship since 1973, defeating the <strong>San Antonio Spurs 94–90</strong> in Game 5 to take the Finals series <strong>4–1</strong>. In the 24 hours following the win, Knicks championship merchandise became the top seller across all sports in <strong>Fanatics history</strong> — surpassing the record set by the 2025 <strong>Philadelphia Eagles</strong> after Super Bowl LIX. Fanatics took in more than <strong>8,000 orders per minute</strong> immediately after the final whistle and released over <strong>300 championship products</strong>. The team is on pace to surpass the <strong>2016 Chicago Cubs</strong> as the all-time top championship seller in Fanatics history. Unique items include a <strong>$10,000 Swarovski crystal leather jacket</strong> and a Seinfeld-inspired <strong>"Summer of the Knicks"</strong> tee.',
@@ -401,6 +580,7 @@ const MONTHLY_GROUPS = [
           {
             order: 5,
             tag: 'Live Events · UFC',
+            section: 'sports',
             accentText: '$60M+',
             headline: 'UFC Freedom 250 at the White House Delivers Record Paramount+ Numbers',
             emailSummary: '<strong>UFC</strong> held <strong>Freedom 250</strong> on the White House South Lawn on <strong>June 14, 2026</strong> — the first-ever UFC event at the complex — to mark America\'s 250th anniversary. <strong>President Trump</strong> watched cage-side alongside <strong>Dana White</strong>, with event production costs exceeding <strong>$60 million</strong>. The card aired on <strong>Paramount+</strong>, delivering what Dana White described as "monstrous" viewership numbers. Over <strong>4,000 guests</strong> attended on the South Lawn by invitation; security involved <strong>seven federal agencies</strong> across <strong>11 months of planning</strong>. Corporate sponsors included <strong>Bud Light</strong>, <strong>Dodge Ram</strong>, <strong>Corona Extra</strong>, and <strong>Polymarket</strong>. The main card featured <strong>Ilia Topuria vs. Justin Gaethje</strong> for the Lightweight title and <strong>Alex Pereira vs. Ciryl Gane</strong> for the Interim Heavyweight belt.',
@@ -413,6 +593,7 @@ const MONTHLY_GROUPS = [
           {
             order: 6,
             tag: 'Media Rights · Latin America',
+            section: 'sports',
             accentText: '104 matches',
             headline: 'DAZN and DirecTV Latin America Sign Five-Country World Cup Deal',
             emailSummary: '<strong>DAZN</strong> struck a multi-year agreement with <strong>DirecTV Latin America</strong> to carry its <strong>DSPORTS</strong>, <strong>DSPORTS2</strong>, and <strong>DSPORTS+</strong> channels on DAZN\'s platform across five countries: <strong>Chile</strong>, <strong>Colombia</strong>, <strong>Ecuador</strong>, <strong>Peru</strong>, and <strong>Uruguay</strong>. The deal delivers all <strong>104 FIFA World Cup 2026 matches</strong> live to DAZN subscribers in those markets. The package also includes <strong>Copa América</strong>, <strong>CONMEBOL Sudamericana</strong>, FIBA competitions, tennis, and MMA. DSPORTS is owned by <strong>Grupo Werthein</strong>, which acquired DirecTV Latin America from AT&T in 2021. The deal was announced <strong>June 11</strong>, days before World Cup kickoff.',
@@ -425,6 +606,7 @@ const MONTHLY_GROUPS = [
           {
             order: 7,
             tag: 'Entertainment · M&A',
+            section: 'entertainment',
             accentText: '$25B',
             headline: 'Fox Acquires Roku for $25 Billion, Adding 100 Million Streaming Households',
             emailSummary: '<strong>Fox Corporation</strong> announced an agreement to acquire <strong>Roku</strong> for <strong>$25 billion</strong> total, paying <strong>$160 per share</strong> in a cash-and-stock transaction. Roku reaches more than <strong>100 million global streaming households</strong>, making it the most widely deployed connected TV platform in the U.S. The combined company will rank as the <strong>third-largest U.S. TV player</strong> by share of viewing, behind YouTube and Netflix. Fox expects <strong>$400 million in annual cost synergies</strong> and for the deal to be accretive to free cash flow by 2029. The transaction is expected to close in <strong>H1 2027</strong>. <strong>Fox shares fell 18%</strong> on announcement day. <strong>Roku founder Anthony Wood</strong> will join Fox\'s board.',
@@ -437,6 +619,7 @@ const MONTHLY_GROUPS = [
           {
             order: 8,
             tag: 'Entertainment · Labor',
+            section: 'entertainment',
             headline: 'DGA Reaches Tentative Four-Year Deal With Studios and Streamers',
             emailSummary: 'The <strong>Directors Guild of America</strong> reached a tentative four-year collective bargaining agreement with the <strong>Alliance of Motion Picture and Television Producers</strong> on June 9, 2026 — roughly three weeks before the previous contract\'s June 30 expiration. The deal was negotiated under new DGA President <strong>Christopher Nolan</strong> and aligns with the four-year terms secured earlier in 2026 by both the <strong>Writers Guild of America</strong> and <strong>SAG-AFTRA</strong>. Top priorities included employment protections, health plan sustainability, and AI guardrails. Full financial terms will not be released until the <strong>DGA National Board</strong> completes its review; approximately <strong>20,000 members</strong> will then vote on ratification.',
             whyItMatters: 'Three major Hollywood guilds — WGA, SAG-AFTRA, and now DGA — have all secured four-year terms in 2026. Aligned expiration dates give studios and streamers multi-year labor peace, removing a major production disruption risk at the moment the industry rebuilds post-strike output capacity.',
@@ -448,6 +631,7 @@ const MONTHLY_GROUPS = [
           {
             order: 9,
             tag: 'IP · Tennis · Digital',
+            section: 'sports',
             headline: 'ATP Expands TikTok Partnership to Cover All Nine Masters 1000 Events',
             emailSummary: 'The <strong>ATP Tour</strong> and <strong>TikTok</strong> expanded their global content partnership to cover all <strong>nine ATP Masters 1000 events</strong> and the <strong>Nitto ATP Finals</strong>, establishing a year-round platform presence. The <strong>"On Tour With" creator program</strong> — launched at the 2025 ATP Finals — extends to all Masters 1000 and select <strong>ATP 500</strong> events, granting behind-the-scenes access including media days and practice sessions. Since the partnership began, top-100 ATP players on TikTok have <strong>nearly doubled</strong> and posts tagged <strong>#tennis grew over 25%</strong> during 2025. Players including <strong>Carlos Alcaraz</strong>, <strong>Ethan Quinn</strong>, and <strong>Zizou Bergs</strong> received platform education through the program.',
             whyItMatters: 'Expanding to all nine Masters 1000 events converts a one-off content experiment into a systematic year-round distribution strategy — positioning TikTok as the primary discovery channel for tennis\'s next generation of fans at the sport\'s highest commercial tier.',
@@ -459,6 +643,7 @@ const MONTHLY_GROUPS = [
           {
             order: 10,
             tag: 'Entertainment · IP · Mexico',
+            section: 'entertainment',
             headline: 'Soy Frankelda Reaches Netflix as Mexico\'s First Stop-Motion Feature',
             emailSummary: '<strong>Soy Frankelda</strong> (I Am Frankelda), <strong>Mexico\'s first stop-motion feature film</strong>, launched globally on <strong>Netflix</strong> on <strong>June 12, 2026</strong>. Directed by brothers <strong>Arturo</strong> and <strong>Roy Ambriz</strong> at their <strong>Cinema Fantasma</strong> studio in Mexico City, the film follows a 19th-century writer who confronts the fictional monsters she created. Filmmaker <strong>Guillermo del Toro</strong> mentored the Ambriz brothers and connected them directly to Netflix. Originally developed as a 30-minute Warner special, the project expanded into a feature independently co-financed — including a mortgage on the family home. Before its Netflix launch, it was <strong>Mexico\'s third-highest-grossing film of 2025</strong> and earned a nomination for <strong>Best Independent Feature at the Annie Awards</strong>.',
             whyItMatters: 'A Mexican stop-motion film that self-financed through a family mortgage, earned $50M+ pesos in theaters, and reached Netflix via Guillermo del Toro\'s direct introduction is a complete IP origin story — from regional cultural product to global streaming through a single relationship unlock.',
@@ -500,6 +685,7 @@ const MONTHLY_GROUPS = [
           {
             order: 1,
             tag: 'Ownership · Football',
+            section: 'sports',
             accentText: '€2B',
             headline: 'Napoli Owner Rejects €2 Billion American Consortium Bid',
             emailSummary: '<strong>Matt Rizzetta</strong> of <strong>Underdog Global Partners</strong> led a consortium offering <strong>€2 billion</strong> for <strong>Napoli</strong> — a significant premium above the club\'s <strong>€1.1 billion</strong> May 2025 valuation. Owner <strong>Aurelio De Laurentiis</strong> (77), who rescued the club from bankruptcy in 2004, rejected the bid outright. No formal due diligence was reached. The proposed project aimed to create a multi-sport hub integrating football and basketball infrastructure.',
@@ -512,6 +698,7 @@ const MONTHLY_GROUPS = [
           {
             order: 2,
             tag: 'Ownership · M&A',
+            section: 'sports',
             accentText: '€444M',
             headline: 'Sergio Ramos\'s €444M Sevilla Takeover Collapses Before Deadline',
             emailSummary: '<strong>Sergio Ramos</strong> led a consortium — including Mexican investors and financing from <strong>Banco Santander</strong> — to acquire <strong>85% of Sevilla</strong> for <strong>€444 million</strong>. In late-stage negotiations, the group restructured its offer by splitting the capital increase into two installments. <strong>Sevilla\'s shareholders terminated talks</strong>. <strong>La Liga</strong>\'s regulatory intervention contributed to the collapse. The club faces a <strong>June 30 deadline</strong> to complete a €120M capital increase or face acute financial distress.',
@@ -524,6 +711,7 @@ const MONTHLY_GROUPS = [
           {
             order: 3,
             tag: 'Investment · Basketball',
+            section: 'sports',
             headline: 'Luka Dončić Invests in Italian Club Relocating to Rome for NBA Europe',
             emailSummary: '<strong>Luka Dončić</strong> joined an investor group led by former <strong>Dallas Mavericks</strong> president <strong>Donnie Nelson</strong> to acquire <strong>Vanoli Cremona</strong>, relocating to <strong>Rome</strong> for the 2026–27 season. The team will position itself for a spot in <strong>NBA Europe</strong>, a 16-team league under development with FIBA that could debut as early as fall 2027. Stake size was not disclosed. Dončić: "I have dreamed about owning a team in Europe for a long time."',
             whyItMatters: 'NBA Europe is the most significant structural expansion in professional basketball in decades. Dončić is simultaneously a player and franchise owner positioning for inclusion in a league targeting Rome, Milan, London, Paris, and other major European markets.',
@@ -535,6 +723,7 @@ const MONTHLY_GROUPS = [
           {
             order: 4,
             tag: 'Sponsorship · Brand',
+            section: 'sports',
             accentText: '$400M',
             headline: 'Stephen Curry Signs 10-Year, $400M Endorsement Deal with Li-Ning',
             emailSummary: '<strong>Stephen Curry</strong> signed a <strong>10-year, $400 million</strong> endorsement deal with Chinese sportswear brand <strong>Li-Ning</strong>, ending his sneaker free agency after splitting from <strong>Under Armour</strong> in November 2025. The agreement covers basketball, athleisure, a golf line, and gives Curry the right to sign athletes under <strong>Curry Brand</strong>. <strong>Li-Ning</strong> plans Curry Brand retail stores in the US and China. Curry chose Li-Ning over at least one competitor that offered higher financial terms.',
@@ -547,6 +736,7 @@ const MONTHLY_GROUPS = [
           {
             order: 5,
             tag: 'Sponsorship · Women\'s Sports',
+            section: 'sports',
             accentText: '£1M',
             headline: 'Airbnb Signs Multi-Year WSL Partnership with £1M Player Fund',
             emailSummary: '<strong>Airbnb</strong> became the official accommodation and experiences partner of England\'s <strong>Women\'s Super League</strong> in a multi-year deal. The partnership includes a three-year <strong>£1 million Player Accommodation Fund</strong>, providing <strong>$2,000 in Airbnb credit</strong> per eligible player during every WSL and WSL2 transfer window. Airbnb cited a 15% year-on-year increase in bookings around WSL fixtures. <strong>WSL attendance has risen 31%</strong> since the 2022–23 season.',
@@ -559,6 +749,7 @@ const MONTHLY_GROUPS = [
           {
             order: 6,
             tag: 'Gaming · Streaming',
+            section: 'entertainment',
             headline: 'FIFA and Netflix Launch Free World Cup Game on June 11',
             emailSummary: '<strong>FIFA</strong> and <strong>Netflix Games</strong> announced <strong>FIFA World Cup: Launch Edition</strong>, developed by <strong>Delphi Interactive</strong>, launching <strong>June 11</strong> — the day the 2026 World Cup begins — across 19 markets including the US, UK, Germany, France, and Mexico. The game is free with a Netflix subscription. Players use a phone as controller and TV as screen, with all <strong>48 teams</strong>, <strong>16 real stadiums</strong>, and <strong>1,248 players</strong>. The game updates daily throughout the tournament based on real results.',
             whyItMatters: 'FIFA is building a direct gaming relationship with Netflix\'s subscriber base at peak global attention — entirely outside EA\'s ecosystem. Netflix describes this as its biggest gaming push to date, using the World Cup to move gaming from an optional feature to a front-page product.',
@@ -570,6 +761,7 @@ const MONTHLY_GROUPS = [
           {
             order: 7,
             tag: 'IP · Capital Markets',
+            section: 'entertainment',
             accentText: '$64B',
             headline: 'UMG Rejects Ackman\'s $64B Takeover Bid and Buys Back €250M',
             emailSummary: '<strong>Universal Music Group\'s</strong> board unanimously rejected a <strong>$64.4 billion</strong> cash-and-stock takeover bid from <strong>Bill Ackman\'s Pershing Square</strong> as "fundamentally and materially undervaluing" the company. Ackman subsequently exited his <strong>4.7% stake</strong> (~80.6 million shares). UMG repurchased <strong>€250 million ($290.8M)</strong> of those shares at <strong>€17.66 per share</strong> — outside its existing buyback program. UMG\'s stock was down <strong>14% over six months</strong> and 33% over 12 months at the time of the announcement.',
@@ -582,6 +774,7 @@ const MONTHLY_GROUPS = [
           {
             order: 8,
             tag: 'Entertainment · Box Office',
+            section: 'entertainment',
             accentText: '$854M',
             headline: 'Michael Biopic Becomes Lionsgate\'s All-Time Highest-Grossing Film',
             emailSummary: 'The <strong>Michael Jackson biopic</strong> <strong>Michael</strong>, directed by <strong>Antoine Fuqua</strong> and starring <strong>Jaafar Jackson</strong>, opened to <strong>$97.2 million</strong> domestically and <strong>$217.4 million</strong> worldwide — Lionsgate\'s biggest opening ever. Now in its seventh weekend, the film has crossed <strong>$854.6 million globally</strong>. It surpassed <strong>Bohemian Rhapsody</strong> as the highest-grossing musical biopic in US history on its 16th release day. A Japan opening on June 12 is expected to push it past <strong>$900 million</strong> worldwide.',
@@ -594,6 +787,7 @@ const MONTHLY_GROUPS = [
           {
             order: 9,
             tag: 'Entertainment · Box Office',
+            section: 'entertainment',
             accentText: '$212M',
             headline: 'Backrooms Becomes A24\'s First Film to Cross $200 Million',
             emailSummary: '<strong>Backrooms</strong> crossed <strong>$212 million globally</strong> in just <strong>10 days</strong> of release — overtaking <strong>Marty Supreme</strong> ($191M) to become <strong>A24\'s all-time highest-grossing film</strong>. Domestic total stands at <strong>$135 million</strong>; international at <strong>$77 million</strong> across 57 territories. <strong>Latin America</strong> led international performance with <strong>$24.2 million</strong> — A24\'s strongest regional total ever. Production budget: ~<strong>$10 million</strong>, co-financed by A24 and Chernin Entertainment.',
@@ -645,6 +839,7 @@ const MONTHLY_GROUPS = [
           {
             order: 1,
             tag: 'Ownership · Corporate',
+            section: 'sports',
             headline: 'MSG Sports Files with SEC to Split the Knicks and Rangers into Separate Companies',
             emailSummary: '<strong>Madison Square Garden Sports Corp.</strong> filed a confidential initial <strong>Form 10</strong> registration statement with the <strong>SEC</strong> to split the <strong>New York Knicks</strong> and <strong>New York Rangers</strong> into two separate publicly traded companies. The MSG Sports board approved the plan in February. The Knicks company would include the Knicks and their G League affiliate; the Rangers company would include the Rangers and the Hartford Wolf Pack. <strong>Silver Lake</strong> holds a <strong>10% stake</strong> in MSG Sports. CEO <strong>James Dolan</strong> has shown no interest in selling control of the Knicks.',
             whyItMatters: 'A separation gives each franchise independent capital-raising capacity — including the ability to sell minority interests without forcing investors to buy exposure to both sports. The Knicks have been discussed as a target for global capital, including Middle Eastern money.',
@@ -656,6 +851,7 @@ const MONTHLY_GROUPS = [
           {
             order: 2,
             tag: 'M&A · Gaming',
+            section: 'sports',
             accentText: '$17.6B',
             headline: 'Caesars Entertainment Sold to Tilman Fertitta in a $17.6 Billion Deal',
             emailSummary: 'Billionaire hospitality operator <strong>Tilman Fertitta</strong> is acquiring <strong>Caesars Entertainment</strong> for <strong>$31 per share</strong> — a <strong>49% premium</strong> over its pre-rumor price — in a deal totaling approximately <strong>$17.6 billion</strong> including assumed debt. The combined entity spans <strong>60 casino resorts</strong>, more than <strong>200 William Hill sports betting locations</strong>, and over <strong>600 Fertitta Entertainment outlets</strong>. Shareholder approval is required; competing bids are permitted through <strong>July 11</strong>. Caesars traces its roots to 1930s Reno.',
@@ -668,6 +864,7 @@ const MONTHLY_GROUPS = [
           {
             order: 3,
             tag: 'Media Rights · Streaming',
+            section: 'sports',
             accentText: '$500M',
             headline: 'CFL Signs 6-Year Deal with Bell Media, DAZN, and YouTube Worth ~$500 Million',
             emailSummary: 'The <strong>CFL</strong> announced a six-year broadcast agreement with <strong>Bell Media</strong> (TSN/CTV), <strong>DAZN</strong>, and <strong>YouTube</strong> worth approximately <strong>$500 million</strong> — the league\'s largest media deal ever. <strong>TSN</strong> retains 60 of 81 regular-season games plus playoffs and the Grey Cup. <strong>DAZN Canada</strong> exclusively carries Saturday Night Football (~21 games/season) and becomes the global broadcaster outside Canada and the U.S. <strong>YouTube</strong> gets live pre-season games, CFL combine coverage, and an All-Access unscripted series. The previous <strong>TSN deal</strong> averaged <strong>$50 million per year</strong>.',
@@ -680,6 +877,7 @@ const MONTHLY_GROUPS = [
           {
             order: 4,
             tag: 'Media Rights · Women\'s Sports',
+            section: 'sports',
             accentText: '183 matches',
             headline: 'CBS Sports Acquires U.S. Rights to Barclays Women\'s Super League Through 2029–30',
             emailSummary: '<strong>CBS Sports</strong> secured multi-year English-language U.S. broadcasting rights to the <strong>Barclays Women\'s Super League</strong>, England\'s top women\'s division, through the <strong>2029–30 season</strong> beginning September 2026. <strong>Paramount+</strong> will stream all <strong>183 matches per season</strong> — the most ever available under the competition\'s newly expanded format. One match per week airs on <strong>CBS Sports Network</strong>, with select fixtures on the <strong>CBS Sports Golazo Network</strong>. The WSL joins a CBS portfolio that includes the <strong>NWSL</strong> and <strong>UEFA Women\'s Champions League</strong>.',
@@ -692,6 +890,7 @@ const MONTHLY_GROUPS = [
           {
             order: 5,
             tag: 'Tech · Live Sports',
+            section: 'sports',
             accentText: '15 iPhones',
             headline: 'Apple Shoots an Entire MLS Match Using 15 iPhone 17 Pro Max Cameras',
             emailSummary: '<strong>Apple</strong> captured a complete professional soccer match — <strong>LA Galaxy vs. Houston Dynamo</strong> at Dignity Health Sports Park — using <strong>15 iPhone 17 Pro Max</strong> units. Cameras recorded in <strong>Apple Log 2</strong> format at <strong>1080p60</strong> via the <strong>Blackmagic Camera App</strong>, with feeds sent live to an on-site production truck. Some rigs were paired with <strong>Fujinon broadcast lenses valued at ~$265,000</strong>; goal net and elevated pole positions captured angles unavailable to traditional broadcast cameras.',
@@ -704,6 +903,7 @@ const MONTHLY_GROUPS = [
           {
             order: 6,
             tag: 'Live Events · Expansion',
+            section: 'sports',
             headline: 'SailGP Signs Rome as Italy Grand Prix Host in Three-Year Deal',
             emailSummary: '<strong>SailGP</strong> confirmed <strong>Rome</strong> as the host city for the <strong>Italy Sail Grand Prix</strong> under a <strong>three-year initial agreement</strong>, with the inaugural event scheduled for <strong>September 11–12, 2027</strong> at a purpose-built race stadium at <strong>Porto di Roma</strong>. The event marks Italy\'s return to SailGP hosting since the 2023–24 season. It is part of a <strong>13-event 2027 season calendar</strong>. SailGP CEO <strong>Russell Coutts</strong> cited Rome\'s cultural heritage and modern infrastructure as central to the selection.',
             whyItMatters: 'A three-year hosting deal signals SailGP\'s shift toward long-term venue partnerships — the same capital-efficient model used by F1 and premium motorsport to lock in civic investment and sponsorship certainty across multiple seasons.',
@@ -715,6 +915,7 @@ const MONTHLY_GROUPS = [
           {
             order: 7,
             tag: 'IP · AI · Media',
+            section: 'entertainment',
             headline: 'CNN Sues Perplexity in Federal Court for Unlawful Distribution of Copyrighted Content',
             emailSummary: '<strong>CNN</strong>, owned by <strong>Warner Bros. Discovery</strong>, filed suit against <strong>Perplexity</strong> in New York federal court, alleging the AI search engine unlawfully copied <strong>thousands of CNN stories, videos, and images</strong> and distributes "identical or substantially similar" competing content. CNN seeks unspecified monetary damages and a court order blocking further violations. Perplexity — described as "valued at tens of billions of dollars" — also faces suits from the <strong>New York Times</strong>, <strong>Reddit</strong>, and <strong>Dow Jones</strong>. <strong>Anthropic</strong> settled a similar case last year for <strong>$1.5 billion</strong>.',
             whyItMatters: 'Each new lawsuit raises the legal cost basis of the AI search model — and Anthropic\'s $1.5B settlement has established the first concrete price signal for what copyright infringement in the AI industry costs.',
@@ -726,6 +927,7 @@ const MONTHLY_GROUPS = [
           {
             order: 8,
             tag: 'IP · Brand Partnership',
+            section: 'entertainment',
             accentText: '150 pieces',
             headline: 'Bad Bunny and Zara Launch \'Benito Antonio\' — a 150-Piece Global Capsule Collection',
             emailSummary: '<strong>Bad Bunny</strong> and <strong>Zara</strong> launched <strong>"Benito Antonio"</strong> — named after the artist\'s real name, <strong>Benito Antonio Martínez Ocasio</strong> — a <strong>150-piece capsule collection</strong> inspired by his Puerto Rican identity and personal aesthetic. Creative direction by <strong>Janthony Oliveras</strong>; campaign visuals by Paris-based studio <strong>M/M</strong>. Available globally in select Zara stores and online. Bad Bunny\'s prior commercial collaborations include <strong>Adidas, Crocs, Gucci, Jacquemus, and Calvin Klein</strong>.',
@@ -738,6 +940,7 @@ const MONTHLY_GROUPS = [
           {
             order: 9,
             tag: 'Entertainment · Box Office',
+            section: 'entertainment',
             accentText: '$81M',
             headline: '\'Backrooms\' Opens at $81M, Setting A24\'s All-Time Record on a $10 Million Budget',
             emailSummary: '<strong>\'Backrooms\'</strong>, directed by <strong>Kane Parsons</strong> (age 20), opened with <strong>$81 million</strong> from <strong>3,442 theaters</strong> — setting <strong>A24\'s all-time opening weekend record</strong> — against a production budget of approximately <strong>$10 million</strong>. The film earned <strong>$118 million globally</strong> in its opening frame. <strong>85% of the audience was under 35</strong>; over <strong>50% were 25 or younger</strong>. Parsons became the <strong>youngest filmmaker ever to have a #1 box office film</strong>. Disney\'s <strong>\'The Mandalorian and Grogu\'</strong> dropped <strong>70%</strong> in its second weekend.',

@@ -369,6 +369,7 @@
   gap: 0 2.5rem;
   padding: 3rem 0;
   border-bottom: 1px solid rgba(204,237,96,0.1);
+  scroll-margin-top: calc(var(--bar-h) + 1.5rem);
 }
 .ecosystem-item:last-child { border-bottom: none; padding-bottom: 0; }
 .ecosystem-item-num {
@@ -544,6 +545,18 @@
         + '</button>';
     }).join('');
 
+    var ecosystemIndex = '';
+    if (issue.ecosystemNews && issue.ecosystemNews.length) {
+      ecosystemIndex = '<div class="story-index-section">Fillip Ecosystem</div>'
+        + issue.ecosystemNews.map(function (item, idx) {
+          return '<button class="story-index-btn" onclick="scrollToSection(\'ecosystem-' + (idx + 1) + '\')">'
+            + '<span class="idx-num">' + String(idx + 1).padStart(2, '0') + '</span>'
+            + '<span><div class="idx-text">' + esc(item.headline) + '</div>'
+            + '<div class="idx-tag">Fillip Ecosystem</div></span>'
+            + '</button>';
+        }).join('');
+    }
+
     var coreHtml = '';
     if (issue.coreSignal) {
       coreHtml = '<div class="core-signal">'
@@ -561,7 +574,7 @@
       + '<span class="stat-pill">' + sc + ' Signal' + (sc !== 1 ? 's' : '') + '</span>'
       + '<span class="edition-chip">' + esc(issue.editionTag) + '</span>'
       + '</div>'
-      + '<div class="story-index">' + index + '</div>'
+      + '<div class="story-index">' + index + ecosystemIndex + '</div>'
       + '</section>';
   }
 
@@ -659,7 +672,7 @@
       var sourceHtml = (item.sourceUrl && item.sourceName)
         ? '<a class="entry-source" href="' + esc(item.sourceUrl) + '" target="_blank" rel="noopener">' + esc(item.sourceName) + ' ↗</a>'
         : '';
-      return '<div class="ecosystem-item">'
+      return '<div class="ecosystem-item" id="ecosystem-' + (idx + 1) + '">'
         + '<div class="ecosystem-item-num">' + numStr + '</div>'
         + '<div>'
         + '<div class="ecosystem-item-head">' + esc(item.headline) + '</div>'

@@ -206,16 +206,31 @@
   color: var(--off-white);
   margin-bottom: 3.5rem;
 }
-.month-group { margin-bottom: 3rem; }
+.month-group { margin-bottom: 1rem; }
 .month-group:last-child { margin-bottom: 0; }
 .month-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 1rem 0;
+  margin-bottom: 0.25rem;
+  cursor: pointer;
+  font-family: var(--font);
+  text-align: left;
+  transition: border-color 0.2s;
+}
+.month-group-header:hover { border-bottom-color: rgba(204,237,96,0.35); }
+.month-group-header-text {
   display: flex;
   align-items: baseline;
   gap: 1.5rem;
   flex-wrap: wrap;
-  padding-bottom: 1rem;
-  margin-bottom: 0.25rem;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 .month-group-name {
   font-size: clamp(1.2rem, 2.5vw, 1.8rem);
@@ -230,6 +245,21 @@
   text-transform: uppercase;
   color: var(--sage);
 }
+.month-group-arrow {
+  font-size: 0.85rem;
+  color: var(--sage);
+  flex-shrink: 0;
+  transition: transform 0.25s ease, color 0.2s;
+}
+.month-group.expanded .month-group-header:hover { border-bottom-color: rgba(204,237,96,0.08); }
+.month-group.expanded .month-group-arrow { transform: rotate(180deg); color: var(--lime); }
+.month-group-issues-outer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+.month-group.expanded .month-group-issues-outer { grid-template-rows: 1fr; }
+.month-group-issues-inner { overflow: hidden; min-height: 0; }
 .issue-row {
   display: flex; align-items: center; gap: 1.5rem;
   padding: 1rem 1.2rem; text-decoration: none; color: inherit;
@@ -379,20 +409,28 @@ document.getElementById('footer-subscribe').href = CONFIG.beehiivSubscribeUrl;
       return new Date(b.publishedDate) - new Date(a.publishedDate);
     });
 
-    sortedMonths.forEach(function (month) {
+    var hasExpanded = sortedMonths.some(function (m) { return m.isCurrent; });
+
+    sortedMonths.forEach(function (month, monthIdx) {
       var monthIssues = (month.issues || []).slice().sort(function (a, b) {
         return new Date(b.publishedDate) - new Date(a.publishedDate);
       });
       if (!monthIssues.length) return;
       var totalSig = monthIssues.reduce(function (s, i) { return s + (i.stories ? i.stories.length : 0); }, 0);
       var ic = monthIssues.length;
+      var groupId = 'month-group-' + monthIdx;
+      var isExpanded = month.isCurrent || (!hasExpanded && monthIdx === 0);
 
-      html += '<div class="month-group">';
-      html += '<div class="month-group-header">';
+      html += '<div class="month-group' + (isExpanded ? ' expanded' : '') + '" id="' + groupId + '">';
+      html += '<button type="button" class="month-group-header" onclick="toggleMonthGroup(\'' + groupId + '\')" aria-expanded="' + (isExpanded ? 'true' : 'false') + '">';
+      html += '<span class="month-group-header-text">';
       html += '<span class="month-group-name">' + esc(month.monthLabel) + '</span>';
       html += '<span class="month-group-stats">' + ic + ' Issue' + (ic !== 1 ? 's' : '') + ' &nbsp;·&nbsp; ' + totalSig + ' Signal' + (totalSig !== 1 ? 's' : '') + '</span>';
-      html += '</div>';
+      html += '</span>';
+      html += '<span class="month-group-arrow" aria-hidden="true">▾</span>';
+      html += '</button>';
 
+      html += '<div class="month-group-issues-outer"><div class="month-group-issues-inner">';
       monthIssues.forEach(function (issue) {
         var sc = (issue.stories || []).length;
         html += '<a class="issue-row" href="' + issueUrl(issue.slug) + '">';
@@ -404,6 +442,7 @@ document.getElementById('footer-subscribe').href = CONFIG.beehiivSubscribeUrl;
         html += '<span class="issue-row-arrow">→</span>';
         html += '</a>';
       });
+      html += '</div></div>';
 
       html += '</div>';
     });
@@ -422,6 +461,14 @@ document.getElementById('footer-subscribe').href = CONFIG.beehiivSubscribeUrl;
 
     setupHeroVideo();
   }
+
+  window.toggleMonthGroup = function (id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    var expanded = el.classList.toggle('expanded');
+    var btn = el.querySelector('.month-group-header');
+    if (btn) btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+  };
 
   var HERO_VIDEOS = [
     'https://video.wixstatic.com/video/31a0b1_5c2c50b997184abeb92a3067a0ee65c1/1080p/mp4/file.mp4'

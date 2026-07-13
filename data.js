@@ -22,10 +22,163 @@ const MONTHLY_GROUPS = [
     isCurrent: true,
     monthLabel: 'July 2026',
     editionTag: 'Sports · Entertainment · IP · Capital',
-    publishedDate: '2026-07-05',
-    dateRange: 'June 29 – July 5, 2026',
-    introLine: 'Week 1 of July: Sky acquires ITV for $2.1B, Atlético Madrid signs a 10-year Live Nation deal to stage concerts at the Metropolitano, an AI \'actor\' named Tilly Norwood gets her first movie, PJL sells a $50M franchise before its 2027 launch, the Premier Lacrosse League raises $100M ahead of the Olympics, Liga F\'s assembly ratifies Pau Gasol\'s €55M investment, CazéTV locks up Euro 2028 rights in Brazil, and Isaac del Toro becomes the first Mexican Tour de France stage winner in 37 years.',
+    publishedDate: '2026-07-13',
+    dateRange: 'June 29 – July 13, 2026',
+    introLine: 'Weeks 1–2 of July: Sky acquires ITV for $2.1B, Atlético Madrid signs a 10-year Live Nation deal to stage concerts at the Metropolitano, an AI \'actor\' named Tilly Norwood gets her first movie, PJL sells a $50M franchise before its 2027 launch, the Premier Lacrosse League raises $100M ahead of the Olympics, Liga F\'s assembly ratifies Pau Gasol\'s €55M investment, CazéTV locks up Euro 2028 rights in Brazil, and Isaac del Toro becomes the first Mexican Tour de France stage winner in 37 years; then Mexico sets a new U.S. soccer TV ratings record against England, FIFA\'s Infantino floats a 64-team World Cup for 2030, Netflix, Disney, and YouTube prepare to bid on the next World Cup media-rights cycle, a Khosla-led group buys the Seahawks for a record $9.6B, London City Lionesses sign Ballon d\'Or winner Alexia Putellas, TV Azteca enters bankruptcy reorganization, and Meta pulls an AI image feature after talent-agency backlash.',
     issues: [
+
+      // WEEK 2
+      {
+        slug: 'week-2-july-2026',
+        issueNumber: '2',
+        weekLabel: 'Week 2',
+        dateRange: 'July 6–13, 2026',
+        publishedDate: '2026-07-13',
+        issueTitle: 'Week 2 — July 2026',
+        editionTag: 'Sports · Entertainment · IP · Capital',
+        introLine: 'Week two of July: Mexico set a new U.S. soccer ratings record, FIFA\'s Infantino floated a 64-team World Cup, Netflix and Disney lined up to bid on the next rights cycle, a Khosla-led group bought the Seahawks for a record $9.6 billion, and Meta yanked an AI image feature within days of talent-agency pushback.',
+        shareText: 'Mexico sets a US soccer ratings record, Infantino floats a 64-team World Cup, Khosla buys the Seahawks for $9.6B, Putellas joins London City, TV Azteca files for bankruptcy, and Meta pulls its AI image feature — Week 2 July · Fillip.',
+        coreSignal: 'This week showed capital chasing the World Cup\'s gravitational pull from every direction. Streamers are now bidding directly for rights that used to belong to broadcasters, and a record U.S. audience just handed FIFA the leverage to price that bidding war even higher. Meanwhile the NFL set a new ownership record entirely independent of the World Cup, proving franchise valuations keep climbing on their own timeline, and Meta\'s fast reversal on an AI likeness feature showed that talent representation — not regulation — is currently the fastest check on AI\'s reach into entertainment IP.',
+        latamAngle: 'Mexico was this week\'s biggest sports storyline. Its Round-of-16 win over England at Estadio Azteca drew 44.8 million U.S. viewers — 23.2 million on Telemundo and 21.7 million on Fox — the most-watched soccer telecast in American history, a number FIFA will use to justify a bigger 2030 media-rights package. That same World Cup cycle carries into 2030, when Gianni Infantino\'s suggestion of a 64-team format would let that tournament\'s South American co-hosts — Uruguay, Argentina, and Paraguay — each stage a full four-team group instead of a single ceremonial match, rather than serve as a symbolic nod to the continent hosting the centenary opener.',
+        ecosystemNews: [
+          {
+            headline: 'Dominik Mysterio and El Grande Americano Unite Before Their Own Match',
+            body: 'AAA teased a new chapter in the Dominik Mysterio–El Grande Americano rivalry: despite their pending singles match at Triplemanía, the former Los Gringos Locos 2.0 partners will stand together at Verano de Escándalo (late July) against the newly reformed Los Perros del Mal, led by Daga. Dominik has offered to face whichever member of the stable Daga selects, framing it as "his business is my business" until their own match happens.',
+            sourceName: 'Récord',
+            sourceUrl: 'https://www.record.com.mx/historia/los-mejores-enemigos-dominik-mysterio-y-el-grande-americano-enfrentaran-a-los-perros-del-mal-en-verano-de-escandalo-2026071204152154251'
+          }
+        ],
+        stories: [
+          {
+            order: 1,
+            tag: 'Ownership · Valuation',
+            section: 'sports',
+            accentText: '$9.6B',
+            headline: 'Vinod Khosla-Led Group Buys Seahawks in $9.6B Sale',
+            emailSummary: 'A group led by <strong>Vinod Khosla</strong>, a limited partner in the <strong>San Francisco 49ers</strong>, agreed to buy the <strong>Seattle Seahawks</strong> for <strong>$9.612 billion</strong> — a record price for an NFL franchise. Khosla must relinquish his 49ers stake as part of the deal, and his family will become the Seahawks\' controlling owner pending a league vote in late August. The team has been owned by the estate of Microsoft co-founder <strong>Paul Allen</strong> since his 2018 death.',
+            whyItMatters: 'The sale sets a new NFL valuation ceiling and confirms tech wealth is now bidding directly against legacy ownership groups for control of major franchises.',
+            signalText: 'A Khosla-led group agreed to buy the Seattle Seahawks for $9.612 billion.',
+            sourceName: 'ESPN',
+            sourceUrl: 'https://www.espn.com/nfl/story/_/id/49337716/khosla-led-group-agrees-buy-seahawks-sources-say-96-billion',
+            publishedDate: '2026-07-11'
+          },
+          {
+            order: 2,
+            tag: 'Media Rights · Streaming',
+            section: 'sports',
+            accentText: '$2B',
+            headline: 'Netflix, Disney, YouTube Eye 2030 World Cup US Rights',
+            emailSummary: '<strong>Netflix</strong>, <strong>Disney</strong>, and Alphabet\'s <strong>YouTube</strong> are preparing to bid against Fox for U.S. broadcast rights to the <strong>2030 and 2034 World Cups</strong>, with executives budgeting <strong>$1.5–2 billion</strong> per tournament. <strong>Amazon</strong> and <strong>Apple</strong> could also enter the bidding. FIFA is expected to sell English- and Spanish-language U.S. rights as a single bundled package for the first time, a shift from prior cycles including 2026, where Fox paid <strong>$485 million</strong> and Telemundo paid <strong>$600 million</strong> separately.',
+            whyItMatters: 'Bundling English and Spanish rights into one package is designed to inflate the final price, and pulling in streaming-native bidders like Netflix and YouTube signals FIFA no longer sees linear broadcasters as its primary buyers.',
+            signalText: 'Netflix, Disney, and YouTube are preparing to bid for U.S. World Cup rights.',
+            sourceName: 'CNBC',
+            sourceUrl: 'https://www.cnbc.com/2026/07/07/fifa-world-cup-media-rights-netflix-disney-youtube.html',
+            publishedDate: '2026-07-07'
+          },
+          {
+            order: 3,
+            tag: 'Media Rights · Ratings',
+            section: 'sports',
+            accentText: '44.8M',
+            headline: 'Mexico vs. England Sets US Soccer Ratings Record',
+            emailSummary: 'The Round-of-16 match between <strong>Mexico</strong> and <strong>England</strong> at Estadio Azteca drew a combined <strong>44.8 million</strong> U.S. viewers — <strong>23.2 million</strong> on Telemundo and <strong>21.7 million</strong> on Fox — surpassing the <strong>U.S.-Belgium</strong> game\'s roughly <strong>42 million</strong> to become the most-watched soccer telecast in U.S. history. Fox\'s audience peaked at <strong>25.7 million</strong> in the match\'s final minutes, with England holding a lead down to 10 men.',
+            whyItMatters: 'Back-to-back U.S. ratings records inside one World Cup are the clearest data point FIFA and its media suitors have for justifying a higher price on the next rights cycle.',
+            signalText: 'Mexico vs. England drew 44.8 million U.S. viewers, a new soccer TV record.',
+            sourceName: 'The Athletic',
+            sourceUrl: 'https://www.nytimes.com/athletic/7432616/2026/07/08/england-mexico-world-cup-tv-ratings/',
+            publishedDate: '2026-07-08'
+          },
+          {
+            order: 4,
+            tag: 'League Expansion',
+            section: 'sports',
+            accentText: '64 Teams',
+            headline: 'Infantino Hints at 64-Team World Cup by 2030',
+            emailSummary: 'FIFA president <strong>Gianni Infantino</strong> said expanding the World Cup from <strong>48 to 64 teams</strong> "will definitely be examined and discussed" by relevant committees after this tournament. He called the current 48-team format a "huge success," citing <strong>9 of 10</strong> African teams reaching the knockout stage. The 2030 centenary edition already opens with one match each in <strong>Uruguay, Argentina, and Paraguay</strong>, alongside primary hosts Morocco, Portugal, and Spain.',
+            whyItMatters: 'A 64-team format would let each 2030 South American co-host stage a full four-team group instead of a single ceremonial match, meaningfully raising their commercial and hosting stakes.',
+            signalText: 'Infantino said FIFA will examine expanding the World Cup to 64 teams.',
+            sourceName: 'The Guardian',
+            sourceUrl: 'https://www.theguardian.com/football/2026/jul/12/gianni-infantino-expansion-64-team-world-cup-2030-fifa',
+            publishedDate: '2026-07-12'
+          },
+          {
+            order: 5,
+            tag: 'Investment · Women\'s Sports',
+            section: 'sports',
+            headline: 'London City Lionesses Sign Ballon d\'Or Winner Putellas',
+            emailSummary: '<strong>London City Lionesses</strong>, owned by U.S. businesswoman <strong>Michele Kang</strong>, signed two-time Ballon d\'Or winner <strong>Alexia Putellas</strong> on a free transfer after she left <strong>Barcelona</strong> following 14 years and 38 trophies. The three-year deal, unveiled at a produced event in New York, is believed to make Putellas London City\'s highest-paid player. Kang also owns the <strong>Washington Spirit</strong> and <strong>OL Lyonnes</strong>.',
+            whyItMatters: 'Kang landing one of women\'s football\'s biggest names for a club that was in England\'s second tier a year ago shows how far a single owner\'s capital can move a league\'s competitive balance.',
+            signalText: 'Michele Kang\'s London City Lionesses signed Ballon d\'Or winner Alexia Putellas.',
+            sourceName: 'BBC Sport',
+            sourceUrl: 'https://www.bbc.com/sport/football/articles/cvg7wenkklyo',
+            publishedDate: '2026-07-08'
+          },
+          {
+            order: 6,
+            tag: 'Streaming · Sports Doc',
+            section: 'entertainment',
+            accentText: '20 Years',
+            headline: 'Netflix Sets August Launch Date for \'Mourinho\' Documentary',
+            emailSummary: '<strong>Netflix</strong> released a teaser for <strong>\'Mourinho\'</strong>, a documentary on manager <strong>José Mourinho</strong>, confirming a global launch date of <strong>August 11</strong> — the same day Mourinho begins his second spell as <strong>Real Madrid</strong> coach. Filmed over two years, the series covers his run from Porto\'s Champions League win through two Premier Leagues at Chelsea, a Champions League at Inter Milan, and a title at Real Madrid, with interviews including <strong>Alex Ferguson, Didier Drogba,</strong> and <strong>Frank Lampard</strong>.',
+            whyItMatters: 'Netflix continuing its Untold sports-doc strand with a manager rather than an athlete shows the streamer sees standalone commercial value in football\'s biggest personalities beyond player-driven stories.',
+            signalText: 'Netflix set an August 11 global launch date for its Mourinho documentary.',
+            sourceName: 'Deadline',
+            sourceUrl: 'https://deadline.com/2026/07/mourinho-teaser-release-date-netflix-1236980599/',
+            publishedDate: '2026-07-13'
+          },
+          {
+            order: 7,
+            tag: 'Live Events · Production',
+            section: 'entertainment',
+            accentText: '$100M',
+            headline: 'Bieber Joins Madonna, Shakira, BTS for World Cup Halftime',
+            emailSummary: '<strong>Justin Bieber</strong> joined <strong>Madonna, Shakira,</strong> and <strong>BTS</strong> as co-headliners of the first-ever <strong>FIFA World Cup Final Halftime Show</strong>, set for July 19 at New York New Jersey Stadium, with <strong>Burna Boy</strong> and conductor <strong>Gustavo Dudamel</strong> also performing. The 11-minute show, produced by <strong>Global Citizen, Live Nation,</strong> and <strong>Done + Dusted</strong> and curated by Coldplay\'s <strong>Chris Martin</strong>, supports the FIFA Global Citizen Education Fund, which has raised over <strong>$50 million</strong> toward a <strong>$100 million</strong> goal.',
+            whyItMatters: 'Turning the World Cup final into a Super Bowl-style production with a dedicated fundraising vehicle shows FIFA building a recurring commercial and philanthropic platform around the halftime slot itself, not just the match.',
+            signalText: 'FIFA\'s Final Halftime Show will feature Bieber, Madonna, Shakira, and BTS as co-headliners.',
+            sourceName: 'FIFA.com',
+            sourceUrl: 'https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/justin-bieber-to-co-headline-final-halftime-show-with-madonna-shakira-bts',
+            publishedDate: '2026-07-08'
+          },
+          {
+            order: 8,
+            tag: 'Box Office',
+            section: 'entertainment',
+            accentText: '$43M',
+            headline: '\'Moana\' Live-Action Remake Bombs With $43M US Opening',
+            emailSummary: 'Disney\'s live-action <strong>\'Moana\'</strong> opened to just <strong>$43 million</strong> domestically against a <strong>$250 million</strong> production budget, plus a weak <strong>$52 million</strong> international debut. It ranks among the weakest opening weekends for a Disney live-action remake, alongside 2025\'s <strong>\'Snow White\'</strong> ($42M), and analysts estimate the studio could lose roughly <strong>$100 million</strong> on the film\'s theatrical run.',
+            whyItMatters: 'A tentpole this expensive underperforming just 20 months after the billion-dollar animated sequel shows Disney\'s live-action remake formula breaking down when there isn\'t enough time for nostalgia to rebuild.',
+            signalText: 'Disney\'s live-action \'Moana\' opened to $43 million against a $250 million budget.',
+            sourceName: 'Variety',
+            sourceUrl: 'https://variety.com/2026/film/box-office/moana-box-office-opening-weekend-weakest-disney-live-action-remake-1236808979/',
+            publishedDate: '2026-07-12'
+          },
+          {
+            order: 9,
+            tag: 'Media · Restructuring',
+            section: 'entertainment',
+            accentText: '$580M',
+            headline: 'Mexican Judge Declares TV Azteca in Concurso Mercantil',
+            emailSummary: 'A Mexican federal judge, <strong>Tessy del Rocío Covarrubias</strong>, formally declared <strong>TV Azteca</strong> — Mexico\'s second-largest broadcaster — in <strong>concurso mercantil</strong>, opening a <strong>6-month conciliation period</strong> to negotiate with creditors. The broadcaster, owned by <strong>Ricardo Salinas Pliego</strong>, owes more than <strong>23 billion pesos</strong> to creditors domestically and faces a separate U.S. creditor claim exceeding <strong>$580 million</strong>. The company filed voluntarily in March 2026 and says it will continue normal operations under a court-appointed conciliator.',
+            whyItMatters: 'Mexico\'s second-biggest broadcaster entering a formal pre-bankruptcy process — while still holding major sports and entertainment content rights — puts real financial risk on one of the country\'s largest media distribution channels.',
+            signalText: 'A Mexican judge placed TV Azteca into a 6-month bankruptcy conciliation process.',
+            sourceName: 'El País',
+            sourceUrl: 'https://elpais.com/mexico/economia/2026-07-07/una-jueza-federal-declara-a-tv-azteca-en-concurso-mercantil.html',
+            publishedDate: '2026-07-07'
+          },
+          {
+            order: 10,
+            tag: 'AI · IP Rights',
+            section: 'entertainment',
+            headline: 'Meta Pulls AI Feature After Talent Agency Backlash',
+            emailSummary: '<strong>Meta</strong> discontinued its new <strong>Muse Image</strong> AI feature, which let users generate images by @-mentioning any public <strong>Instagram</strong> account, days after backlash over its opt-out (rather than opt-in) consent policy. Talent agency <strong>CAA</strong>, representing clients including <strong>Tom Hanks</strong> and <strong>Meryl Streep</strong>, pressured Meta directly, and <strong>SAG-AFTRA</strong> urged members to opt out before Meta reversed course.',
+            whyItMatters: 'Talent representation successfully forcing a platform to reverse an AI likeness feature in days — not months — signals real leverage forming around consent standards for how AI models can use public figures\' images.',
+            signalText: 'Meta discontinued its Muse Image AI feature after backlash from CAA and SAG-AFTRA.',
+            sourceName: 'Variety',
+            sourceUrl: 'https://variety.com/2026/biz/news/meta-suspends-ai-image-instagram-feature-backlash-1236806989/',
+            publishedDate: '2026-07-10'
+          }
+        ]
+      },
 
       // WEEK 1
       {

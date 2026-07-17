@@ -22,10 +22,163 @@ const MONTHLY_GROUPS = [
     isCurrent: true,
     monthLabel: 'July 2026',
     editionTag: 'Sports · Entertainment · IP · Capital',
-    publishedDate: '2026-07-13',
-    dateRange: 'June 29 – July 13, 2026',
-    introLine: 'Weeks 1–2 of July: Sky acquires ITV for $2.1B, Atlético Madrid signs a 10-year Live Nation deal to stage concerts at the Metropolitano, an AI \'actor\' named Tilly Norwood gets her first movie, PJL sells a $50M franchise before its 2027 launch, the Premier Lacrosse League raises $100M ahead of the Olympics, Liga F\'s assembly ratifies Pau Gasol\'s €55M investment, CazéTV locks up Euro 2028 rights in Brazil, and Isaac del Toro becomes the first Mexican Tour de France stage winner in 37 years; then Mexico sets a new U.S. soccer TV ratings record against England, FIFA\'s Infantino floats a 64-team World Cup for 2030, Netflix, Disney, and YouTube prepare to bid on the next World Cup media-rights cycle, a Khosla-led group buys the Seahawks for a record $9.6B, London City Lionesses sign Ballon d\'Or winner Alexia Putellas, TV Azteca enters bankruptcy reorganization, and Meta pulls an AI image feature after talent-agency backlash.',
+    publishedDate: '2026-07-17',
+    dateRange: 'June 29 – July 17, 2026',
+    introLine: 'Weeks 1–3 of July: Sky acquires ITV for $2.1B, Atlético Madrid signs a 10-year Live Nation deal to stage concerts at the Metropolitano, an AI \'actor\' named Tilly Norwood gets her first movie, PJL sells a $50M franchise before its 2027 launch, the Premier Lacrosse League raises $100M ahead of the Olympics, Liga F\'s assembly ratifies Pau Gasol\'s €55M investment, CazéTV locks up Euro 2028 rights in Brazil, and Isaac del Toro becomes the first Mexican Tour de France stage winner in 37 years; then Mexico sets a new U.S. soccer TV ratings record against England, FIFA\'s Infantino floats a 64-team World Cup for 2030, Netflix, Disney, and YouTube prepare to bid on the next World Cup media-rights cycle, a Khosla-led group buys the Seahawks for a record $9.6B, London City Lionesses sign Ballon d\'Or winner Alexia Putellas, TV Azteca enters bankruptcy reorganization, and Meta pulls an AI image feature after talent-agency backlash; then Pophouse buys half of Iron Maiden\'s catalog and NIL rights, the Writers Guild sues to block Paramount\'s $111B Warner acquisition, Bundesliga takes a pay cut to move onto free U.S. streaming via Fandango, Christopher Nolan\'s \'The Odyssey\' posts the best box office previews of the year, and Mexico\'s FMF gets fined over Fan ID data violations while also scrapping promotion and relegation and leaving Liga MX Femenil without a calendar.',
     issues: [
+
+      // WEEK 3
+      {
+        slug: 'week-3-july-2026',
+        issueNumber: '3',
+        weekLabel: 'Week 3',
+        dateRange: 'July 13–17, 2026',
+        publishedDate: '2026-07-17',
+        issueTitle: 'Week 3 — July 2026',
+        editionTag: 'Sports · Entertainment · IP · Capital',
+        introLine: 'Week three of July: Pophouse bought half of Iron Maiden\'s catalog and NIL rights, the Writers Guild sued to block Paramount\'s $111B Warner acquisition, Bundesliga took a pay cut to move onto free U.S. streaming via Fandango, and Mexico\'s FMF got fined over Fan ID data while also scrapping promotion and relegation and leaving Liga MX Femenil without a calendar.',
+        shareText: 'Pophouse buys half of Iron Maiden\'s IP, the WGA sues to block Paramount\'s $111B Warner deal, Bundesliga takes a pay cut for free U.S. streaming, and Mexico\'s FMF gets fined over Fan ID while scrapping promotion/relegation — Week 3 July · Fillip.',
+        coreSignal: 'This week showed two versions of the same trade: content owners giving up certainty for reach, and league bodies giving up accountability for control. Pophouse repeated its Kiss playbook on Iron Maiden, Bundesliga took a real fee cut to move onto free ad-supported streaming, and Fanatics Fest proved a merchandise convention can now out-scoop leagues on their own news. Meanwhile Mexico\'s football federation and top leagues spent the week trading fan protections and competitive integrity for tighter administrative control, on both the men\'s and women\'s side.',
+        latamAngle: 'Mexican football governance faced scrutiny from three directions this week. The FMF was fined 42.8 million pesos for mishandling Fan ID biometric data, its Executive Committee permanently eliminated promotion and relegation for 2026-27 over a CAS recommendation to restore it, and Liga MX Femenil enters its tenth season still without an announced Apertura calendar. None of these are isolated incidents — together they show Mexico\'s top football authorities consistently trading fan protections and competitive integrity for administrative and financial control, in both the men\'s and women\'s game.',
+        ecosystemNews: [
+          {
+            headline: 'WWE/AAA Worlds Collide Set for Chicago in September',
+            body: 'WWE and AAA announced the third Worlds Collide event for September 26 at Allstate Arena in Chicago — deliberately scheduled the same night as AEW All Out, just 20 minutes away at NOW Arena. It continues a pattern of head-to-head date clashes between WWE and AEW, following Forbidden Door and last year\'s Wrestlepalooza. Presale tickets open July 23, with general sale the following day.',
+            sourceName: 'Wrestling Inc.',
+            sourceUrl: 'https://www.wrestlinginc.com/2216698/wwe-aaa-worlds-collide-set-aew-all-out-chicagoland/'
+          }
+        ],
+        stories: [
+          {
+            order: 1,
+            tag: 'Media Rights',
+            section: 'sports',
+            accentText: '$100M',
+            headline: 'Bundesliga Signs $100M, Five-Year US TV Deal',
+            emailSummary: '<strong>Versant</strong> acquired U.S. broadcast rights to the <strong>Bundesliga</strong> for <strong>$100 million over five years</strong> ($20M annually), moving games from ESPN+ to <strong>USA Network</strong> and <strong>Fandango</strong>. The new deal is roughly a <strong>33% cut</strong> from Bundesliga\'s prior $30 million-per-year ESPN arrangement. USA Network will air at least 30 matches, with the remaining 250-plus games streaming free on Fandango.',
+            whyItMatters: 'Bundesliga taking a pay cut to trade paywalled reach for a free, ad-supported streaming platform shows overseas soccer leagues sacrificing rights fees for U.S. audience size.',
+            signalText: 'Versant acquired U.S. Bundesliga broadcast rights for $100 million over five years.',
+            sourceName: 'Yahoo Sports',
+            sourceUrl: 'https://sports.yahoo.com/articles/usa-network-fandango-secure-bundesliga-230005005.html',
+            publishedDate: '2026-07-14'
+          },
+          {
+            order: 2,
+            tag: 'Governance · Fines',
+            section: 'sports',
+            accentText: '$42.8M MXN',
+            headline: 'SABG Fines FMF Over Fan ID Data Violations',
+            emailSummary: 'Mexico\'s anti-corruption authority <strong>SABG</strong> fined the <strong>Mexican Football Federation (FMF)</strong> <strong>42,849,095 pesos</strong> for mishandling biometric data collected through its stadium <strong>Fan ID</strong> system. Regulators found the FMF failed to disclose that fan photos qualified as sensitive personal data and collected consent through a website checkbox rather than a verifiable signature. The FMF can still appeal the ruling.',
+            whyItMatters: 'A formal fine over how a federation handles fan biometric data sets a compliance precedent just as more leagues adopt facial-recognition stadium entry systems.',
+            signalText: 'Mexico\'s SABG fined the FMF 42.8 million pesos over Fan ID data violations.',
+            sourceName: 'El Economista',
+            sourceUrl: 'https://www.eleconomista.com.mx/deportes/multan-fmf-incumplir-reglas-datos-biometricos-fan-id-20260712-822828.html',
+            publishedDate: '2026-07-12'
+          },
+          {
+            order: 3,
+            tag: 'League Structure',
+            section: 'sports',
+            headline: 'Liga MX Permanently Eliminates Promotion and Relegation',
+            emailSummary: 'The <strong>FMF\'s Executive Committee</strong> formally eliminated promotion and relegation between <strong>Liga MX</strong> and <strong>Liga de Expansión MX</strong> for the 2026-27 season, writing the change into <strong>Article 35</strong> of the new competition rules. The mechanism was first suspended in 2020 citing pandemic-era financial stability, and the decision overrides a <strong>Court of Arbitration for Sport (CAS)</strong> recommendation to restore sporting merit.',
+            whyItMatters: 'Locking out relegation protects Liga MX franchise values from the financial risk of the drop, at the direct expense of competitive integrity.',
+            signalText: 'Liga MX\'s Executive Committee permanently eliminated promotion and relegation for 2026-27.',
+            sourceName: 'Récord',
+            sourceUrl: 'https://www.record.com.mx/historia/oficial-no-habra-ascenso-y-descenso-en-la-liga-mx-2026071601450237007',
+            publishedDate: '2026-07-15'
+          },
+          {
+            order: 4,
+            tag: 'Governance · Scheduling',
+            section: 'sports',
+            accentText: '18 Clubs',
+            headline: 'Liga MX Femenil Still Lacks Apertura 2026 Calendar',
+            emailSummary: 'Nearly a decade into <strong>Liga MX Femenil</strong>\'s existence, the league still has no announced start date for its <strong>Apertura 2026</strong> tournament. A new format splits <strong>18 clubs</strong> into two groups playing eight regular-season games each, with the top four from each group advancing to playoffs. Clubs criticized the structure after learning their initial opponents, and the league says a full calendar will be released July 23.',
+            whyItMatters: 'Repeated late-notice scheduling changes for the women\'s league, blamed partly on prioritizing men\'s-league logistics, signal it still isn\'t run with the same operational discipline as Liga MX.',
+            signalText: 'Liga MX Femenil has no announced Apertura 2026 start date as of mid-July.',
+            sourceName: 'Récord',
+            sourceUrl: 'https://www.record.com.mx/historia/y-el-calendario-de-la-femenil-para-cuando-la-tardanza-desata-confusion-y-criticas-2026071700332432185',
+            publishedDate: '2026-07-17'
+          },
+          {
+            order: 5,
+            tag: 'Live Events · Sports IP',
+            section: 'sports',
+            headline: 'Fanatics Fest Again Becomes NBA\'s Free Agency Stage',
+            emailSummary: '<strong>LeBron James</strong> taped a live episode of his "Mind the Game" podcast with <strong>Tyrese Haliburton</strong> at <strong>Fanatics Fest</strong> in New York, declining to reveal his free-agency decision on stage. The event has become a recurring venue for major NBA news — <strong>Kevin Durant</strong>\'s trade to the Rockets broke there the previous year — underscoring Fanatics\' growing role as a live media and IP platform beyond merchandise.',
+            whyItMatters: 'A merchandise company\'s fan convention becoming the venue where marquee free-agency and trade news breaks shows Fanatics building real media leverage over league-controlled news cycles.',
+            signalText: 'Fanatics Fest has become a recurring venue for breaking NBA free-agency news.',
+            sourceName: 'Yahoo Sports',
+            sourceUrl: 'https://sports.yahoo.com/nba/article/lebron-james-mum-on-free-agency-destination-after-tyrese-haliburton-inquires-about-decision-at-fanatics-fest-174410964.html',
+            publishedDate: '2026-07-16'
+          },
+          {
+            order: 6,
+            tag: 'Live Events',
+            section: 'sports',
+            accentText: '35K Runners',
+            headline: 'CDMX Half Marathon Draws 35,000 Runners',
+            emailSummary: 'The 19th edition of the <strong>Mexico City Half Marathon</strong> drew <strong>35,000 runners</strong> along a 21-kilometer route from Alameda Central to the Ángel de la Independencia. Kenyan runners <strong>Simon Maywa</strong> and <strong>Gladys Cherop Longari</strong> won the men\'s and women\'s overall titles, while paralympic rower <strong>Michel Muñoz</strong> completed the course on a hand-propelled skateboard.',
+            whyItMatters: 'A 35,000-runner field makes CDMX\'s half marathon one of Latin America\'s largest recurring mass-participation sporting events, though this year\'s race carries no reported sponsorship or economic-impact figures.',
+            signalText: 'The Mexico City Half Marathon drew 35,000 runners across its 19th edition.',
+            sourceName: 'IMER',
+            sourceUrl: 'https://noticias.imer.mx/blog/entre-velocidad-e-inclusion-35-mil-corredores-recorren-el-xix-medio-maraton-de-la-cdmx/',
+            publishedDate: '2026-07-12'
+          },
+          {
+            order: 7,
+            tag: 'Music IP · Catalog',
+            section: 'entertainment',
+            accentText: '50% Stake',
+            headline: 'Pophouse Acquires 50% Stake in Iron Maiden IP',
+            emailSummary: '<strong>Pophouse Entertainment</strong>, the investment firm co-founded by ABBA\'s <strong>Björn Ulvaeus</strong>, acquired a <strong>50% stake</strong> in <strong>Iron Maiden</strong>\'s publishing and master recording rights, plus the band\'s name, image, and likeness rights, including mascot <strong>Eddie</strong>. Terms were undisclosed, though Pophouse paid upward of <strong>$300 million</strong> for a comparable deal with <strong>Kiss</strong>. Plans include a cinematic project filming the band\'s "Run for Your Lives" tour and a digital universe built around Eddie.',
+            whyItMatters: 'Pophouse extending its buy-the-brand-not-just-the-catalog model to a second legacy metal act confirms a repeatable playbook for monetizing heritage rock IP beyond streaming royalties.',
+            signalText: 'Pophouse acquired a 50% stake in Iron Maiden\'s music and NIL rights.',
+            sourceName: 'Variety',
+            sourceUrl: 'https://variety.com/2026/music/news/iron-maiden-sells-music-catalog-to-pophouse-1236810440/',
+            publishedDate: '2026-07-14'
+          },
+          {
+            order: 8,
+            tag: 'Streaming · Sports Doc',
+            section: 'entertainment',
+            accentText: '240+ Countries',
+            headline: 'Prime Video Sets August Release for Djokovic Documentary',
+            emailSummary: '<strong>Prime Video</strong> released the trailer for <strong>"Novak Djokovic: The Wolf in Winter,"</strong> premiering <strong>August 20</strong> in more than <strong>240 countries and territories</strong>. Directed by <strong>Jason Hehir</strong> (The Last Dance), the documentary features Djokovic\'s wife <strong>Jelena</strong> alongside <strong>Rafael Nadal, Andre Agassi, Pete Sampras,</strong> and <strong>Boris Becker</strong>, and is produced by <strong>Words + Pictures</strong> and <strong>Little Room Films</strong>.',
+            whyItMatters: 'Prime Video backing a career-capstone documentary on tennis\' most decorated player extends the platform\'s push into athlete-driven sports content beyond live rights.',
+            signalText: 'Prime Video will release its Djokovic documentary on August 20 in 240-plus countries.',
+            sourceName: 'Vogue Adria',
+            sourceUrl: 'https://vogueadria.com/novak-djokovic-documentary-trailer/',
+            publishedDate: '2026-07-14'
+          },
+          {
+            order: 9,
+            tag: 'M&A · Legal',
+            section: 'entertainment',
+            accentText: '$111B',
+            headline: 'Writers Guild Sues to Block Paramount-Warner Merger',
+            emailSummary: 'The <strong>Writers Guild of America</strong> (West and East) filed a federal lawsuit seeking to block <strong>Paramount</strong>\'s roughly <strong>$111 billion</strong> (including debt) acquisition of <strong>Warner Bros. Discovery</strong>, arguing the combined company would suppress writer wages and cut jobs. The suit follows a separate challenge filed a day earlier by <strong>12 U.S. states</strong> led by California AG <strong>Rob Bonta</strong>. Paramount said the merger would "expand opportunities for writers, not shrink them."',
+            whyItMatters: 'A second legal challenge in as many days raises real odds of delaying Paramount\'s target close, with the states\' coalition already seeking an emergency injunction ahead of a possible July 22 closing.',
+            signalText: 'The WGA sued to block Paramount\'s roughly $111 billion acquisition of Warner Bros. Discovery.',
+            sourceName: 'AP News',
+            sourceUrl: 'https://apnews.com/article/paramount-warner-writers-guild-lawsuit-94059525fdc9812acd73ce5092de3fbf',
+            publishedDate: '2026-07-14'
+          },
+          {
+            order: 10,
+            tag: 'Box Office',
+            section: 'entertainment',
+            accentText: '$17.6M',
+            headline: '\'The Odyssey\' Posts Best 2026 Preview Numbers',
+            emailSummary: '<strong>Christopher Nolan</strong>\'s <strong>"The Odyssey"</strong> earned <strong>$17.6 million</strong> in Thursday preview screenings, the best preview number of 2026 so far, edging out <strong>Toy Story 5</strong>\'s <strong>$17.5 million</strong>. Fandango reported the <strong>Universal</strong> film as its top 2026 preseller, with advance ticket sales estimated at <strong>$30-40 million</strong>. Analysts project a <strong>$100 million-plus</strong> domestic opening weekend.',
+            whyItMatters: 'A three-hour mythological epic outpacing family-franchise previews shows premium-format ticket demand, not just IP recognition, is now driving opening-weekend box office.',
+            signalText: '\'The Odyssey\' earned $17.6 million in Thursday previews, the best of 2026 so far.',
+            sourceName: 'Deadline',
+            sourceUrl: 'https://deadline.com/2026/07/box-office-the-odyssey-1236993792/',
+            publishedDate: '2026-07-17'
+          }
+        ]
+      },
 
       // WEEK 2
       {

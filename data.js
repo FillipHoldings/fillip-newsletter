@@ -38,7 +38,7 @@ const MONTHLY_GROUPS = [
         editionTag: 'Sports · Entertainment · IP · Capital',
         introLine: 'Week three of July: Pophouse bought half of Iron Maiden\'s catalog and NIL rights, the Writers Guild sued to block Paramount\'s $111B Warner acquisition, Bundesliga took a pay cut to move onto free U.S. streaming via Fandango, and Mexico\'s FMF got fined over Fan ID data while also scrapping promotion and relegation and leaving Liga MX Femenil without a calendar.',
         shareText: 'Pophouse buys half of Iron Maiden\'s IP, the WGA sues to block Paramount\'s $111B Warner deal, Bundesliga takes a pay cut for free U.S. streaming, and Mexico\'s FMF gets fined over Fan ID while scrapping promotion/relegation — Week 3 July · Fillip.',
-        coreSignal: 'This week showed two versions of the same trade: content owners giving up certainty for reach, and league bodies giving up accountability for control. Pophouse repeated its Kiss playbook on Iron Maiden, Bundesliga took a real fee cut to move onto free ad-supported streaming, and Fanatics Fest proved a merchandise convention can now out-scoop leagues on their own news. Meanwhile Mexico\'s football federation and top leagues spent the week trading fan protections and competitive integrity for tighter administrative control, on both the men\'s and women\'s side.',
+        coreSignal: 'This week showed two versions of the same trade: content owners giving up certainty for reach, and league bodies giving up accountability for control. Pophouse repeated its Kiss playbook on Iron Maiden, Bundesliga took a real fee cut to move onto free ad-supported streaming, and Fanatics Fest proved a merchandise convention has become a real sports IP platform in its own right. Meanwhile Mexico\'s football federation and top leagues spent the week trading fan protections and competitive integrity for tighter administrative control, on both the men\'s and women\'s side.',
         latamAngle: 'Mexican football governance faced scrutiny from three directions this week. The FMF was fined 42.8 million pesos for mishandling Fan ID biometric data, its Executive Committee permanently eliminated promotion and relegation for 2026-27 over a CAS recommendation to restore it, and Liga MX Femenil enters its tenth season still without an announced Apertura calendar. None of these are isolated incidents — together they show Mexico\'s top football authorities consistently trading fan protections and competitive integrity for administrative and financial control, in both the men\'s and women\'s game.',
         ecosystemNews: [
           {
@@ -102,12 +102,12 @@ const MONTHLY_GROUPS = [
           },
           {
             order: 5,
-            tag: 'Live Events · Sports IP',
+            tag: 'Sports IP · Live Events',
             section: 'sports',
-            headline: 'Fanatics Fest Again Becomes NBA\'s Free Agency Stage',
-            emailSummary: '<strong>LeBron James</strong> taped a live episode of his "Mind the Game" podcast with <strong>Tyrese Haliburton</strong> at <strong>Fanatics Fest</strong> in New York, declining to reveal his free-agency decision on stage. The event has become a recurring venue for major NBA news — <strong>Kevin Durant</strong>\'s trade to the Rockets broke there the previous year — underscoring Fanatics\' growing role as a live media and IP platform beyond merchandise.',
-            whyItMatters: 'A merchandise company\'s fan convention becoming the venue where marquee free-agency and trade news breaks shows Fanatics building real media leverage over league-controlled news cycles.',
-            signalText: 'Fanatics Fest has become a recurring venue for breaking NBA free-agency news.',
+            headline: 'Fanatics Fest Cements Itself as a Sports IP Platform',
+            emailSummary: '<strong>Fanatics Fest</strong>, the company\'s branded fan convention in New York, hosted <strong>LeBron James</strong> for a live taping of his "Mind the Game" podcast with <strong>Tyrese Haliburton</strong>. The event has become a recurring venue for major NBA news — <strong>Kevin Durant</strong>\'s trade to the Rockets surfaced there the previous year — turning what began as a retail and autograph convention into a de facto media and IP platform for the league.',
+            whyItMatters: 'Fanatics Fest evolving from a merchandise convention into the venue where league-defining news breaks shows Fanatics building real media and IP leverage well beyond its trading-card and autograph business.',
+            signalText: 'Fanatics Fest has become a recurring venue where major NBA news breaks.',
             sourceName: 'Yahoo Sports',
             sourceUrl: 'https://sports.yahoo.com/nba/article/lebron-james-mum-on-free-agency-destination-after-tyrese-haliburton-inquires-about-decision-at-fanatics-fest-174410964.html',
             publishedDate: '2026-07-16'

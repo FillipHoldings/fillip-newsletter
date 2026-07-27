@@ -22,10 +22,171 @@ const MONTHLY_GROUPS = [
     isCurrent: true,
     monthLabel: 'July 2026',
     editionTag: 'Sports · Entertainment · IP · Capital',
-    publishedDate: '2026-07-17',
-    dateRange: 'June 29 – July 17, 2026',
-    introLine: 'Weeks 1–3 of July: Sky acquires ITV for $2.1B, Atlético Madrid signs a 10-year Live Nation deal to stage concerts at the Metropolitano, an AI \'actor\' named Tilly Norwood gets her first movie, PJL sells a $50M franchise before its 2027 launch, the Premier Lacrosse League raises $100M ahead of the Olympics, Liga F\'s assembly ratifies Pau Gasol\'s €55M investment, CazéTV locks up Euro 2028 rights in Brazil, and Isaac del Toro becomes the first Mexican Tour de France stage winner in 37 years; then Mexico sets a new U.S. soccer TV ratings record against England, FIFA\'s Infantino floats a 64-team World Cup for 2030, Netflix, Disney, and YouTube prepare to bid on the next World Cup media-rights cycle, a Khosla-led group buys the Seahawks for a record $9.6B, London City Lionesses sign Ballon d\'Or winner Alexia Putellas, TV Azteca enters bankruptcy reorganization, and Meta pulls an AI image feature after talent-agency backlash; then Pophouse buys half of Iron Maiden\'s catalog and NIL rights, the Writers Guild sues to block Paramount\'s $111B Warner acquisition, Bundesliga takes a pay cut to move onto free U.S. streaming via Fandango, Christopher Nolan\'s \'The Odyssey\' posts the best box office previews of the year, and Mexico\'s FMF gets fined over Fan ID data violations while also scrapping promotion and relegation and leaving Liga MX Femenil without a calendar.',
+    publishedDate: '2026-07-26',
+    dateRange: 'June 29 – July 26, 2026',
+    introLine: 'Weeks 1–4 of July: Sky acquires ITV for $2.1B, Atlético Madrid signs a 10-year Live Nation deal to stage concerts at the Metropolitano, an AI \'actor\' named Tilly Norwood gets her first movie, PJL sells a $50M franchise before its 2027 launch, the Premier Lacrosse League raises $100M ahead of the Olympics, Liga F\'s assembly ratifies Pau Gasol\'s €55M investment, CazéTV locks up Euro 2028 rights in Brazil, and Isaac del Toro becomes the first Mexican Tour de France stage winner in 37 years; then Mexico sets a new U.S. soccer TV ratings record against England, FIFA\'s Infantino floats a 64-team World Cup for 2030, Netflix, Disney, and YouTube prepare to bid on the next World Cup media-rights cycle, a Khosla-led group buys the Seahawks for a record $9.6B, London City Lionesses sign Ballon d\'Or winner Alexia Putellas, TV Azteca enters bankruptcy reorganization, and Meta pulls an AI image feature after talent-agency backlash; then Pophouse buys half of Iron Maiden\'s catalog and NIL rights, the Writers Guild sues to block Paramount\'s $111B Warner acquisition, Bundesliga takes a pay cut to move onto free U.S. streaming via Fandango, Christopher Nolan\'s \'The Odyssey\' posts the best box office previews of the year, and Mexico\'s FMF gets fined over Fan ID data violations while also scrapping promotion and relegation and leaving Liga MX Femenil without a calendar; then Mexico pushes to host 36% of the 2031 Women\'s World Cup and rebuilds Liga Femenil BBVA\'s competition format and identity, Isaac del Toro becomes the first Mexican cyclist to podium at the Tour de France, Bad Bunny\'s DTMF World Tour closes at $467.5M, Rogers Communications takes full ownership of MLSE in a $4.35B buyout, \'The Odyssey\' crosses $639M globally, and Comic-Con 2026 doubles as a franchise-IP marketing platform for Marvel, HBO Max, and Amazon.',
     issues: [
+
+      // WEEK 4
+      {
+        slug: 'week-4-july-2026',
+        issueNumber: '4',
+        weekLabel: 'Week 4',
+        dateRange: 'July 18–26, 2026',
+        publishedDate: '2026-07-26',
+        issueTitle: 'Week 4 — July 2026',
+        editionTag: 'Sports · Entertainment · IP · Capital',
+        introLine: 'Week four of July: Mexico moved on multiple fronts — a bigger World Cup hosting bid, a rebuilt women\'s league, and Isaac del Toro\'s historic Tour de France podium — while Bad Bunny closed a record-breaking world tour, Rogers took full control of MLSE, and Comic-Con doubled as a coordinated IP-marketing platform for Marvel, HBO Max, and Amazon.',
+        shareText: 'Mexico eyes 36% of the 2031 Women\'s World Cup, Liga Femenil BBVA rebrands, Isaac del Toro becomes the first Mexican Tour de France podium finisher, Bad Bunny\'s tour closes at $467.5M, and Rogers takes full ownership of MLSE — Week 4 July · Fillip.',
+        coreSignal: 'This week\'s stories share a common thread: legacy institutions restructuring themselves to capture value they were previously leaving on the table. Mexico\'s football federation is fighting for a bigger hosting share, its women\'s league rebuilt its own competition format and brand, tennis is renegotiating who actually gets paid from tournament revenue, and Rogers consolidated full ownership of MLSE before selling passive stakes back out. Even Hollywood\'s IP is being restructured — Paramount treating theatrical release as a formality, not a revenue channel, for its next franchise bet.',
+        latamAngle: 'Mexico\'s sports and culture ecosystem had a genuinely strong week. The country\'s federation is pushing to nearly triple its match share for the 2031 Women\'s World Cup bid, its top women\'s league just executed a two-year competition overhaul under a new BBVA-backed identity, and Isaac del Toro became the first Mexican cyclist ever to podium at the Tour de France. Layered on top, Bad Bunny\'s record-breaking DTMF World Tour posted its single best-selling engagement anywhere in the world at Mexico City\'s Estadio GNP Seguros — 518,000 tickets across eight shows. Together, these signal Mexico functioning simultaneously as a growing sports-hosting power, a competitive-sport talent producer, and the biggest live-entertainment market in Latin America.',
+        ecosystemNews: [
+          {
+            headline: 'Mattel and WWE Launch AAA Lucha Libre Action Figures',
+            body: 'Mattel and WWE announced a global partnership to produce action figures of Lucha Libre AAA Worldwide stars, unveiled at San Diego Comic-Con. The inaugural lineup includes Psycho Clown, El Hijo del Vikingo, La Parka, and Mr. Iguana, each figure capturing AAA\'s signature máscaras and ring personas. Mattel Creations also released a made-to-order Mr. Iguana figure exclusively at Comic-Con as the collection\'s first product, ahead of a full Summer 2027 launch.',
+            sourceName: 'Récord',
+            sourceUrl: 'https://www.record.com.mx/historia/mattel-lanzara-figuras-de-accion-de-lucha-libre-aaa-junto-a-las-estrellas-de-wwe-2026072317440897172'
+          },
+          {
+            headline: 'Dominik Mysterio Betrays El Grande Americano, Joins El Ojo',
+            body: 'At AAA\'s Verano de Escándalo 2026, reigning Megacampeón Dominik Mysterio turned on tag-team partner El Grande Americano mid-match against Los Perros del Mal, handing Americano the loss and confirming his allegiance to El Ojo. The faction, led by Dorian Roldán and Omos, now adds Mysterio as its headline act following Hijo del Vikingo\'s injury, setting up a direct confrontation with Americano\'s title defense at TripleMania 34.',
+            sourceName: 'Récord',
+            sourceUrl: 'https://www.record.com.mx/historia/dominik-mysterio-traiciona-a-el-grande-americano-y-se-une-a-el-ojo-rumbo-a-triplemania-34-2026072605302196604'
+          }
+        ],
+        stories: [
+          {
+            order: 1,
+            tag: 'Hosting Bid',
+            section: 'sports',
+            accentText: '36%',
+            headline: 'Mexico Seeks 36% of 2031 Women\'s World Cup Matches',
+            emailSummary: 'Mexico is seeking to host between <strong>28 and 30 matches</strong> — roughly <strong>36%</strong> of the schedule — as part of a joint bid with the <strong>United States, Costa Rica, and Jamaica</strong> for the <strong>2031 FIFA Women\'s World Cup</strong>. That would more than double Mexico\'s 12.5% match share (13 of 104 games) from the 2026 men\'s tournament. The bid documentation process is already underway, with venues expected to reuse 2026 infrastructure including <strong>Estadio Banorte, Estadio BBVA,</strong> and <strong>Estadio Akron</strong>.',
+            whyItMatters: 'Hosting more than a third of a Women\'s World Cup would give Mexico outsized commercial exposure — sponsorship, ticketing, tourism — relative to its 2026 men\'s tournament share.',
+            signalText: 'Mexico is seeking to host 28 to 30 matches of the 2031 Women\'s World Cup.',
+            sourceName: 'Fox Sports MX',
+            sourceUrl: 'https://www.foxsports.com.mx/2026/07/24/mundialazo-femenil-en-casa-mexico-busca-albergar-hasta-30-partidos-de-la-edicion-de-2031/',
+            publishedDate: '2026-07-24'
+          },
+          {
+            order: 2,
+            tag: 'League Structure',
+            section: 'sports',
+            accentText: '14 Games',
+            headline: 'Liga Femenil BBVA Overhauls Format, Drops \'MX\' From Name',
+            emailSummary: 'Liga MX Femenil rebranded as <strong>Liga Femenil BBVA</strong>, dropping "MX" from its name, and unveiled a new logo and neon color identity for the <strong>Apertura 2026</strong> season starting July 31. The competition format changes to <strong>three blocks of six clubs</strong> playing a <strong>14-game group stage</strong> before a cross-bracket knockout round. President <strong>Mariana Gutiérrez</strong> said the two-year overhaul aims to reduce player workload and better align the calendar with national-team competitions.',
+            whyItMatters: 'Cutting scheduled games and rebranding around a standalone identity signals Mexico\'s women\'s league prioritizing sponsor and broadcast appeal over simply mirroring the men\'s format.',
+            signalText: 'Liga MX Femenil rebranded as Liga Femenil BBVA and cut its group-stage games to 14.',
+            sourceName: 'Marca MX',
+            sourceUrl: 'https://www.marca.com/mx/futbol/liga-mx-femenil/2026/07/24/futbol-femenino-mexico-transforma-renace-liga-femenil-bbva-complejo-sistema-competencia.html',
+            publishedDate: '2026-07-23'
+          },
+          {
+            order: 3,
+            tag: 'Media Rights',
+            section: 'sports',
+            accentText: 'Through 2030',
+            headline: 'CazéTV Acquires WTA Brazil Broadcast Rights Through 2030',
+            emailSummary: '<strong>CazéTV</strong>, the YouTube-based streaming platform owned by Casimiro Miguel, signed a deal to broadcast <strong>WTA 250, 500, and 1000</strong> tournaments in Brazil through <strong>2030</strong>. Financial terms were not disclosed. The agreement adds women\'s tennis to a sports portfolio that already includes recently-signed UEFA and LaLiga rights, and follows CazéTV\'s record 23 million simultaneous devices during its 2026 World Cup coverage.',
+            whyItMatters: 'A YouTube-native broadcaster locking up multi-year women\'s tennis rights shows streaming platforms outbidding traditional broadcasters for recurring international sports content in Brazil.',
+            signalText: 'CazéTV acquired broadcast rights to WTA tournaments in Brazil through 2030.',
+            sourceName: '2Playbook',
+            sourceUrl: 'https://www.2playbook.com/media/cazetv-suma-sigue-se-hace-con-derechos-wta-en-brasil-hasta-2030_23070_102.html',
+            publishedDate: '2026-07-23'
+          },
+          {
+            order: 4,
+            tag: 'Player Compensation',
+            section: 'sports',
+            accentText: '16% → 22%',
+            headline: 'French Open Offers Players Grand Slam Revenue Share',
+            emailSummary: 'The <strong>French Open</strong> has offered to become the first Grand Slam to tie player prize money to a fixed share of tournament revenue, proposing <strong>16%</strong> immediately and rising to <strong>22% by 2030</strong>. Roland Garros made the offer to players\' representative <strong>Larry Scott</strong> during talks at Wimbledon. The agreement has not yet been finalized, and the All England Club has separately signaled openness to funding player pensions and healthcare.',
+            whyItMatters: 'A Grand Slam tying prize money to a fixed revenue percentage would set a financial precedent the other three majors, including the US Open, would face pressure to match.',
+            signalText: 'The French Open offered players a revenue share starting at 16%, rising to 22% by 2030.',
+            sourceName: 'The Irish Times',
+            sourceUrl: 'https://www.irishtimes.com/sport/tennis/2026/07/21/french-open-becomes-first-grand-slam-to-offer-players-share-of-tournament-revenue/',
+            publishedDate: '2026-07-21'
+          },
+          {
+            order: 5,
+            tag: 'Ownership · M&A',
+            section: 'sports',
+            accentText: '$4.35B',
+            headline: 'Rogers Completes $4.35B MLSE Buyout, Plans Minority Sale',
+            emailSummary: '<strong>Rogers Communications</strong> completed its purchase of the remaining <strong>25% stake</strong> in <strong>Maple Leaf Sports & Entertainment (MLSE)</strong> from Larry Tanenbaum\'s Kilmer Sports for <strong>$4.35 billion</strong>, taking full ownership of the Maple Leafs, Raptors, Toronto FC, and Argonauts. The deal drove a <strong>$726 million</strong> net loss in Rogers\' Q2 results due to a related non-cash charge. Rogers now plans to sell non-voting minority stakes in its combined sports and media portfolio, valued at over <strong>$25 billion</strong>, by the first half of 2027.',
+            whyItMatters: 'Consolidating full ownership before selling passive minority stakes lets Rogers monetize MLSE\'s value without ceding operating control of Toronto\'s four major pro franchises.',
+            signalText: 'Rogers Communications paid $4.35 billion for full ownership of Maple Leaf Sports & Entertainment.',
+            sourceName: 'Yahoo Finance',
+            sourceUrl: 'https://ca.finance.yahoo.com/news/rogers-communications-reports-q2-loss-113755551.html',
+            publishedDate: '2026-07-22'
+          },
+          {
+            order: 6,
+            tag: 'Sports Milestone',
+            section: 'sports',
+            accentText: '3rd Place',
+            headline: 'Isaac Del Toro Becomes First Mexican Tour De France Podium',
+            emailSummary: '<strong>Isaac del Toro</strong> finished <strong>3rd overall</strong> in the general classification of the <strong>2026 Tour de France</strong>, becoming the first Mexican cyclist to reach the podium in the race\'s history. He also won the tournament\'s <strong>best young rider</strong> classification. Tadej Pogačar won his fifth Tour title on the final stage into Paris, with Remco Evenepoel finishing second, 6:26 behind.',
+            whyItMatters: 'A first-ever Mexican Tour de France podium is a milestone moment for the country\'s sports ecosystem and its growing international cycling visibility, independent of any deal or capital signal.',
+            signalText: 'Isaac del Toro became the first Mexican cyclist to podium at the Tour de France.',
+            sourceName: 'ESPN México',
+            sourceUrl: 'https://www.espn.com.mx/ciclismo/nota/_/id/17048552/tour-de-francia-isaac-del-toro-hace-historia-y-confirma-podio',
+            publishedDate: '2026-07-26'
+          },
+          {
+            order: 7,
+            tag: 'Live Events · Touring',
+            section: 'entertainment',
+            accentText: '$467.5M',
+            headline: 'Bad Bunny\'s DTMF Tour Grosses $467.5 Million Worldwide',
+            emailSummary: '<strong>Bad Bunny</strong>\'s Debí Tirar Más Fotos World Tour closed after <strong>55 shows</strong> across five continents, grossing <strong>$467.5 million</strong> and selling <strong>3.1 million tickets</strong> — the highest-grossing and best-selling tour by a male Latin artist in history, surpassing Luis Miguel\'s 2023-24 tour. The tour\'s biggest stop was eight shows at Mexico City\'s Estadio GNP Seguros, which brought in <strong>$88 million</strong> from <strong>518,000 tickets</strong> — the best-selling concert engagement ever recorded in Mexico. Bad Bunny played no U.S. dates.',
+            whyItMatters: 'A Latin artist setting touring records while deliberately skipping the U.S. market shows Latin America and Europe alone can now sustain a record-breaking global stadium tour.',
+            signalText: 'Bad Bunny\'s DTMF World Tour grossed $467.5 million across 55 shows on five continents.',
+            sourceName: 'Billboard',
+            sourceUrl: 'https://www.billboard.com/lists/bad-bunny-record-breaking-world-tour/',
+            publishedDate: '2026-07-24'
+          },
+          {
+            order: 8,
+            tag: 'Box Office',
+            section: 'entertainment',
+            accentText: '$639.6M',
+            headline: '\'The Odyssey\' Tops $639 Million At Global Box Office',
+            emailSummary: '<strong>Christopher Nolan</strong>\'s <strong>"The Odyssey"</strong> has grossed <strong>$639.6 million</strong> globally after two weekends — <strong>$353.2 million</strong> international and <strong>$284.4 million</strong> domestic — on a <strong>$250 million</strong> budget from Universal. <strong>IMAX</strong> alone contributed <strong>$140 million</strong> in ticket sales, the second-fastest title in IMAX history to cross $100 million, behind only "Avengers: Endgame."',
+            whyItMatters: 'A three-hour R-rated mythological epic outperforming most franchise tentpoles shows premium-format demand, not IP recognition, is now the stronger box office driver.',
+            signalText: '\'The Odyssey\' grossed $639.6 million globally in its first two weekends of release.',
+            sourceName: 'Variety',
+            sourceUrl: 'https://variety.com/2026/film/box-office/the-odyssey-global-box-office-600-million-imax-1236821428/',
+            publishedDate: '2026-07-26'
+          },
+          {
+            order: 9,
+            tag: 'Live Events · IP',
+            section: 'entertainment',
+            accentText: '135,000+ Attendees',
+            headline: 'Comic-Con 2026 Showcases Major Franchise IP Moves',
+            emailSummary: 'San Diego Comic-Con drew over <strong>135,000-160,000</strong> badge holders across four days, with major studios using the event to unveil franchise moves: Marvel cast <strong>Ryan Gosling</strong> as Ghost Rider and confirmed <strong>Ryan Coogler</strong> will direct Black Panther 3 with <strong>David Jonsson</strong> as the new Black Panther; HBO Max revealed casting for its "Lanterns" series; Amazon MGM unveiled "Spaceballs: The New One"; and Prime Video previewed Season 3 of "The Lord of the Rings: The Rings of Power," premiering November 11.',
+            whyItMatters: 'Studios concentrating casting reveals and franchise-continuation news at a single fan convention shows Comic-Con functioning as a coordinated IP-marketing platform, not just a fan event.',
+            signalText: 'Marvel, HBO Max, Amazon MGM, and Prime Video all made major franchise announcements at Comic-Con 2026.',
+            sourceName: 'Forbes',
+            sourceUrl: 'https://www.forbes.com/sites/laurasirikul/2026/07/26/comic-con-2026-all-the-biggest-announcements-and-major-reveals/',
+            publishedDate: '2026-07-26'
+          },
+          {
+            order: 10,
+            tag: 'Streaming · IP Revival',
+            section: 'entertainment',
+            accentText: 'July 25',
+            headline: '\'Avatar Aang\' Ends 12-Year Franchise Gap On Paramount+',
+            emailSummary: '<strong>"Avatar Aang: The Last Airbender,"</strong> the first release from <strong>Avatar Studios</strong>, ends a 12-year gap since "The Legend of Korra" concluded in 2014. Paramount is releasing the animated feature through a <strong>limited, awards-qualifying theatrical run</strong> in New York and Los Angeles only, before it streams on <strong>Paramount+</strong> starting <strong>July 25</strong>. The strategy prioritizes streaming distribution over a wide theatrical release for the franchise\'s continuation.',
+            whyItMatters: 'Routing a flagship franchise revival through a token theatrical run straight to streaming shows Paramount treating theatrical release as an awards formality rather than a real revenue channel.',
+            signalText: '"Avatar Aang: The Last Airbender" streams on Paramount+ starting July 25 after a limited theatrical run.',
+            sourceName: 'Variety',
+            sourceUrl: 'https://variety.com/2026/tv/reviews/avatar-aang-the-last-airbender-review-sequel-film-1236818576/',
+            publishedDate: '2026-07-25'
+          }
+        ]
+      },
 
       // WEEK 3
       {

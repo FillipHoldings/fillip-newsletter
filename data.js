@@ -22,10 +22,190 @@ const MONTHLY_GROUPS = [
     isCurrent: true,
     monthLabel: 'July 2026',
     editionTag: 'Sports · Entertainment · IP · Capital',
-    publishedDate: '2026-07-26',
-    dateRange: 'June 29 – July 26, 2026',
-    introLine: 'Weeks 1–4 of July: Sky acquires ITV for $2.1B, Atlético Madrid signs a 10-year Live Nation deal to stage concerts at the Metropolitano, an AI \'actor\' named Tilly Norwood gets her first movie, PJL sells a $50M franchise before its 2027 launch, the Premier Lacrosse League raises $100M ahead of the Olympics, Liga F\'s assembly ratifies Pau Gasol\'s €55M investment, CazéTV locks up Euro 2028 rights in Brazil, and Isaac del Toro becomes the first Mexican Tour de France stage winner in 37 years; then Mexico sets a new U.S. soccer TV ratings record against England, FIFA\'s Infantino floats a 64-team World Cup for 2030, Netflix, Disney, and YouTube prepare to bid on the next World Cup media-rights cycle, a Khosla-led group buys the Seahawks for a record $9.6B, London City Lionesses sign Ballon d\'Or winner Alexia Putellas, TV Azteca enters bankruptcy reorganization, and Meta pulls an AI image feature after talent-agency backlash; then Pophouse buys half of Iron Maiden\'s catalog and NIL rights, the Writers Guild sues to block Paramount\'s $111B Warner acquisition, Bundesliga takes a pay cut to move onto free U.S. streaming via Fandango, Christopher Nolan\'s \'The Odyssey\' posts the best box office previews of the year, and Mexico\'s FMF gets fined over Fan ID data violations while also scrapping promotion and relegation and leaving Liga MX Femenil without a calendar; then Mexico pushes to host 36% of the 2031 Women\'s World Cup and rebuilds Liga Femenil BBVA\'s competition format and identity, Isaac del Toro becomes the first Mexican cyclist to podium at the Tour de France, Bad Bunny\'s DTMF World Tour closes at $467.5M, Rogers Communications takes full ownership of MLSE in a $4.35B buyout, \'The Odyssey\' crosses $639M globally, and Comic-Con 2026 doubles as a franchise-IP marketing platform for Marvel, HBO Max, and Amazon.',
+    publishedDate: '2026-08-02',
+    dateRange: 'June 29 – August 2, 2026',
+    introLine: 'Weeks 1–4 of July: Sky acquires ITV for $2.1B, Atlético Madrid signs a 10-year Live Nation deal to stage concerts at the Metropolitano, an AI \'actor\' named Tilly Norwood gets her first movie, PJL sells a $50M franchise before its 2027 launch, the Premier Lacrosse League raises $100M ahead of the Olympics, Liga F\'s assembly ratifies Pau Gasol\'s €55M investment, CazéTV locks up Euro 2028 rights in Brazil, and Isaac del Toro becomes the first Mexican Tour de France stage winner in 37 years; then Mexico sets a new U.S. soccer TV ratings record against England, FIFA\'s Infantino floats a 64-team World Cup for 2030, Netflix, Disney, and YouTube prepare to bid on the next World Cup media-rights cycle, a Khosla-led group buys the Seahawks for a record $9.6B, London City Lionesses sign Ballon d\'Or winner Alexia Putellas, TV Azteca enters bankruptcy reorganization, and Meta pulls an AI image feature after talent-agency backlash; then Pophouse buys half of Iron Maiden\'s catalog and NIL rights, the Writers Guild sues to block Paramount\'s $111B Warner acquisition, Bundesliga takes a pay cut to move onto free U.S. streaming via Fandango, Christopher Nolan\'s \'The Odyssey\' posts the best box office previews of the year, and Mexico\'s FMF gets fined over Fan ID data violations while also scrapping promotion and relegation and leaving Liga MX Femenil without a calendar; then Mexico pushes to host 36% of the 2031 Women\'s World Cup and rebuilds Liga Femenil BBVA\'s competition format and identity, Isaac del Toro becomes the first Mexican cyclist to podium at the Tour de France, Bad Bunny\'s DTMF World Tour closes at $467.5M, Rogers Communications takes full ownership of MLSE in a $4.35B buyout, \'The Odyssey\' crosses $639M globally, and Comic-Con 2026 doubles as a franchise-IP marketing platform for Marvel, HBO Max, and Amazon; then FIFA abandons a $20B plan to sell World Cup stakes after Europe, Asia and the Americas revolt, Saudi Arabia\'s PIF stops funding LIV Golf in the same week it clears the last approvals on a $55B take-private of EA, Jake Paul\'s MVP merges with the PFL, YouTube TV adds ESPN and NBC Sports, the WSL rebuilds its League Cup as the Subway Players Cup, Mattel and Reebok build a doll-and-sneaker launch around Angel Reese, \'Spider-Man: Brand New Day\' posts a $927M global opening, Netflix and AMC sign a $500M Walking Dead deal, BlackRock backs a $600M music-catalog buy, and Mexico\'s LYON wins the Free Fire world title in Paris.',
     issues: [
+
+      // WEEK 5
+      {
+        slug: 'week-5-july-2026',
+        issueNumber: '5',
+        weekLabel: 'Week 5',
+        dateRange: 'July 27 – August 2, 2026',
+        publishedDate: '2026-08-02',
+        issueTitle: 'Week 5 — July 2026',
+        editionTag: 'Sports · Entertainment · IP · Capital',
+        introLine: 'Week five of July: FIFA\'s own confederations forced Gianni Infantino to abandon a $20 billion plan to sell stakes in the World Cup, Saudi Arabia\'s sovereign fund walked away from LIV Golf in the same week it cleared the last approvals on the largest leveraged buyout ever recorded, and Spider-Man posted the second-biggest global opening in film history.',
+        shareText: 'FIFA kills its $20B World Cup investment vehicle, PIF exits LIV Golf while closing a $55B EA buyout, Jake Paul\'s MVP merges with the PFL, Spider-Man opens to $927M worldwide, and Mexico\'s LYON wins a Free Fire world title — Week 5 July · Fillip.',
+        coreSignal: 'The same week Saudi Arabia\'s Public Investment Fund confirmed it would stop funding LIV Golf, it cleared the last approvals on a $55 billion take-private of EA. That is the week in miniature: capital is not retreating from sport and entertainment, it is relocating to assets it can actually control. FIFA\'s members made the boundary explicit, rejecting $4.2 billion rather than let outside investors near the World Cup. Everywhere the asset is ownable — fighter rosters, song catalogs, a zombie franchise — it consolidated. Everywhere it is collectively held, capital was shown the door.',
+        latamAngle: 'Two stories in this issue put Latin America on both sides of the value chain. Mexican organization LYON won the Free Fire world championship in Paris, the region\'s first title at the Esports World Cup, with Chilean player Benjamín Honores taking MVP — LatAm as a producer of competitive talent, not only an audience for it. Days later, Spider-Man: Brand New Day set all-time opening records in Brazil ($23.8M), Peru, Colombia, Chile and Ecuador, with Mexico posting the second-biggest opening in its history at $38.3M. Brazil beat Endgame in like-for-likes, in a market Hollywood has struggled to crack since Covid.',
+        ecosystemNews: [
+          {
+            headline: 'Free Fire and Lucha Libre AAA Launch Rey de Los Luchadores',
+            body: 'Garena and Lucha Libre AAA Worldwide launched Free Fire x AAA 2.0: Rey De Los Luchadores, running inside the mobile battle royale from July 31 to August 16. Rey Mysterio joins with an exclusive black, white and gold bundle, and La Parka returns with a refreshed mask. Players complete daily challenges to compete for the Megacampeonato AAA, alongside themed items including a Mysterio lowrider, a kendo stick and a championship-belt backpack.',
+            sourceName: 'IGN Latinoamérica',
+            sourceUrl: 'https://latam.ign.com/free-fire-game/113975/free-fire-lucha-libre-aaa-2026'
+          },
+          {
+            headline: 'TripleMania 34 Moves to MGM Grand Garden Arena in Las Vegas',
+            body: 'WWE and AAA moved night one of TripleMania 34 from the Luxor to the MGM Grand Garden Arena after the September 11 show sold out, citing unprecedented demand. The date and start time are unchanged, and night two remains at Arena CDMX on September 13. TripleMania 33 drew a record 19,691 fans and was the highest-grossing edition in the event\'s history.',
+            sourceName: 'Yahoo Sports',
+            sourceUrl: 'https://sports.yahoo.com/articles/wwe-announces-aaa-triplemania-venue-145438288.html'
+          },
+          {
+            headline: 'G3X FC Wins Kings World Cup Clubs 2026 in Milan',
+            body: 'G3X FC beat Alpak FC 9-5 in Milan to win Kings World Cup Clubs 2026, becoming the first non-Spanish club to take the title after Porcinos FC in 2024 and Los Troncos FC in 2025. The 14 goals made it the highest-scoring final in the competition\'s history. More than 9,000 fans attended across seven matchdays at the Kings League Arena in Cologno Monzese.',
+            sourceName: 'Kings League',
+            sourceUrl: 'https://kingsleague.pro/en/world-cup/news/g3x-fc-kwc-clubs-2026-champions-final-alpak'
+          }
+        ],
+        stories: [
+          {
+            order: 1,
+            tag: 'Governance',
+            section: 'sports',
+            accentText: '$20B',
+            headline: 'FIFA Abandons $20B Plan to Sell World Cup Stakes',
+            emailSummary: '<strong>FIFA</strong> said it will not proceed with a plan to create a <strong>$20 billion</strong> commercial arm, FIFA Forward Enterprise, that would have sold stakes in the World Cup and other tournaments to private investors. The vehicle had been targeting <strong>$4.2 billion</strong> from minority, non-controlling investors, with FIFA remaining the controlling shareholder. <strong>UEFA</strong> voted that all 55 of its member associations would boycott the World Cup if the plan advanced, and <strong>CONCACAF</strong> and the <strong>AFC</strong> also formally opposed it. President <strong>Gianni Infantino</strong> withdrew the proposal on Friday, days after announcing it.',
+            whyItMatters: 'The confederations proved they can veto FIFA\'s commercial strategy outright, closing off private-capital access to the single largest media property in sport.',
+            signalText: 'FIFA cancelled a plan to sell $4.2 billion in minority stakes in the World Cup.',
+            sourceName: 'Deadline',
+            sourceUrl: 'https://deadline.com/2026/07/fifa-scraps-plan-commercial-arm-1237015111/',
+            publishedDate: '2026-07-31'
+          },
+          {
+            order: 2,
+            tag: 'Consolidation',
+            section: 'sports',
+            accentText: '300+ Fighters',
+            headline: 'Jake Paul\'s MVP Merges With PFL Across Boxing and MMA',
+            emailSummary: '<strong>Most Valuable Promotions</strong> and the <strong>Professional Fighters League</strong> merged, bringing more than <strong>300 fighters</strong> across boxing and mixed martial arts under the MVP brand. MVP co-founders <strong>Jake Paul</strong> and <strong>Nakisa Bidarian</strong> will lead the combined company, with PFL head <strong>John Martin</strong> joining the board and continuing as CEO. MVP launched in boxing in 2021 and staged its first MMA card in May, when <strong>Ronda Rousey</strong>\'s 15-second win over <strong>Gina Carano</strong> peaked at 17 million viewers globally on Netflix.',
+            whyItMatters: 'Combining the number-two global MMA promotion with boxing\'s most aggressive new promoter creates a single counterweight to the UFC across both codes.',
+            signalText: 'Most Valuable Promotions and the Professional Fighters League merged under the MVP brand.',
+            sourceName: 'BBC Sport',
+            sourceUrl: 'https://www.bbc.com/sport/articles/c9359evpwy0o',
+            publishedDate: '2026-07-30'
+          },
+          {
+            order: 3,
+            tag: 'Funding',
+            section: 'sports',
+            accentText: '$350M',
+            headline: 'LIV Golf to Cancel $40M Season Finale in Michigan',
+            emailSummary: '<strong>LIV Golf</strong> is set to cancel its <strong>$40 million</strong> team championship, scheduled for August 27–30 at The Cardinal at Saint John\'s Resort outside Detroit. It is the circuit\'s second cancellation of the season after LIV Golf Louisiana in late June, cutting the 2026 calendar from 14 events to 12. Saudi Arabia\'s <strong>Public Investment Fund</strong> has said it will stop funding the league after this season, and LIV is seeking up to <strong>$350 million</strong> from new investors to continue into 2027.',
+            whyItMatters: 'A sovereign wealth fund withdrawing from the league it built forces LIV to prove commercial viability on open-market terms for the first time.',
+            signalText: 'Saudi Arabia\'s Public Investment Fund will stop funding LIV Golf after the 2026 season.',
+            sourceName: 'Yahoo Sports',
+            sourceUrl: 'https://sports.yahoo.com/articles/liv-golf-to-cancel-40m-season-finale-in-michigan-193416138.html',
+            publishedDate: '2026-07-28'
+          },
+          {
+            order: 4,
+            tag: 'Media Rights',
+            section: 'sports',
+            accentText: '13.8%',
+            headline: 'YouTube TV Adds ESPN and NBC Sports to Lineup',
+            emailSummary: '<strong>YouTube TV</strong> integrated <strong>ESPN Unlimited</strong> directly into its service and signed a long-term carriage extension with <strong>NBCUniversal</strong>, which will also produce select premiere live sporting events for YouTube. Peacock joins YouTube Premium\'s ad-free tier next year. YouTube accounted for <strong>13.8%</strong> of all U.S. television viewing in May per Nielsen, ahead of Netflix at 8%, and YouTube TV has passed <strong>10 million subscribers</strong>, trailing only Charter (12.5M) and Comcast (10.67M).',
+            whyItMatters: 'The biggest legacy sports broadcasters are now distributing through YouTube rather than competing with it, concentrating sports advertising on a single platform.',
+            signalText: 'YouTube TV added ESPN Unlimited and extended its carriage agreement with NBCUniversal.',
+            sourceName: 'Forbes',
+            sourceUrl: 'https://www.forbes.com/sites/gabrielalinzainescu/2026/07/29/youtube-tv-adds-espn-and-nbc-sports-as-ad-dollars-follow-the-audience/',
+            publishedDate: '2026-07-29'
+          },
+          {
+            order: 5,
+            tag: 'Sponsorship',
+            section: 'sports',
+            accentText: '23 Clubs',
+            headline: 'WSL Rebrands League Cup as Subway Players Cup',
+            emailSummary: '<strong>WSL Football</strong> extended its partnership with <strong>Subway</strong> through a multi-year deal and rebranded the League Cup as the <strong>Subway Players Cup</strong> from the 2026/27 season. The competition moves to a Swiss-model league phase with <strong>23 clubs</strong>, each playing a minimum of six matches, before an eight-team knockout round. Clubs in the UEFA Women\'s Champions League are excluded to ease fixture congestion, and drawn matches go straight to penalties — worth two points to the winner and one to the loser. The final is set for March 13–14, 2027.',
+            whyItMatters: 'Redesigning a cup competition around squad depth and a named title sponsor shows women\'s football building commercial properties tailored to its own calendar rather than copying the men\'s format.',
+            signalText: 'WSL Football renamed its League Cup the Subway Players Cup under a multi-year sponsorship extension.',
+            sourceName: 'Her Football Hub',
+            sourceUrl: 'https://herfootballhub.com/wsl-football-launches-subway-players-cup-with-player-welfare-at-its-core/',
+            publishedDate: '2026-07-28'
+          },
+          {
+            order: 6,
+            tag: 'Esports',
+            section: 'sports',
+            accentText: '$300,000',
+            headline: 'Mexico\'s LYON Wins Free Fire Title at Esports World Cup',
+            emailSummary: 'Mexican organization <strong>LYON</strong> won the <strong>Free Fire</strong> world championship at the <strong>Esports World Cup 2026</strong> in Paris, the first Latin American squad to take the title there. The win carries a <strong>$300,000</strong> prize and the first direct berth at the Free Fire Global Finals in Bangkok. On the fifth map of the final, LYON set an EWC record with <strong>33 eliminations</strong>, beating Team Falcons\' previous mark of 28. Chilean player <strong>Benjamín "gamezk!ng" Honores</strong> was named MVP with 60 eliminations and a $25,000 bonus.',
+            whyItMatters: 'A Latin American roster winning the largest event on the esports calendar gives regional organizations a proven case for sponsorship and investment at global rates.',
+            signalText: 'Mexican esports organization LYON won the Free Fire world championship at the Esports World Cup.',
+            sourceName: 'IGN Latinoamérica',
+            sourceUrl: 'https://latam.ign.com/esports-1/113928/lyon-campeon-mundial-free-fire-ewc-2026',
+            publishedDate: '2026-07-29'
+          },
+          {
+            order: 7,
+            tag: 'Box Office',
+            section: 'entertainment',
+            accentText: '$927M',
+            headline: 'Spider-Man: Brand New Day Opens to $927M Worldwide',
+            emailSummary: '<strong>Spider-Man: Brand New Day</strong> opened to <strong>$927 million</strong> worldwide across 90,000 screens, the second-biggest global debut in industry history behind <strong>Avengers: Endgame</strong>\'s $1.22 billion. Sony had projected $425 million. International contributed <strong>$572 million</strong> from 66 markets, led by <strong>China</strong> at $121 million — the biggest post-Covid Marvel opening there — and the United Kingdom at $49 million. The film set all-time opening records in France, India, Brazil, Spain and eight other markets.',
+            whyItMatters: 'A single title more than doubling studio projections confirms theatrical demand is concentrating in a handful of franchise events rather than spreading across the release slate.',
+            signalText: 'Spider-Man: Brand New Day opened to $927 million worldwide, the second-biggest global opening ever.',
+            sourceName: 'Deadline',
+            sourceUrl: 'https://deadline.com/2026/08/box-office-global-spider-man-brand-new-day-1237015459/',
+            publishedDate: '2026-08-02'
+          },
+          {
+            order: 8,
+            tag: 'Streaming Rights',
+            section: 'entertainment',
+            accentText: '$500M',
+            headline: 'Netflix and AMC Sign $500M Walking Dead Streaming Deal',
+            emailSummary: '<strong>AMC Global Media</strong> and <strong>Netflix</strong> signed a five-year, <strong>$500 million</strong> global streaming rights deal covering the full <strong>Walking Dead</strong> universe — some <strong>371 episodes</strong> across the original series and six spin-offs. The agreement expands the franchise into new Netflix territories including the U.K., Italy, Australia and New Zealand, and is co-exclusive, allowing <strong>AMC+</strong> to stream the original series for the first time in 2027. AMC reported quarterly revenue of $547 million, down 9%, but raised guidance on the back of the deal.',
+            whyItMatters: 'A mid-size studio monetizing a completed franchise library at nine figures shows catalog IP still commands premium pricing even as new-content budgets tighten.',
+            signalText: 'Netflix and AMC signed a five-year, $500 million streaming deal for The Walking Dead universe.',
+            sourceName: 'The Hollywood Reporter',
+            sourceUrl: 'https://www.hollywoodreporter.com/tv/tv-news/netflix-walking-dead-streaming-deal-amc-global-media-1236659933/',
+            publishedDate: '2026-07-30'
+          },
+          {
+            order: 9,
+            tag: 'Music IP',
+            section: 'entertainment',
+            accentText: '$600M+',
+            headline: 'Influence Media and BlackRock Acquire Anthem Entertainment Catalogs',
+            emailSummary: '<strong>Influence Media Partners</strong> agreed to acquire <strong>Anthem Entertainment</strong>\'s catalogs for more than <strong>$600 million</strong>, with capital provided by funds and accounts managed by <strong>BlackRock</strong> affiliates. The assets span music publishing, film and television publishing, and master recordings — over <strong>24,000 released songs</strong> plus more than 60,000 unexploited works, including <strong>Britney Spears</strong>, Justin Timberlake, Timbaland and Rush, alongside publishing tied to the Spider-Man and Men in Black franchises. The deal is expected to close in Q4 2026.',
+            whyItMatters: 'BlackRock funding a nine-figure catalog purchase treats music rights as scaled infrastructure assets rather than entertainment bets, holding up valuations for large catalogs.',
+            signalText: 'Influence Media and BlackRock agreed to buy Anthem Entertainment\'s catalogs for over $600 million.',
+            sourceName: 'Yahoo Finance',
+            sourceUrl: 'https://finance.yahoo.com/media-advertising/articles/influence-media-partners-signs-agreement-170500757.html',
+            publishedDate: '2026-07-29'
+          },
+          {
+            order: 10,
+            tag: 'Buyout',
+            section: 'entertainment',
+            accentText: '$55B',
+            headline: 'EA Set to Close $55B Take-Private, Largest Buyout Ever',
+            emailSummary: '<strong>Electronic Arts</strong> expects to close its <strong>$55 billion</strong> take-private on <strong>August 4</strong>, described as the largest leveraged buyout ever recorded. The buyers are Saudi Arabia\'s <strong>Public Investment Fund</strong>, <strong>Silver Lake</strong> and <strong>Affinity Partners</strong>, with all required regulatory approvals obtained as of July 30. CEO <strong>Andrew Wilson</strong> stays in place and the company remains headquartered in Redwood City. EA ends a 35-year run as a public company on 2025 revenue of $7.5 billion.',
+            whyItMatters: 'Taking the owner of EA Sports FC and Madden private removes the largest sports-gaming rights holder from public-market disclosure and quarterly earnings pressure.',
+            signalText: 'Electronic Arts will close a $55 billion take-private led by Saudi Arabia\'s Public Investment Fund.',
+            sourceName: 'Yahoo Finance',
+            sourceUrl: 'https://finance.yahoo.com/markets/stocks/articles/ea-set-close-55-billion-194300015.html',
+            publishedDate: '2026-07-31'
+          },
+          {
+            order: 11,
+            tag: 'IP Licensing',
+            section: 'entertainment',
+            accentText: '3 Categories',
+            headline: 'Barbie and Reebok Launch Angel Reese Doll and Sneaker',
+            emailSummary: '<strong>Mattel</strong> introduced a <strong>Barbie Signature</strong> doll modeled on basketball player <strong>Angel Reese</strong>, wearing the <strong>Reebok Angel Reese 1</strong> shoe in a Barbie pink colorway that is also being sold to consumers in adult and kids\' sizes. The doll went on sale July 24 through Target, Walmart, Amazon and Mattel Shop; the shoe arrives <strong>August 3</strong> via Reebok.com, Dick\'s Sporting Goods and Foot Locker. Both launched at <strong>TOGETHXR House</strong> in Chicago, where Reese is a co-owner, alongside a limited-edition apparel line.',
+            whyItMatters: 'Mattel is exploiting one athlete\'s likeness across three product categories at once — doll, footwear and apparel — running an active sports career as a licensable IP franchise rather than an endorsement slot.',
+            signalText: 'Mattel released a Barbie Signature doll of Angel Reese with a matching Reebok shoe.',
+            sourceName: 'Indian Retailer',
+            sourceUrl: 'https://indianretailer.com/brandlicense/archives/news/barbie-x-reebok-celebrate-angel-reese-new-doll-and-basketball-shoes.n5711',
+            publishedDate: '2026-07-27'
+          }
+        ]
+      },
 
       // WEEK 4
       {

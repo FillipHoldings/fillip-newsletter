@@ -16,10 +16,177 @@ const PUBLICATION_CONFIG = {
 
 const MONTHLY_GROUPS = [
 
+  // AUGUST 2026
+  {
+    slug: 'august-2026',
+    isCurrent: true,
+    monthLabel: 'August 2026',
+    editionTag: 'Sports · Entertainment · IP · Capital',
+    publishedDate: '2026-08-09',
+    dateRange: 'August 2–9, 2026',
+    introLine: 'Week one of August: Becle\'s Juan Domingo Beckmann bought a 6% stake in LAFC at a $1.25 billion valuation while Mexico\'s own Fox Sports collapsed under debt, Jeff Bezos and Eduardo Saverin closed in on a $6 billion stake in Liverpool, LIV Golf replaced its Saudi backer with an unnamed investor, MLB\'s players and owners dug in over a hard salary cap that could cost part of the 2027 season, and Spider-Man: Brand New Day helped push the domestic summer box office toward $4 billion for the first time since 2023.',
+    issues: [
+
+      // WEEK 1
+      {
+        slug: 'week-1-august-2026',
+        issueNumber: '1',
+        weekLabel: 'Week 1',
+        dateRange: 'August 2–9, 2026',
+        publishedDate: '2026-08-09',
+        issueTitle: 'Week 1 — August 2026',
+        editionTag: 'Sports · Entertainment · IP · Capital',
+        introLine: 'Week one of August: a tequila magnate bought into LAFC while Mexico\'s own Fox Sports collapsed under debt, Jeff Bezos and Eduardo Saverin closed in on a $6 billion stake in Liverpool, LIV Golf replaced its Saudi backer, and MLB\'s players and owners dug in over a hard salary cap that could cost part of the 2027 season.',
+        shareText: 'LAFC\'s new tequila owner, Bezos and Saverin circling a $6B stake in Liverpool, LIV Golf\'s mystery investor, and the MLB fight that could cost a season — Week 1 August · Fillip.',
+        coreSignal: 'The pattern this week isn\'t which team or league changes hands — it\'s who\'s doing the buying and who\'s stuck footing the bill. Tequila capital takes an ownership stake in LAFC, Amazon and Facebook wealth circle Liverpool, and LIV Golf trades Saudi backing for an unnamed replacement, while Paramount racks up $7 million a day waiting on its own merger and MLB\'s players and owners can\'t agree on how to split the sport\'s money. Capital is moving into sports and media ownership faster than the labor and governance structures built to absorb it.',
+        latamAngle: 'This week captures Mexican capital\'s split personality in sports business. Becle president Juan Domingo Beckmann converted a tequila sponsorship into a direct 6% ownership stake in LAFC, at a valuation that puts the club above $1.25 billion — Mexican consumer capital buying into US sports ownership. At the same time, Mexico\'s own flagship sports broadcaster, Fox Sports México, is unwinding: exiting izzi and Sky on August 30 after losing NFL, Premier League, and Concacaf rights amid a cash crunch and a licensing dispute with its own former parent, Fox Corporation. Mexican money is expanding into foreign franchises even as the country\'s home-grown sports-media infrastructure collapses under debt.',
+        ecosystemNews: [
+          {
+            headline: 'Damián 666 Joins Los Perros del Mal\'s New Generation',
+            body: 'During AAA\'s Verano de Escándalo 2026, lucha libre veteran Damián 666 officially joined the revitalized Los Perros del Mal faction at Daga\'s invitation. Damián 666 — real name José Luis Carrera Gómez, a Tijuana-born wrestler active since the 1980s and a founding member of La Familia de Tijuana — received the group\'s jersey and raised its signature chain in tribute to founder Hijo del Perro Aguayo. It\'s a legacy handoff for one of AAA\'s most storied factions.',
+            sourceName: 'Récord',
+            sourceUrl: 'https://www.record.com.mx/historia/los-perros-del-mal-siguen-creciendo-damian-666-se-une-a-la-nueva-generacion-2026080904564728225'
+          }
+        ],
+        stories: [
+          {
+            order: 1,
+            tag: 'Media Rights',
+            section: 'sports',
+            accentText: '380 Matches',
+            headline: 'DAZN Extends Exclusive Premier League Rights In Iberia Through 2031',
+            emailSummary: '<strong>DAZN</strong> extended its exclusive broadcast agreement for <strong>Premier League</strong> coverage in Spain and Portugal through the 2030-31 season. The three-year renewal covers all 380 live matches annually plus FA Cup highlights. DAZN now holds rights to all five major European leagues in Spain.',
+            whyItMatters: 'The renewal locks in over a decade of Premier League distribution in one of Europe\'s largest football markets, consolidating DAZN\'s grip on Spanish and Portuguese sports streaming.',
+            signalText: 'DAZN renewed its exclusive Premier League broadcast rights in Spain and Portugal through 2031.',
+            sourceName: 'Sportcal',
+            sourceUrl: 'https://www.sportcal.com/media/dazn-renews-exclusive-premier-league-rights-in-iberia-through-2031/',
+            publishedDate: '2026-08-05'
+          },
+          {
+            order: 2,
+            tag: 'Ownership',
+            section: 'sports',
+            accentText: '$1.25B',
+            headline: 'Tequila Magnate Buys 6% Stake In LAFC',
+            emailSummary: '<strong>Juan Domingo Beckmann Legorreta</strong>, president of tequila giant Becle, acquired a <strong>6% stake</strong> in <strong>LAFC</strong> in a deal that valued the club at <strong>$1.25 billion</strong>. Beckmann joins the board alongside co-investors James Cha and Carlos Vela, while Joe Tsai and Mike Mahan divested their stakes. Becle has sponsored LAFC through its 1800 tequila brand since 2021.',
+            whyItMatters: 'The deal converts a sponsorship relationship into direct ownership, showing how Mexican consumer-goods capital is moving from brand deals into equity stakes in US sports franchises.',
+            signalText: 'Becle\'s president bought a 6% stake in LAFC in a deal valuing the club at $1.25 billion.',
+            sourceName: 'Playbook',
+            sourceUrl: 'https://www.playbook.la/articulo?id=el-dueno-de-jose-cuervo-entra-al-lafc-en-una-operacion-que-valuo-al-club-en-us-1-250-millones',
+            publishedDate: '2026-08-05'
+          },
+          {
+            order: 3,
+            tag: 'Funding',
+            section: 'sports',
+            accentText: '$5B+',
+            headline: 'LIV Golf Secures Unnamed Lead Investor For 2027',
+            emailSummary: '<strong>LIV Golf</strong> signed a board-approved agreement with an unnamed lead investor to fund the tour from 2027 onward, replacing Saudi Arabia\'s Public Investment Fund, which is ending more than <strong>$5 billion</strong> in backing after this season. The tour will shrink to 10 events in 2027 and make its players majority equity holders, a first for a major global sports league.',
+            whyItMatters: 'The exit of Saudi backing forced LIV to find fresh capital just to survive past 2026, and handing players majority equity sets a new ownership template other leagues may watch.',
+            signalText: 'LIV Golf signed a new lead investor to replace Saudi Arabia\'s PIF funding starting in 2027.',
+            sourceName: 'BBC Sport',
+            sourceUrl: 'https://www.bbc.com/sport/golf/articles/c1e14g1d192o',
+            publishedDate: '2026-08-05'
+          },
+          {
+            order: 4,
+            tag: 'Ownership',
+            section: 'sports',
+            accentText: '$6B',
+            headline: 'Bezos, Saverin Set To Buy 30% Stake In Liverpool',
+            emailSummary: 'A consortium led by <strong>Amit Bhatia</strong>, including Amazon founder <strong>Jeff Bezos</strong> and Facebook co-founder <strong>Eduardo Saverin</strong>, is close to buying a <strong>30% stake</strong> in <strong>Liverpool FC</strong> in a deal valuing the club at <strong>$6 billion</strong>. Current owner Fenway Sports Group is expected to announce the deal within days. It would mark Bezos\'s first major move into sports team ownership.',
+            whyItMatters: 'A $6 billion valuation would rank among the largest transactions in football history and signals tech wealth continuing to flow into Premier League ownership.',
+            signalText: 'A consortium including Jeff Bezos and Eduardo Saverin is buying a 30% stake in Liverpool FC.',
+            sourceName: 'Deadline',
+            sourceUrl: 'https://deadline.com/2026/08/liverpool-fc-deal-close-jeff-bezos-eduardo-saverin-1237030021/',
+            publishedDate: '2026-08-10'
+          },
+          {
+            order: 5,
+            tag: 'Labor',
+            section: 'sports',
+            accentText: '$245.3M',
+            headline: 'MLB Salary-Cap Fight Threatens Full 2027 Season',
+            emailSummary: '<strong>MLB</strong> has proposed a <strong>$245.3 million</strong> salary cap and a $171.2 million payroll floor for 2027, a structure the players\' union has rejected outright. The current CBA expires December 1, 2026, and a lockout is widely expected without a new deal, with growing doubt the league can complete a full 162-game season. Under MLB\'s own proposal, the Phillies would be among eight teams forced to cut payroll.',
+            whyItMatters: 'A hard cap would be MLB\'s first attempt at one since the dispute that triggered the 1994 strike, and it would fundamentally reshape how league revenue is split between owners and players.',
+            signalText: 'MLB proposed a $245.3 million salary cap for the 2027 season, and the players\' union rejected it.',
+            sourceName: 'Philadelphia Baseball Review',
+            sourceUrl: 'https://www.philadelphiabaseballreview.com/2026/08/major-league-baseball-labor-dispute-update-lockout-owners-2027-schedule.html',
+            publishedDate: '2026-08-06'
+          },
+          {
+            order: 6,
+            tag: 'Contracts',
+            section: 'sports',
+            headline: 'Isaac Del Toro Extends With UAE Team Emirates Through 2031',
+            emailSummary: 'Mexican cyclist <strong>Isaac del Toro</strong>, 22, signed a contract extension with <strong>UAE Team Emirates-XRG</strong> through the 2031 season. The renewal follows a breakout 2026 in which del Toro finished third overall at the Tour de France, won a stage, and took the white jersey, plus stage-race wins at the UAE Tour, Tirreno-Adriatico, and Tour Auvergne-Rhône-Alpes.',
+            whyItMatters: 'The extension locks in one of cycling\'s most promising young climbers through his expected prime years, anchoring a top European team\'s long-term plans around a Mexican rider.',
+            signalText: 'Isaac del Toro signed a contract extension with UAE Team Emirates through 2031.',
+            sourceName: 'UAE Team Emirates',
+            sourceUrl: 'https://www.uaeteamemirates.com/isaac-del-toro-commits-future-uae-team-emirates-xrg-2031/',
+            publishedDate: '2026-08-06'
+          },
+          {
+            order: 7,
+            tag: 'Media Rights',
+            section: 'entertainment',
+            accentText: '4 Channels',
+            headline: 'Fox Sports México To Exit Izzi And Sky Amid Crisis',
+            emailSummary: '<strong>Fox Sports México</strong>, operated by Grupo Lauman, will exit pay-TV providers izzi and Sky on <strong>August 30, 2026</strong>, pulling four channels after Megacable had already dropped the service in February. The broadcaster has lost NFL, Premier League, FA Cup, Concacaf Champions Cup, and Formula 1 rights amid a cash crunch, and remains locked in a licensing dispute with Fox Corporation over the brand\'s use through November 2026.',
+            whyItMatters: 'One of Mexico\'s flagship sports broadcasters is unwinding its distribution and rights portfolio in real time, opening the door for Fox Corporation\'s competing channel to absorb its audience and rights.',
+            signalText: 'Fox Sports México is exiting two major Mexican pay-TV platforms on August 30, 2026.',
+            sourceName: 'El Imparcial',
+            sourceUrl: 'https://www.elimparcial.com/deporte/2026/08/05/fox-sports-mexico-saldra-de-izzi-y-sky-donde-podra-verse-el-canal-de-grupo-lauman-y-por-que-atraviesa-una-crisis/',
+            publishedDate: '2026-08-04'
+          },
+          {
+            order: 8,
+            tag: 'Box Office',
+            section: 'entertainment',
+            accentText: '$1.67B',
+            headline: 'Spider-Man: Brand New Day Becomes 2nd-Fastest To $1B Overseas',
+            emailSummary: '<strong>\'Spider-Man: Brand New Day\'</strong> has crossed <strong>$1 billion</strong> internationally in 12 days, the second-fastest film ever to do so behind only 2019\'s Avengers: Endgame. The film has grossed <strong>$1.67 billion</strong> worldwide — $1.01 billion international and $655 million domestic — and is now the 12th-highest-grossing release of all time.',
+            whyItMatters: 'The pace confirms Marvel\'s Spider-Man franchise remains one of the few IPs that can still reliably move the global box office at blockbuster scale.',
+            signalText: '\'Spider-Man: Brand New Day\' crossed $1 billion overseas in 12 days, reaching $1.67 billion worldwide.',
+            sourceName: 'Variety',
+            sourceUrl: 'https://variety.com/2026/film/box-office/spider-man-brand-new-day-second-fastest-movie-1-billion-overseas-1236830845/',
+            publishedDate: '2026-08-09'
+          },
+          {
+            order: 9,
+            tag: 'Box Office',
+            section: 'entertainment',
+            accentText: '$3.985B',
+            headline: 'Summer Box Office On Pace To Cross $4B, Best Since 2023',
+            emailSummary: 'The 2026 domestic summer box office stood at <strong>$3.985 billion</strong> through August 9, just $14.8 million from crossing $4 billion for the first time since 2023. Five films — Spider-Man: Brand New Day, The Odyssey, Toy Story 5, The Obsession, and The Backrooms — account for <strong>$2 billion</strong> of that total, half of the summer\'s domestic ticket sales.',
+            whyItMatters: 'A $4 billion summer would mark Hollywood\'s strongest box-office stretch since before the pandemic, though the total is being carried by a narrow set of tentpoles rather than a broad recovery.',
+            signalText: 'The 2026 domestic summer box office is on pace to cross $4 billion for the first time since 2023.',
+            sourceName: 'Deadline',
+            sourceUrl: 'https://deadline.com/2026/08/summer-domestic-box-office-record-spider-man-odyssey-1237029662/',
+            publishedDate: '2026-08-09'
+          },
+          {
+            order: 10,
+            tag: 'Antitrust',
+            section: 'entertainment',
+            accentText: '$7M/Day',
+            headline: 'Paramount-WBD Antitrust Trial Set For March 2027',
+            emailSummary: 'A federal judge set a <strong>March 2, 2027</strong> trial date for the antitrust challenge to Paramount\'s acquisition of <strong>Warner Bros. Discovery</strong>, brought by a coalition of state attorneys general and the Writers Guild of America. Paramount must pay WBD shareholders roughly <strong>$7 million per day</strong> starting September 30 until the deal closes, meaning its liability will exceed $1 billion by the time a verdict arrives.',
+            whyItMatters: 'The delay keeps one of media\'s largest pending mergers in legal limbo for at least seven more months and pushes Paramount\'s carrying costs past $1 billion before a ruling even arrives.',
+            signalText: 'A judge set a March 2027 trial date for the Paramount-Warner Bros. Discovery antitrust case.',
+            sourceName: 'Scripps News',
+            sourceUrl: 'https://www.scrippsnews.com/us-news/paramount-warner-bros-discovery-judge-sets-2027-trial-date-for-antitrust-fight',
+            publishedDate: '2026-08-04'
+          }
+        ]
+      }
+    ]
+  },
+
   // JULY 2026
   {
     slug: 'july-2026',
-    isCurrent: true,
+    isCurrent: false,
     monthLabel: 'July 2026',
     editionTag: 'Sports · Entertainment · IP · Capital',
     publishedDate: '2026-08-02',

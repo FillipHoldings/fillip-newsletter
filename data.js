@@ -22,10 +22,142 @@ const MONTHLY_GROUPS = [
     isCurrent: true,
     monthLabel: 'August 2026',
     editionTag: 'Sports · Entertainment · IP · Capital',
-    publishedDate: '2026-08-09',
-    dateRange: 'August 2–9, 2026',
-    introLine: 'Week one of August: Becle\'s Juan Domingo Beckmann bought a 6% stake in LAFC at a $1.25 billion valuation while Mexico\'s own Fox Sports collapsed under debt, Jeff Bezos and Eduardo Saverin closed in on a $6 billion stake in Liverpool, LIV Golf replaced its Saudi backer with an unnamed investor, MLB\'s players and owners dug in over a hard salary cap that could cost part of the 2027 season, and Spider-Man: Brand New Day helped push the domestic summer box office toward $4 billion for the first time since 2023.',
+    publishedDate: '2026-08-17',
+    dateRange: 'August 2–17, 2026',
+    introLine: 'Weeks 1–2 of August: Becle\'s Juan Domingo Beckmann bought a 6% stake in LAFC at a $1.25 billion valuation while Mexico\'s own Fox Sports collapsed under debt, Jeff Bezos and Eduardo Saverin closed in on a $6 billion stake in Liverpool, LIV Golf replaced its Saudi backer with an unnamed investor, MLB\'s players and owners dug in over a hard salary cap that could cost part of the 2027 season, and Spider-Man: Brand New Day helped push the domestic summer box office toward $4 billion for the first time since 2023; then the Bezos-Saverin consortium closed its Liverpool stake at a $7.45 billion valuation, Bob Iger and Josh Kushner\'s group bought the Lakers for a record $12.5 billion, Google turned five of Europe\'s biggest football clubs into a Gemini and Pixel fan-experience platform, and David Ellison threatened to move Paramount out of California over the stalled Warner Bros. Discovery merger.',
     issues: [
+
+      // WEEK 2
+      {
+        slug: 'week-2-august-2026',
+        issueNumber: '2',
+        weekLabel: 'Week 2',
+        dateRange: 'August 10–17, 2026',
+        publishedDate: '2026-08-17',
+        issueTitle: 'Week 2 — August 2026',
+        editionTag: 'Sports · Entertainment · IP · Capital',
+        introLine: 'Week two of August: Bob Iger and Josh Kushner\'s group bought the Lakers for a record $12.5 billion, a Bezos-backed consortium closed its $7.45 billion Liverpool stake, Google turned five of Europe\'s biggest football clubs into an AI and smartphone platform for Gemini and Pixel, and Hollywood fought three separate battles over confidential data, state jurisdiction, and AI training rights.',
+        shareText: 'The Lakers sell for a record $12.5B, Bezos closes his $7.45B Liverpool stake, Google turns Gemini into your football sidekick, and Ellison threatens to walk Paramount out of California — Week 2 August · Fillip.',
+        coreSignal: 'This week\'s stories share a throughline: fights over who controls the information underneath an asset, not just the asset itself. Bezos- and Kushner-linked money bought into two of sports\' most storied franchises, while Panini, David Ellison, and Hollywood\'s own trade body each fought to control confidential licensing data, legal jurisdiction, and AI training rights. Even Google\'s football deal is really a bid to own the fan-data layer, not just the sponsorship board.',
+        ecosystemNews: [
+          {
+            headline: 'El Grande Americano Greets Santos Fans Before Chivas Clash',
+            body: 'Ahead of Santos Laguna\'s Liga MX match against Chivas, AAA star El Grande Americano appeared in Torreón to greet Santos supporters, captured in a video of the wrestler mingling with fans before kickoff. The moment adds to his growing crossover presence ahead of his Megacampeonato defense at TripleManía 34 in September.',
+            sourceName: 'TUDN',
+            sourceUrl: 'https://www.tudn.com/futbol/liga-mx/asi-reciben-los-aficionados-de-santos-al-grande-americano-previo-al-duelo-con-chivas-video'
+          },
+          {
+            headline: 'TripleManía 34\'s First Match Confirmed: Americano vs. Mysterio',
+            body: 'AAA confirmed the first official match for TripleManía 34: El Grande Americano defends the Megacampeonato against reigning champion Dominik Mysterio on Night 2, September 13 at Estadio Ciudad de México. Americano earned his shot by winning the Rey de Reyes tournament, with the rivalry escalating since Verano de Escándalo.',
+            sourceName: 'Récord',
+            sourceUrl: 'https://www.record.com.mx/historia/1a-lucha-de-triplemania-34-el-grande-americano-vs-dominik-mysterio-por-el-megacampeonato-aaa-2026081603414559356'
+          }
+        ],
+        stories: [
+          {
+            order: 1,
+            tag: 'Ownership',
+            section: 'sports',
+            accentText: '$12.5B',
+            headline: 'Lakers Sold To Bob Iger, Josh Kushner Group For $12.5B',
+            emailSummary: 'An ownership group led by <strong>Josh Kushner</strong> and <strong>Bob Iger</strong> is buying the <strong>Los Angeles Lakers</strong> for a <strong>$12.5 billion</strong> price tag, according to two people familiar with the deal. The team was previously sold to <strong>Mark Walter</strong> in October at a valuation of about $10 billion. Walter is now under investigation by the U.S. Attorney\'s Office in Manhattan and the SEC over insurance-fraud allegations.',
+            whyItMatters: 'The sale sets a new record valuation for an NBA franchise and hands control of one of the league\'s most storied teams to a venture-capital and media-executive duo rather than a traditional sports owner.',
+            signalText: 'Bob Iger and Josh Kushner\'s group is buying the Los Angeles Lakers for $12.5 billion.',
+            sourceName: 'NBC News',
+            sourceUrl: 'https://www.nbcnews.com/sports/nba/los-angeles-lakers-sold-bob-iger-josh-kushner-12-billion-rcna592121',
+            publishedDate: '2026-08-12'
+          },
+          {
+            order: 2,
+            tag: 'Ownership',
+            section: 'sports',
+            accentText: '$7.45B',
+            headline: 'Bezos-Backed Consortium Buys 30% Stake In Liverpool',
+            emailSummary: 'A consortium led by <strong>Amit Bhatia</strong>\'s 1892 Holdings — including Jeff Bezos\'s K5 Sports fund and Eduardo Saverin\'s EE Capital — bought a <strong>30%</strong> stake in <strong>Liverpool FC</strong>, valuing the club at <strong>£5.5 billion ($7.45 billion)</strong>. Seller <strong>Fenway Sports Group</strong> retains majority control. Bhatia becomes vice chairman; Bezos will not sit on the board and is represented by Bryan Baum.',
+            whyItMatters: 'The deal brings two of the world\'s wealthiest tech and finance figures into direct Premier League ownership, more than doubling FSG\'s original £300 million purchase price from fifteen years ago.',
+            signalText: 'A Bezos- and Saverin-backed consortium bought a 30% stake in Liverpool FC for $7.45 billion.',
+            sourceName: 'ESPN',
+            sourceUrl: 'https://www.espn.com/soccer/story/_/id/49610494/liverpool-owners-fsg-sell-stake-consortium-jeff-bezos-amit-bhatia',
+            publishedDate: '2026-08-14'
+          },
+          {
+            order: 3,
+            tag: 'Litigation',
+            section: 'sports',
+            headline: 'Panini Adds New Confidential-Data Claims To Fanatics Suit',
+            emailSummary: '<strong>Panini</strong> filed new claims in its ongoing antitrust lawsuit against <strong>Fanatics</strong>, alleging Fanatics misused confidential licensing details — including royalty rates and minimum guarantee schedules — to win exclusive NBA, NFL, NBPA and NFLPA trading-card deals. Panini also alleges <strong>OneTeam Partners</strong> conspired with Fanatics to monopolize the market. A magistrate judge recently lifted the sealing order on these allegations.',
+            whyItMatters: 'The claims escalate a three-year fight over who controls exclusive sports trading-card licensing, one of the most valuable rights categories in the collectibles market.',
+            signalText: 'Panini alleges Fanatics misused confidential licensing data to win exclusive NBA and NFL card deals.',
+            sourceName: 'Front Office Sports',
+            sourceUrl: 'https://frontofficesports.com/panini-fanatics-allegations-lawsuit-confidential/',
+            publishedDate: '2026-08-14'
+          },
+          {
+            order: 4,
+            tag: 'Media Rights',
+            section: 'sports',
+            accentText: '86M+ Followers',
+            headline: 'KSI\'s Club Signs New Distribution Deal With DAZN, YouTube',
+            emailSummary: '<strong>Dagenham & Redbridge</strong>, the National League South club where <strong>KSI</strong> is a shareholder and strategic partner, signed a new distribution partnership with <strong>DAZN</strong> to livestream select fixtures on YouTube throughout the 2026-27 season. The deal adds behind-the-scenes access, special guests, and new production formats to selected matches. KSI has more than 86 million combined followers across platforms.',
+            whyItMatters: 'A creator with tens of millions of followers steering broadcast strategy at a fifth-tier English club shows creator-led distribution reaching deep into football\'s lower divisions.',
+            signalText: 'Dagenham & Redbridge signed a DAZN-backed YouTube livestreaming deal for the 2026-27 season.',
+            sourceName: 'ESPN',
+            sourceUrl: 'https://www.espn.com/soccer/story/_/id/49608013/ksi-livestream-dagenham-redbridge-fixtures-new-distribution-partnership',
+            publishedDate: '2026-08-14'
+          },
+          {
+            order: 5,
+            tag: 'Sponsorship',
+            section: 'sports',
+            accentText: '5 Clubs',
+            headline: 'Google Becomes Official AI Partner Of Five Top Clubs',
+            emailSummary: '<strong>Google</strong> announced long-term partnerships making <strong>Gemini</strong> and <strong>Pixel</strong> the official consumer-AI and smartphone partners of <strong>Arsenal, Barcelona, Bayern Munich, Liverpool</strong> and <strong>Paris Saint-Germain</strong>. Gemini will act as a personal AI assistant for fans — analyzing formation changes, surfacing head-to-head stats, and settling post-match debates — while Pixel devices capture behind-the-scenes content. Google said the partnerships will also amplify coverage of each club\'s women\'s team.',
+            whyItMatters: 'Google is using top European football clubs as a distribution channel to embed Gemini and Pixel into fans\' daily habits, while using the deal to address the visibility gap in women\'s football.',
+            signalText: 'Google made Gemini and Pixel the official AI and smartphone partners of five top football clubs.',
+            sourceName: 'The Economic Times',
+            sourceUrl: 'https://economictimes.indiatimes.com/news/international/global-trends/google-partners-with-arsenal-barcelona-bayern-liverpool-and-psg-for-ai-powered-fan-experiences/articleshow/133291279.cms',
+            publishedDate: '2026-08-17'
+          },
+          {
+            order: 6,
+            tag: 'IP Licensing',
+            section: 'entertainment',
+            accentText: '600M+ Sold',
+            headline: 'Squishmallows Movie Heads To Amazon MGM With Jazwares',
+            emailSummary: '<strong>Amazon MGM</strong> is developing a tentpole family film based on <strong>Squishmallows</strong>, licensing the toy line and co-producing with creator <strong>Jazwares</strong> alongside producer <strong>Beau Flynn</strong> ("Moana," "Jungle Cruise"). It is not yet known whether the film will be animated, live-action, or a hybrid. Squishmallows has sold more than <strong>600 million</strong> units across 60 countries since launching in 2017.',
+            whyItMatters: 'A billion-dollar toy line with no prior screen adaptation getting a major-studio tentpole treatment shows studios still mining consumer-product IP for original franchises.',
+            signalText: 'Amazon MGM is developing a feature film based on the Squishmallows toy line.',
+            sourceName: 'Variety',
+            sourceUrl: 'https://variety.com/2026/film/news/squishmallows-movie-amazon-mgm-beau-flynn-1236834782/',
+            publishedDate: '2026-08-14'
+          },
+          {
+            order: 7,
+            tag: 'Litigation',
+            section: 'entertainment',
+            accentText: '$1.2B',
+            headline: 'Ellison Threatens To Move Paramount Out Of California',
+            emailSummary: '<strong>David Ellison</strong> told Paramount\'s senior executive team he will begin relocating the studio out of California on <strong>Oct. 1</strong> if state attorney general <strong>Rob Bonta</strong> won\'t negotiate a settlement in the states\' antitrust suit against the Paramount-Warner Bros. Discovery merger by then. Bonta called the threat "an attempt to blackmail the state." Paramount starts accruing $7 million a day in fees to WBD shareholders on Oct. 1 — roughly <strong>$1.2 billion</strong> by the trial\'s scheduled March 2027 conclusion.',
+            whyItMatters: 'A studio threatening to leave its home state over an unresolved antitrust case shows how much leverage Paramount believes it has, and how costly the merger\'s limbo has already become.',
+            signalText: 'David Ellison threatened to move Paramount out of California starting October 1.',
+            sourceName: 'Variety',
+            sourceUrl: 'https://variety.com/2026/film/news/david-ellison-move-paramount-out-of-california-states-antitrust-lawsuit-1236831936/',
+            publishedDate: '2026-08-11'
+          },
+          {
+            order: 8,
+            tag: 'AI · IP',
+            section: 'entertainment',
+            headline: 'MPA Strikes IP-Protection Deal With ByteDance Over AI',
+            emailSummary: 'The <strong>Motion Picture Association</strong> and <strong>ByteDance</strong> signed a memorandum of understanding to build intellectual-property protections into ByteDance\'s <strong>Seedance</strong> and <strong>Seedream</strong> AI video and image generators. The deal follows a February cease-and-desist letter the MPA sent after Seedance 2.0 let users generate videos of actors including Brad Pitt and Tom Cruise. The protections are already reflected in last month\'s Seedance 2.5 and Seedream 5.0 Pro releases.',
+            whyItMatters: 'One of the industry\'s most vocal AI critics reached a negotiated framework instead of pursuing litigation, setting a template Hollywood may use with other AI model makers.',
+            signalText: 'The Motion Picture Association signed an IP-protection agreement with ByteDance covering its Seedance AI models.',
+            sourceName: 'Variety',
+            sourceUrl: 'https://variety.com/2026/biz/news/motion-picture-association-deal-bytedance-ip-ai-seedance-1236836240/',
+            publishedDate: '2026-08-17'
+          }
+        ]
+      },
 
       // WEEK 1
       {

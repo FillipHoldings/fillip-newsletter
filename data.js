@@ -22,10 +22,171 @@ const MONTHLY_GROUPS = [
     isCurrent: true,
     monthLabel: 'August 2026',
     editionTag: 'Sports · Entertainment · IP · Capital',
-    publishedDate: '2026-08-17',
-    dateRange: 'August 2–17, 2026',
-    introLine: 'Weeks 1–2 of August: Becle\'s Juan Domingo Beckmann bought a 6% stake in LAFC at a $1.25 billion valuation while Mexico\'s own Fox Sports collapsed under debt, Jeff Bezos and Eduardo Saverin closed in on a $6 billion stake in Liverpool, LIV Golf replaced its Saudi backer with an unnamed investor, MLB\'s players and owners dug in over a hard salary cap that could cost part of the 2027 season, and Spider-Man: Brand New Day helped push the domestic summer box office toward $4 billion for the first time since 2023; then the Bezos-Saverin consortium closed its Liverpool stake at a $7.45 billion valuation, Bob Iger and Josh Kushner\'s group bought the Lakers for a record $12.5 billion, Google turned five of Europe\'s biggest football clubs into a Gemini and Pixel fan-experience platform, and David Ellison threatened to move Paramount out of California over the stalled Warner Bros. Discovery merger.',
+    publishedDate: '2026-08-24',
+    dateRange: 'August 2–24, 2026',
+    introLine: 'Weeks 1–2 of August: Becle\'s Juan Domingo Beckmann bought a 6% stake in LAFC at a $1.25 billion valuation while Mexico\'s own Fox Sports collapsed under debt, Jeff Bezos and Eduardo Saverin closed in on a $6 billion stake in Liverpool, LIV Golf replaced its Saudi backer with an unnamed investor, MLB\'s players and owners dug in over a hard salary cap that could cost part of the 2027 season, and Spider-Man: Brand New Day helped push the domestic summer box office toward $4 billion for the first time since 2023; then the Bezos-Saverin consortium closed its Liverpool stake at a $7.45 billion valuation, Bob Iger and Josh Kushner\'s group bought the Lakers for a record $12.5 billion, Google turned five of Europe\'s biggest football clubs into a Gemini and Pixel fan-experience platform, and David Ellison threatened to move Paramount out of California over the stalled Warner Bros. Discovery merger; then the Padres sold for a record $3.9 billion, LIV Golf ended its 2026 season early amid an ownership transition, Liga MX floated expanding past 18 teams as foreign capital circled new franchise slots, PE newcomer BlackSun raised its first $1 billion sports fund, Prime Video locked up Mexico\'s national team for 38 matches while pledging $2 billion across Latin America through 2030, Authentic completed its Care Bears acquisition, TikTok agreed to pay $400 million to settle a DOJ child-privacy case, and California\'s attorney general canceled settlement talks over Paramount\'s $111 billion Warner Bros. Discovery deal.',
     issues: [
+
+      // WEEK 3
+      {
+        slug: 'week-3-august-2026',
+        issueNumber: '3',
+        weekLabel: 'Week 3',
+        dateRange: 'August 17–24, 2026',
+        publishedDate: '2026-08-24',
+        issueTitle: 'Week 3 — August 2026',
+        editionTag: 'Sports · Entertainment · IP · Capital',
+        introLine: 'Week three of August: the Padres sold for a record $3.9 billion, LIV Golf ended its 2026 season early to rebuild under new ownership, a new PE firm called BlackSun raised its first $1 billion sports fund, and Prime Video locked up Mexico\'s national team while pledging $2 billion across Latin America through 2030.',
+        shareText: 'The Padres sell for a record $3.9B, LIV Golf ends its season early to rebuild, BlackSun raises $1B for its first sports fund, and Prime Video locks up Mexico\'s national team while pledging $2B across Latin America — Week 3 August · Fillip.',
+        coreSignal: 'Every story this week is a fight over who gets to own the future rights to something, not just who owns it today. The Padres sold for a record $3.9 billion on the strength of stadium and season-ticket economics rather than market size, BlackSun raised its first $1 billion by promising fans and tribal nations actual equity, and LIV Golf is trying to hand ownership to its own players. Even Authentic\'s Care Bears purchase and Paramount\'s stalled Warner deal are both bets that owning the underlying IP — a character, a studio\'s catalog — beats renting it.',
+        latamAngle: 'This issue puts Amazon\'s Latin American bet next to Liga MX\'s own capital-raising ambitions. Prime Video locked up Mexico\'s national team for four years — 38 home matches starting September 26 — as one piece of a broader $2 billion investment across Mexico, Brazil, Argentina, Colombia and Chile through 2030. Liga MX, meanwhile, is entertaining its own capital opening: president Francisco González won\'t rule out expanding past 18 teams as foreign investment funds circle newly available franchise slots, valued at $200–250 million each, since the league suspended promotion and relegation. Global platforms are buying distribution rights to Mexican soccer while Mexican soccer itself opens the door to outside ownership.',
+        ecosystemNews: [
+          {
+            headline: 'AAA Reveals Stacked \'Ola de Calor\' Card For August 30',
+            body: 'AAA revealed the lineup for \'Ola de Calor\' on August 30 at Bert Ogden Arena in Edinburg, Texas — War Raiders defending the AAA Tag Team Championships against Los Americanos, a gauntlet match for a shot at Flammer\'s Reina de Reinas title, and a four-way for the AAA Latin American Championship. The card also sets up the Mysterio-Grande Americano contract signing ahead of TripleManía 34.',
+            sourceName: 'Récord',
+            sourceUrl: 'https://www.record.com.mx/historia/aaa-revela-la-cartelera-de-ola-de-calor-para-este-domingo-30-de-agosto-2026082320385733678'
+          },
+          {
+            headline: 'Kings And Queens League México Launch New Copa Season',
+            body: 'Kings League México kicks off a new Copa tournament on September 6, followed by Queens League México on September 13, with Club América returning as the format\'s first professional club affiliate. The relaunch opens a fresh chapter for both competitions since their 2024 debut in Mexico, building toward a new season of matches under the Copa format.',
+            sourceName: 'Excélsior',
+            sourceUrl: 'https://www.excelsior.com.mx/deportes/kings-y-queens-league-mexico-regresan-para-torneo-copa-con-reduccion-equipos'
+          }
+        ],
+        stories: [
+          {
+            order: 1,
+            tag: 'Ownership',
+            section: 'sports',
+            accentText: '$3.9B',
+            headline: 'Padres Sold To Feliciano, Jones For Record $3.9B',
+            emailSummary: 'MLB owners unanimously approved the sale of the <strong>San Diego Padres</strong> to private equity billionaire <strong>José E. Feliciano</strong> and his wife <strong>Kwanza Jones</strong> for <strong>$3.9 billion</strong>, breaking the prior MLB record of $2.42 billion set by Steve Cohen\'s 2020 purchase of the Mets. Feliciano and Jones will own a reported 40% of the club, with Feliciano serving as control owner. The pair beat finalists including Dan Friedkin, Joe Lacob, and Tom Gores in a process that drew at least three bids of $3.5 billion or more.',
+            whyItMatters: 'The price shatters MLB\'s sale record despite San Diego ranking outside the 15 largest U.S. metro areas, showing team economics — not market size — now drive valuations.',
+            signalText: 'MLB owners approved the $3.9 billion sale of the San Diego Padres.',
+            sourceName: 'Sportico',
+            sourceUrl: 'https://www.sportico.com/business/team-sales/2026/san-diego-padres-sale-feliciano-jones-1234942104/',
+            publishedDate: '2026-08-17'
+          },
+          {
+            order: 2,
+            tag: 'Restructuring',
+            section: 'sports',
+            accentText: '£3.7B',
+            headline: 'LIV Golf Ends Season Early To Rebuild For 2027',
+            emailSummary: '<strong>LIV Golf</strong> cancelled its Team Championships in Michigan and confirmed this week\'s Indianapolis event will close out the 2026 season, saying it needs to focus on "building its next chapter." Since launching in 2022, Saudi Arabia\'s <strong>Public Investment Fund</strong> spent <strong>£3.7 billion</strong> on the league before withdrawing its backing in April; CEO <strong>Scott O\'Neil</strong> said new investors have been secured and a transaction is expected to close in September. Three-time individual champion <strong>Jon Rahm</strong> is reportedly expected to leave despite playing in the Indianapolis finale.',
+            whyItMatters: 'The early end formalizes LIV\'s shift away from Saudi ownership toward a player-equity model, with retaining stars like Rahm now the real test of whether the new structure holds.',
+            signalText: 'LIV Golf cancelled its Michigan season finale and ended the 2026 season early.',
+            sourceName: 'BBC Sport',
+            sourceUrl: 'https://www.bbc.com/sport/golf/articles/c7vg4rn7v6ro',
+            publishedDate: '2026-08-17'
+          },
+          {
+            order: 3,
+            tag: 'Expansion',
+            section: 'sports',
+            accentText: '20 Teams',
+            headline: 'Liga MX Doesn\'t Rule Out Expanding To 20+ Teams',
+            emailSummary: '<strong>Liga MX</strong> president <strong>Francisco González</strong> said the league is not ruling out expanding from its current <strong>18 teams</strong> to <strong>20 or more</strong>, with 20 seen as the ideal number for scheduling. The comments come as foreign investment funds show growing interest in acquiring franchises since Liga MX split from the Mexican Football Federation and suspended promotion and relegation. Current Liga MX clubs are valued between <strong>$200 million and $250 million</strong>.',
+            whyItMatters: 'Expansion talk paired with the promotion/relegation suspension signals Liga MX is positioning itself to sell new franchise slots to outside capital rather than open spots through sporting results.',
+            signalText: 'Liga MX said it is not ruling out expanding from 18 to 20 or more teams.',
+            sourceName: 'Récord',
+            sourceUrl: 'https://www.record.com.mx/historia/liga-mx-no-descarta-incremento-a-20-franquicias-o-mas-2026082023083226053',
+            publishedDate: '2026-08-20'
+          },
+          {
+            order: 4,
+            tag: 'Funding',
+            section: 'sports',
+            accentText: '$1B Raised',
+            headline: 'New PE Firm BlackSun Raises $1B For Sports Fund',
+            emailSummary: 'Newly launched <strong>BlackSun Private Equity</strong> has raised <strong>$1 billion</strong> toward its first fund, targeting <strong>$7 billion</strong> for investments in professional sports and franchise ownership, with Dubai-based <strong>Greenstone Equity Partners</strong> as placement agent. Founded by <strong>Atonn Muhammad</strong> and investment banker <strong>Nery Gomez</strong>, the firm\'s early moves include forming a group to bid for the <strong>Seattle SuperSonics</strong>\' return to the NBA and launching a new equity-owned <strong>World American Football League</strong>. Athletes <strong>Jason Kidd</strong>, Roy Jones Jr., and Lawrence Taylor are attached as investors.',
+            whyItMatters: 'A fund built around fan and community equity stakes — not just institutional capital — adds a new ownership model to the wave of PE money entering pro sports.',
+            signalText: 'BlackSun Private Equity raised $1 billion toward a $7 billion sports and media fund.',
+            sourceName: 'Deadline',
+            sourceUrl: 'https://deadline.com/2026/08/private-equity-firm-blacksun-sports-media-fund-1237047176/',
+            publishedDate: '2026-08-21'
+          },
+          {
+            order: 5,
+            tag: 'Media Rights',
+            section: 'sports',
+            accentText: '5 Years',
+            headline: 'Indiana Pacers Sign 5-Year DAZN Streaming Deal',
+            emailSummary: 'The <strong>Indiana Pacers</strong> signed a five-year streaming partnership making <strong>DAZN</strong> the team\'s new home, with 22 regular-season and 4 preseason games streamed free in year one across Indiana, Kentucky, Iowa, Illinois and Missouri. The deal reflects a market where cable TV access has fallen from <strong>88% in 2010 to roughly 30%</strong> today, according to team president <strong>Mel Raines</strong>. DAZN, which counts <strong>300 million</strong> global users, will also sell an Early Bird Season Pass for $59.99.',
+            whyItMatters: 'A legacy NBA franchise moving its local broadcast to a global streaming platform shows regional sports networks losing ground even in mid-size media markets.',
+            signalText: 'The Indiana Pacers signed a five-year streaming deal with DAZN for local game broadcasts.',
+            sourceName: 'Forbes',
+            sourceUrl: 'https://www.forbes.com/sites/tonyeast/2026/08/20/indiana-pacers-partner-with-dazn-as-new-streaming-home-for-games/',
+            publishedDate: '2026-08-20'
+          },
+          {
+            order: 6,
+            tag: 'Media Rights',
+            section: 'sports',
+            accentText: '38 Matches',
+            headline: 'Prime Video Signs Mexico National Team For 38 Matches',
+            emailSummary: '<strong>Prime Video</strong> becomes the new streaming home for Mexico\'s national soccer team, agreeing to broadcast <strong>38 home matches</strong> over a <strong>four-year deal</strong> covering friendlies, CONCACAF competitions and 2030 World Cup qualifying — though not the World Cup final tournament itself. Coverage begins <strong>September 26, 2026</strong> against Colombia. <strong>Gustavo Coelho</strong>, Prime Video\'s head of sports for Latin America, said the strategy goes "beyond acquiring rights" to improving production quality and fan access.',
+            whyItMatters: 'Locking up Mexico\'s marquee national team for four years builds Prime Video\'s live-sports footprint in one of the world\'s most valuable soccer fanbases ahead of the 2030 World Cup cycle.',
+            signalText: 'Prime Video signed a four-year deal for 38 home matches of Mexico\'s national soccer team.',
+            sourceName: 'Récord',
+            sourceUrl: 'https://www.record.com.mx/historia/seleccion-mexicana-llega-a-prime-video-transmitiran-38-partidos-del-tri-rumbo-al-mundial-2030-2026082020275559000',
+            publishedDate: '2026-08-20'
+          },
+          {
+            order: 7,
+            tag: 'IP Licensing',
+            section: 'entertainment',
+            accentText: '40+ Years',
+            headline: 'Authentic Completes Care Bears Acquisition, Adds New Vertical',
+            emailSummary: '<strong>Authentic Brands Group</strong> completed its acquisition of <strong>Care Bears</strong>, establishing character IP as a new standalone vertical within its global platform. <strong>Simon Philips</strong> will lead the business as Executive Vice President of Character Brands, backed by a senior team spanning brand management, retail development and entertainment. CEO <strong>Corey Salter</strong> said Care Bears brings "more than four decades of emotional connection" and global recognition to build on.',
+            whyItMatters: 'Carving out a dedicated Character Brands division shows Authentic treating character IP as its own asset class alongside its existing fashion and celebrity licensing business.',
+            signalText: 'Authentic Brands Group completed its acquisition of Care Bears.',
+            sourceName: 'Brands Untapped',
+            sourceUrl: 'https://www.brandsuntapped.com/authentic-completes-care-bears-acquisition-and-details-new-character-vertical/',
+            publishedDate: '2026-08-19'
+          },
+          {
+            order: 8,
+            tag: 'Streaming Investment',
+            section: 'entertainment',
+            accentText: '$2B',
+            headline: 'Prime Video To Invest $2B In Latin America By 2030',
+            emailSummary: '<strong>Prime Video</strong> announced plans to invest more than <strong>$2 billion</strong> in Latin America between 2027 and 2030, spanning original programming, licensed content and live sports rights across <strong>Mexico, Brazil, Argentina, Colombia and Chile</strong>. The streamer aims to double its number of local originals versus 2026, unveiling <strong>25 new titles</strong> for 2027 at a Mexico City showcase. VP of international <strong>Kelly Day</strong> called it "an investment in the entire region, across every way fans engage with Prime Video."',
+            whyItMatters: 'A multiyear, multi-country commitment of this size signals Amazon is betting on Latin America as a primary growth market for original content, not just a licensing outlet.',
+            signalText: 'Prime Video will invest more than $2 billion in Latin American content through 2030.',
+            sourceName: 'Deadline',
+            sourceUrl: 'https://deadline.com/2026/08/prime-video-2-billion-latin-america-1237047327/',
+            publishedDate: '2026-08-21'
+          },
+          {
+            order: 9,
+            tag: 'Regulatory',
+            section: 'entertainment',
+            accentText: '$400M',
+            headline: 'TikTok To Pay $400M In DOJ Child-Privacy Settlement',
+            emailSummary: 'The <strong>Department of Justice</strong> secured a <strong>$400 million</strong> settlement with <strong>TikTok</strong> and <strong>ByteDance</strong> resolving a 2024 complaint alleging violations of the Children\'s Online Privacy Protection Act, one of the largest COPPA recoveries ever. TikTok has already changed its ownership, management and compliance practices to strengthen safeguards for younger users since the complaint was filed. Associate Attorney General <strong>Stanley E. Woodward Jr.</strong> called the deal "a major victory for American children and parents."',
+            whyItMatters: 'The size of the settlement sets a new benchmark for how much regulators can extract from platforms over children\'s data, raising the compliance cost for any app with a young user base.',
+            signalText: 'TikTok and ByteDance agreed to pay $400 million to settle a DOJ children\'s-privacy lawsuit.',
+            sourceName: 'Deadline',
+            sourceUrl: 'https://deadline.com/2026/08/tiktok-400m-justice-department-settlement-childrens-privacy-1237047976/',
+            publishedDate: '2026-08-21'
+          },
+          {
+            order: 10,
+            tag: 'Litigation',
+            section: 'entertainment',
+            accentText: '$111B Deal',
+            headline: 'California AG Cancels Paramount Settlement Talks Over $111B Deal',
+            emailSummary: 'California Attorney General <strong>Rob Bonta</strong> canceled planned settlement talks with <strong>Paramount</strong> over its <strong>$111 billion</strong> proposed acquisition of <strong>Warner Bros. Discovery</strong>, accusing the company of leaking and misrepresenting an earlier meeting. Bonta leads a coalition of <strong>12 states</strong> suing to block the merger; Paramount had separately asked a court to order the states to post a <strong>$1.9 billion</strong> bond. The antitrust trial remains scheduled for March 2027.',
+            whyItMatters: 'A canceled meeting removes the clearest path toward resolving the merger outside of court, extending the uncertainty that\'s already costing Paramount roughly $7 million a day in fees to WBD shareholders.',
+            signalText: 'California\'s attorney general canceled settlement talks with Paramount over its Warner Bros. Discovery merger.',
+            sourceName: 'Variety',
+            sourceUrl: 'https://variety.com/2026/film/global/california-ag-bonta-cancels-paramount-settlement-talks-1236841379/',
+            publishedDate: '2026-08-24'
+          }
+        ]
+      },
 
       // WEEK 2
       {

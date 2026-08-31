@@ -22,10 +22,160 @@ const MONTHLY_GROUPS = [
     isCurrent: true,
     monthLabel: 'August 2026',
     editionTag: 'Sports · Entertainment · IP · Capital',
-    publishedDate: '2026-08-24',
-    dateRange: 'August 2–24, 2026',
-    introLine: 'Weeks 1–2 of August: Becle\'s Juan Domingo Beckmann bought a 6% stake in LAFC at a $1.25 billion valuation while Mexico\'s own Fox Sports collapsed under debt, Jeff Bezos and Eduardo Saverin closed in on a $6 billion stake in Liverpool, LIV Golf replaced its Saudi backer with an unnamed investor, MLB\'s players and owners dug in over a hard salary cap that could cost part of the 2027 season, and Spider-Man: Brand New Day helped push the domestic summer box office toward $4 billion for the first time since 2023; then the Bezos-Saverin consortium closed its Liverpool stake at a $7.45 billion valuation, Bob Iger and Josh Kushner\'s group bought the Lakers for a record $12.5 billion, Google turned five of Europe\'s biggest football clubs into a Gemini and Pixel fan-experience platform, and David Ellison threatened to move Paramount out of California over the stalled Warner Bros. Discovery merger; then the Padres sold for a record $3.9 billion, LIV Golf ended its 2026 season early amid an ownership transition, Liga MX floated expanding past 18 teams as foreign capital circled new franchise slots, PE newcomer BlackSun raised its first $1 billion sports fund, Prime Video locked up Mexico\'s national team for 38 matches while pledging $2 billion across Latin America through 2030, Authentic completed its Care Bears acquisition, TikTok agreed to pay $400 million to settle a DOJ child-privacy case, and California\'s attorney general canceled settlement talks over Paramount\'s $111 billion Warner Bros. Discovery deal.',
+    publishedDate: '2026-08-31',
+    dateRange: 'August 2–31, 2026',
+    introLine: 'Weeks 1–2 of August: Becle\'s Juan Domingo Beckmann bought a 6% stake in LAFC at a $1.25 billion valuation while Mexico\'s own Fox Sports collapsed under debt, Jeff Bezos and Eduardo Saverin closed in on a $6 billion stake in Liverpool, LIV Golf replaced its Saudi backer with an unnamed investor, MLB\'s players and owners dug in over a hard salary cap that could cost part of the 2027 season, and Spider-Man: Brand New Day helped push the domestic summer box office toward $4 billion for the first time since 2023; then the Bezos-Saverin consortium closed its Liverpool stake at a $7.45 billion valuation, Bob Iger and Josh Kushner\'s group bought the Lakers for a record $12.5 billion, Google turned five of Europe\'s biggest football clubs into a Gemini and Pixel fan-experience platform, and David Ellison threatened to move Paramount out of California over the stalled Warner Bros. Discovery merger; then the Padres sold for a record $3.9 billion, LIV Golf ended its 2026 season early amid an ownership transition, Liga MX floated expanding past 18 teams as foreign capital circled new franchise slots, PE newcomer BlackSun raised its first $1 billion sports fund, Prime Video locked up Mexico\'s national team for 38 matches while pledging $2 billion across Latin America through 2030, Authentic completed its Care Bears acquisition, TikTok agreed to pay $400 million to settle a DOJ child-privacy case, and California\'s attorney general canceled settlement talks over Paramount\'s $111 billion Warner Bros. Discovery deal; then DAZN acquired EverPass Media to expand into U.S. commercial venues, LIV Golf prepared a bankruptcy filing as its Saudi backing lapsed, Unrivaled\'s Series C nearly doubled the women\'s 3x3 league\'s valuation to $650 million, Authentic Brands Group bought majority control of Drake\'s OVO, and the U.S. summer box office closed in on an all-time record.',
     issues: [
+
+      // WEEK 4
+      {
+        slug: 'week-4-august-2026',
+        issueNumber: '4',
+        weekLabel: 'Week 4',
+        dateRange: 'August 24–31, 2026',
+        publishedDate: '2026-08-31',
+        issueTitle: 'Week 4 — August 2026',
+        editionTag: 'Sports · Entertainment · IP · Capital',
+        introLine: 'Week four of August: DAZN acquired EverPass Media to build out U.S. commercial-venue distribution as LIV Golf prepared to file for bankruptcy once its Saudi backing lapses, Unrivaled\'s oversubscribed Series C nearly doubled the women\'s 3x3 league\'s valuation to $650 million, and Authentic Brands Group bought majority control of Drake\'s OVO as the U.S. summer box office closed in on an all-time record.',
+        shareText: 'DAZN buys EverPass Media, LIV Golf preps a bankruptcy filing, Unrivaled hits a $650M valuation, and Authentic buys into Drake\'s OVO as summer box office nears an all-time record — Week 4 August · Fillip.',
+        coreSignal: 'This week showed capital moving in opposite directions inside the same industries. DAZN consolidated live-sports distribution by buying EverPass Media while LIV Golf edged toward bankruptcy as its Saudi backing lapsed, and Unrivaled nearly doubled its valuation in the same week traditional sponsors were rethinking what a sponsorship dollar even buys. In entertainment, IP kept flowing into bigger licensing machines — Drake\'s OVO into Authentic Brands, Pokémon\'s trading-card business into a new film — while theatrical box office quietly closed in on an all-time record.',
+        ecosystemNews: [
+          {
+            headline: 'Tycoon Enterprises x CLOE Launch Olive Oyl Collection',
+            body: 'Tycoon Enterprises teamed up with Mexican brand CLOE to launch a new product line featuring Olive Oyl, the classic Popeye character licensed through King Features (a Hearst unit). The collection spans bags, wallets, backpacks, luggage, cosmetic cases and diaper bags built around Olive Oyl\'s signature look — a fresh example of Tycoon\'s licensing pipeline putting nostalgic IP back into everyday retail across Mexico.',
+            sourceName: 'LinkedIn',
+            sourceUrl: 'https://www.linkedin.com/posts/tycoonenterprises-licensing-oliveoyl-ugcPost-7498428335400566784-q7VN/'
+          },
+          {
+            headline: 'Triplemanía 34 Heads To Mexican Movie Theaters',
+            body: 'AAA\'s Triplemanía 34 — now a two-night event for the first time, with one night at Las Vegas\'s MGM Grand — will also screen in Cinépolis theaters across Mexico on September 11 and 13. Both live venues have reportedly sold close to capacity, and the cinema broadcast gives fans a way in as tickets run out. Presale is live now through Cinépolis\'s official channels.',
+            sourceName: 'Mediotiempo',
+            sourceUrl: 'https://www.mediotiempo.com/lucha-libre/triplemania-34-se-podra-ver-en-cines-cuando-y-donde-adquirir-tus-boletos'
+          },
+          {
+            headline: 'El Carnicero Debuts At AAA, Psycho Clown Answers The Call',
+            body: 'El Carnicero made an explosive AAA debut at Ola de Calor, dominating Chris Carter and then fighting off Monster Clown and Dave the Clown before Psycho Clown showed up to confront him directly. The face-off escalated into a challenge: Psycho Clown wants Carnicero in a Street Fight at Triplemanía 34, adding a fresh grudge match to a card that already features title bouts and the Copa Bardahl.',
+            sourceName: 'Fightful',
+            sourceUrl: 'https://www.fightful.com/wrestling/el-carnicero-wins-debut-at-aaa-ola-de-calor-psycho-clown-issues-street-fight-challenge-for-triplemania-34/'
+          }
+        ],
+        stories: [
+          {
+            order: 1,
+            tag: 'Media Rights',
+            section: 'sports',
+            headline: 'DAZN Acquires EverPass Media To Expand Into US Venues',
+            emailSummary: '<strong>DAZN</strong> agreed to acquire <strong>EverPass Media</strong>, the exclusive commercial distributor of NFL Sunday Ticket to bars, restaurants and other U.S. venues. As part of the deal, <strong>RedBird Capital Partners</strong>, <strong>32 Equity</strong> (the NFL\'s investment arm) and <strong>TKO Group Holdings</strong> will become minority shareholders in DAZN. EverPass will be rebranded as DAZN for Business, with CEO <strong>Alex Kaplan</strong> continuing to lead it. Financial terms were not disclosed.',
+            whyItMatters: 'The deal hands DAZN a ready-made U.S. commercial distribution network and puts the NFL\'s own investment arm on its cap table, deepening DAZN\'s ties to American sports media.',
+            signalText: 'DAZN agreed to acquire EverPass Media, the exclusive U.S. commercial distributor of NFL Sunday Ticket.',
+            sourceName: 'Reuters',
+            sourceUrl: 'https://www.reuters.com/legal/transactional/dazn-buy-everpass-media-expand-into-us-commercial-venues-2026-08-26/',
+            publishedDate: '2026-08-26'
+          },
+          {
+            order: 2,
+            tag: 'Restructuring',
+            section: 'sports',
+            accentText: '$5B+',
+            headline: 'LIV Golf Prepares Bankruptcy Filing As PIF Funding Lapses',
+            emailSummary: '<strong>LIV Golf</strong> may file for bankruptcy protection as soon as the week of <strong>September 7</strong>, the Financial Times reported, as funding from Saudi Arabia\'s <strong>Public Investment Fund</strong> is set to expire. The league laid off most of its staff last week and has reportedly sent players owed guaranteed money past 2026 settlement offers worth only cents on the dollar. PIF has invested more than <strong>$5 billion</strong> in LIV Golf since its 2022 launch and is expected to provide a bankruptcy loan of under <strong>$100 million</strong> without committing further funding.',
+            whyItMatters: 'A bankruptcy filing would mark the formal unwinding of the Saudi-backed challenge to the PGA Tour, four years after PIF\'s capital reshaped professional golf\'s economics.',
+            signalText: 'LIV Golf may file for bankruptcy protection as early as the week of September 7.',
+            sourceName: 'Reuters',
+            sourceUrl: 'https://www.reuters.com/legal/litigation/liv-golf-prepares-bankruptcy-filing-september-ft-reports-2026-08-31/',
+            publishedDate: '2026-08-31'
+          },
+          {
+            order: 3,
+            tag: 'Valuation',
+            section: 'sports',
+            accentText: '$650M',
+            headline: 'Unrivaled Reaches $650 Million Valuation In Series C',
+            emailSummary: '<strong>Unrivaled</strong>, the women\'s 3x3 basketball league, closed an oversubscribed <strong>Series C</strong> round led by <strong>Ten Pillars Sports Fund</strong>, valuing the league at <strong>$650 million</strong> ahead of its third season. Players hold nearly <strong>$200 million</strong> in combined equity, a 550% increase since the league launched in 2025. The round also drew <strong>Carmelo Anthony</strong>, <strong>Geno Auriemma</strong>, <strong>Alex Morgan</strong> and <strong>Ashton Kutcher</strong> as investors.',
+            whyItMatters: 'The valuation nearly doubles Unrivaled\'s mark from a year ago, signaling investors see durable commercial upside in women\'s basketball beyond a single hit season.',
+            signalText: 'Unrivaled\'s Series C round valued the women\'s 3x3 basketball league at $650 million.',
+            sourceName: 'Just Women\'s Sports',
+            sourceUrl: 'https://justwomenssports.com/reads/unrivaled-650m-valuation-series-c-funding/',
+            publishedDate: '2026-08-27'
+          },
+          {
+            order: 4,
+            tag: 'Sponsorship',
+            section: 'sports',
+            accentText: '$2.04B',
+            headline: 'US Open Sponsors Shift From Ads To Experiences',
+            emailSummary: '<strong>US Open</strong> sponsors including <strong>Heineken</strong>, <strong>Evian</strong>, <strong>Lotte New York Palace</strong> and <strong>IBM</strong> are shifting spend from traditional endorsement deals toward immersive fan activations — pop-up hotel packages, block parties, AI-powered serve-speed booths — as the tournament posts a record <strong>$108 million</strong> prize pool and a new <strong>$2.04 billion</strong> ESPN broadcast deal. Tournament revenue now tops <strong>$500 million</strong>.',
+            whyItMatters: 'Sponsors are betting that content and experience — not just athlete endorsement — is what converts into engagement, reshaping how brands value sports sponsorship dollars.',
+            signalText: 'US Open sponsors are shifting spend from athlete endorsements to immersive fan experiences.',
+            sourceName: 'Forbes',
+            sourceUrl: 'https://www.forbes.com/sites/merlisalawrencecorbett/2026/08/29/us-open-sponsors-pivot-from-endorsement-deals-to-immersive-experiences/',
+            publishedDate: '2026-08-29'
+          },
+          {
+            order: 5,
+            tag: 'Milestone',
+            section: 'sports',
+            accentText: '12 Wins',
+            headline: 'Pato O\'Ward Sweeps Milwaukee, Becomes Top Mexican IndyCar Winner',
+            emailSummary: '<strong>Pato O\'Ward</strong> swept both IndyCar races in Milwaukee on the same day — a feat unseen in the series for 45 years — winning the morning race and then the rescheduled race with a pass 19 laps from the finish. The 27-year-old <strong>Monterrey</strong> native now has <strong>12 career wins</strong>, surpassing <strong>Adrián Fernández\'s</strong> 11 to become the winningest Mexican driver in IndyCar history.',
+            whyItMatters: 'The milestone cements O\'Ward as Mexican motorsport\'s biggest active commercial draw, reinforcing IndyCar\'s growing investment in the Mexican fan base and sponsorship market.',
+            signalText: 'Pato O\'Ward won both IndyCar races in Milwaukee on the same day.',
+            sourceName: 'Récord',
+            sourceUrl: 'https://www.record.com.mx/historia/hazana-historica-pato-oward-barre-en-milwaukee-entra-al-olimpo-de-indycar-y-es-el-mexicano-mas-ganador-2026083102314461824',
+            publishedDate: '2026-08-31'
+          },
+          {
+            order: 6,
+            tag: 'Brand IP',
+            section: 'entertainment',
+            headline: 'Authentic Brands Buys Majority Stake In Drake\'s OVO',
+            emailSummary: '<strong>Authentic Brands Group</strong> acquired a majority stake in Drake\'s lifestyle brand <strong>October\'s Very Own (OVO)</strong>, with the rapper retaining a minority stake and creative input. Authentic is partnering with <strong>Vince Holding Corp.</strong> on OVO\'s design, product development and retail. Authentic — the second-largest licensor in the U.S. behind Disney — has also acquired <strong>Brooks Brothers</strong>, <strong>Champion</strong>, <strong>Sports Illustrated</strong> and <strong>Care Bears</strong>.',
+            whyItMatters: 'The deal folds a musician-owned lifestyle brand into one of the industry\'s largest licensing platforms, a path Authentic has used to scale celebrity and heritage brands into global retail.',
+            signalText: 'Authentic Brands Group acquired a majority stake in Drake\'s lifestyle brand OVO.',
+            sourceName: 'The Hollywood Reporter',
+            sourceUrl: 'https://www.hollywoodreporter.com/business/business-news/drake-sells-ovo-authentic-brands-group-1236683027/',
+            publishedDate: '2026-08-27'
+          },
+          {
+            order: 7,
+            tag: 'Franchise IP',
+            section: 'entertainment',
+            accentText: '30 Years',
+            headline: 'Pokémon\'s Trading Card Game Enters Film With \'Wild Card\'',
+            emailSummary: '<strong>Pokémon</strong> announced <strong>\'Wild Card\'</strong>, a new theatrical movie built around a trading-card-game player character, set for worldwide release in <strong>2027</strong>. Unveiled at the closing ceremony of the <strong>2026 Pokémon World Championships</strong> in San Francisco, it\'s the franchise\'s first movie since 2020 and first theatrical release since 2018\'s \'The Power of Us.\' <strong>CloverWorks</strong> will produce, directed by <strong>Katsuhiko Kitada</strong> (\'The First Slam Dunk\'), as the franchise marks its <strong>30th anniversary</strong>.',
+            whyItMatters: 'The film puts Pokémon\'s core trading-card-game business — not just its games or anime — at the center of a theatrical release, extending one of entertainment\'s largest licensed-IP franchises into a new commercial vehicle.',
+            signalText: 'Pokémon announced a new theatrical movie, \'Wild Card,\' for worldwide release in 2027.',
+            sourceName: 'Variety',
+            sourceUrl: 'https://variety.com/2026/film/news/pokemon-wild-card-movie-release-date-teaser-1236847050/',
+            publishedDate: '2026-08-30'
+          },
+          {
+            order: 8,
+            tag: 'Box Office',
+            section: 'entertainment',
+            accentText: '$4.6B',
+            headline: 'US Summer Box Office Nears All-Time $4.8B Record',
+            emailSummary: 'The U.S. summer domestic box office stood at <strong>$4.598 billion</strong> through August 30, within striking distance of the <strong>$4.756 billion</strong> all-time summer record set in 2013. The weekend alone brought in <strong>$100 million</strong>, up 46% year-over-year, led by <strong>Spider-Man: Brand New Day</strong> ($22.2 million) and Warner Bros. Animation\'s <strong>Coyote vs. Acme</strong>, which posted indie distributor Ketchup Entertainment\'s biggest opening ever at <strong>$15.4 million</strong>.',
+            whyItMatters: 'A record summer would confirm theatrical moviegoing\'s recovery is durable rather than a single-tentpole blip, with 2026\'s full-year domestic box office already running well ahead of 2025.',
+            signalText: 'The U.S. summer box office reached $4.598 billion, nearing the 2013 record of $4.756 billion.',
+            sourceName: 'Deadline',
+            sourceUrl: 'https://deadline.com/2026/08/box-office-summer-2026-near-record-1237062959/',
+            publishedDate: '2026-08-30'
+          },
+          {
+            order: 9,
+            tag: 'IP Licensing',
+            section: 'entertainment',
+            headline: 'VIZ Media Licenses Classic Anime Catalog To Cineverse\'s RetroCrush',
+            emailSummary: '<strong>VIZ Media</strong> licensed streaming rights to classic titles from its anime catalog — including <strong>Naruto</strong>, <strong>Bleach</strong>, <strong>Hunter x Hunter</strong>, <strong>Pretty Guardian Sailor Moon</strong>, and <strong>Hikaru no Go</strong> — to <strong>Cineverse\'s RetroCrush</strong>, marking RetroCrush\'s first acquisition of content from these franchises. The titles, timed to debut around Anime NYC, will stream on RetroCrush\'s app and its FAST/SVOD distribution across Prime Video Channels, Comcast, Roku and other platforms. Cineverse (Nasdaq: CNVS) said the deal builds out its Golden Age-focused anime vertical with VIZ\'s back catalog.',
+            whyItMatters: 'The deal shows VIZ Media monetizing its legacy franchise catalog through smaller, genre-specific streamers rather than only its own or the majors\' platforms, extending its licensing footprint deeper into niche anime distribution.',
+            signalText: 'VIZ Media licensed streaming rights to classic anime titles to Cineverse\'s RetroCrush.',
+            sourceName: 'PR Newswire',
+            sourceUrl: 'https://www.prnewswire.com/news-releases/cineverses-retrocrush-acquires-streaming-rights-to-classic-anime-series-and-films-from-viz-media-302862308.html',
+            publishedDate: '2026-08-27'
+          }
+        ]
+      },
 
       // WEEK 3
       {
